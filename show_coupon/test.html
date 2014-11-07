@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+<h1>This is amazon coupon test!</h1>
+<div id="content_area" class="container content-top-margin" align="center">
+CONTENT AREA</div>
+</body>
+<script>
+$(document).ready(function(){
+var fileref=document.createElement("link");
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", "//www.compandsave.com/v/mp/css/2014-cas-amazon-coupondiv.css");
+document.getElementById("content_area").appendChild(fileref);
+
+var couponDiv = document.createElement("div");
+var couponDivId = "cas_cms_couponDivAmazon";
+
+couponDiv.id = couponDivId;
+document.getElementById("content_area").appendChild(couponDiv);
+
+document.getElementById("cas_cms_couponDivAmazon").innerHTML = '<p>Special offer for<img src='+'"//www.compandsave.com/v/mp/images/amazon-logo.png"'+'/>shoppers:</p>'+'<p>5% OFF with coupon code:</p>'+'<p><strong id="cas_cms_codeAmazon">ABC564B</strong></p>';	
+document.getElementById('cas_cms_codeAmazon').innerHTML="AMA123";
+});
+</script>
+</html>

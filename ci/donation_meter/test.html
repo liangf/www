@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>
+Donation TEST
+</title>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+</head>
+
+<body>
+<!-- FaceBook Share Button Code !-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_CN/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- FaceBook Share Button Code End !-->
+
+<!-- Twitter Share Button !-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Twitter Share Button !-->
+<!-- Google +  !-- >
+
+<!-- Google + !-->
+<style>
+#donation-meter-block {
+	background-image: url('meter.png');
+	height:660px;
+	width: 530px;
+
+	position: absolute;
+	top:50px;
+	left:50px;
+	z-index: 2;
+}
+
+#meter-bar {
+	background-color: #FF0000;
+	position:absolute;
+	/*top:50px;*/
+	left:50px;
+	/*height:330px;*/
+	width: 530px;
+	z-index: 1;
+
+}
+
+</style>
+
+
+<div id="donation-meter-block">
+</div>
+<div>Message: now we have <span id="donation-message"></span> dollars for donation</div>
+<div id="meter-bar">
+</div>
+
+<div style="margin-top:1000px">
+<div class="fb-share-button" data-href="http://www.compandsave.com/HP_Compatible_Toner_Cartridge_s/167.htm" data-width="12" data-type="button_count"></div>
+
+<br>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.cocompandsave.com" data-text="Hello World" data-size="large" data-count="none">Tweet</a>
+
+<br>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e29e5050dbf91f"></script>
+<!-- AddThis Button END -->
+</div>
+
+
+<!-- Instruction: Kept id: donation-message: display how many orders we have. 
+							meter-bar: change the top and height style 
+                  Other id and style could change. 
+
+	 TWO parameter requires: the height of donation meter, and total amount of donation. 
+	 meter-bar's height will make sure it reflects the same percentage of meter height compare with total height and current donations comare with total donation amount. 
+
+	 and the height of meter-bar is the height of meter subtract meter-bar height. 
+
+	 To sum up, the script will change meter-bar's top and height style every ten seconds. 
+
+
+ !-->
+
+
+
+
+
+<!-- Start donation meter effect !-->
+<script type="text/javascript" src="donation_meter.js"></script>
+<!-- END donation meter effect !-->
+
+
+
+</body>
+
+</html>

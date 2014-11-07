@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/downloadify.min.js"></script> 
+<style>
+body {font-size:20px;}
+.content-area {width:800px;margin:0 auto;}
+#btn,#btn_auto, #btn_cp {padding: 2 4 0 4;font-size:15px;height:25px;background-color:#BEBEBE;border-width:1;cursor:pointer;margin-left:10px;}   
+.tb1{ background-color:#4A8BBF; color:white;width:186px; height:36px; line-height:30px; border:1px solid #8FB7D7; border-bottom:none;font-weight:bold; font-size:22px; cursor:pointer;}
+.tb2{background-color:#EBF4FD; color:#176AAD;width:186px; height:36px; line-height:30px; border:1px solid #8FB7D7; border-bottom:none;font-weight:bold; font-size:22px; cursor:pointer;}
+.bg_t {margin-left:15px;}
+#d_ad {margin-left:15px;}
+#d_auto {margin-left:15px;}
+#d_cp {margin-left:15px;}
+#d_lb {margin-left:15px;}
+
+</style>
+</head>
+<div class="content-area">
+<select style="float:left;margin:10px 0 20px 650px;" onchange='location.href=this.options[this.selectedIndex].value;'> 
+<option>Change website</option> 
+<option value="//www.comboink.com/v/dc/yy/Product_R/main.html"> ComboInk</option> 
+<option value="//www.tomatoink.com/v/dc/yy/Product_R/main.html"> TomatoInk</option>
+</select>
+<h2 style="padding-left: 85px;font-size:30px">Product Report Generation System<span style="color:#2894FF;"> Compandsave</span></h2> 
+<table width="720px" border="0" cellspacing="0" cellpadding="0"  class="bg_t">
+<tr>
+<td  valign="bottom" width="180px" align="center"><div class="tb2" id="t_ad" onClick="showTab('ad','auto', 'cp', 'lb')">ad-hoc generate</div></td>
+<td  valign="bottom" width="180px" align="center"><div class="tb1" id="t_auto" onClick="showTab('auto','ad', 'cp', 'lb')">auto generate</div></td>
+<td  valign="bottom" width="180px" align="center"><div class="tb1" id="t_cp" onClick="showTab('cp','auto','ad', 'lb')">coupon statistics</div></td>
+<td  valign="bottom" width="180px" align="center"><div class="tb1" id="t_lb" onClick="showTab('lb', 'cp','auto','ad')">Label operations</div></td>
+</tr>
+</table>
+<div id="d_ad" style="display:block;"><br>
+Please input Product Code or Label name:
+<input type="text" id="ad_pc" onKeyDown="checkkey(event);" style="width:250px;" />
+<ul style="list-style:none;" id="contents"></ul>
+<div id="warning" style="color:red;"></div>
+<br> 
+Please choose time period:<br>
+<div style="padding-top:12px;"><select id="sm" style="height:25px;font-size:15px;">
+<option>select start month</option>
+</select>
+<select id="em" style="height:25px;font-size:15px;">
+<option>select end month</option>
+</select>
+<input type="button" id="btn" value="generate" onClick="senddata();"/></div><br>
+<div id="message" style="color:red;"></div>
+<div id="savedocument" style="display:none"><form><p><label for='filename'>Filename</label><br /><input type='text' name='filename' value='ProductReport_CAS.csv' id='filename' /></p><p><div id="save_result" style="display:none"></div></p><p id='downloadify'>Click the button below to download your report.</p><input id='saveresult' type='button' size='4' value='Download'/><div id="wait" style="display:none">Please wait...</div></form></div>
+</div>
+
+
+<div id="d_auto" style="display:none;">
+<br>
+Please input Product Code:
+<input type="text" id="auto_pc" onKeyDown="checkkey_auto1(event);" style="width:250px;" />
+<ul style="list-style:none;" id="contents_auto1"></ul>
+<div id="warning_auto1" style="color:red;"></div>
+<br> 
+Please input Recipient:
+<input type="text" id="auto_re" onKeyDown="checkkey_auto2(event);" />
+<ul style="list-style:none;" id="contents_auto2"></ul>
+<div id="warning_auto2" style="color:red;"></div><br>
+Please choose time period:
+<select id="timep" style="height:25px;font-size:15px;">
+<option value=-2>last 1 month</option>
+<option value=-3>last 2 months</option>
+<option value=-4>last 3 months</option>
+<option value=-5>last 4 months</option>
+<option value=-6>last 5 months</option>
+<option value=-7>last 6 months</option>
+<option value=-8>last 7 months</option>
+<option value=-9>last 8 months</option>
+<option value=-10>last 9 months</option>
+<option value=-12>last 10 months</option>
+<option value=-12>last 11 months</option>
+<option value=-13>last 1 year</option>
+</select>
+<input type="button" value="Confirm" id="btn_auto" onClick="sendEmail();"/>
+</div>
+
+
+<div id="d_cp" style="display:none;"><br>
+Please input Coupon Code:
+<input type="text" id="cp_cc" onKeyDown="checkkey_cp(event);" />
+<ul style="list-style:none;" id="contents_cp"></ul>
+<div id="warning_cp" style="color:red;"></div>
+<br> 
+Please choose time period:<br>
+<div style="padding-top:12px">Date<span>  </span>
+<input type="text" id="datepicker_1" value="From" style="width:85px;margin-left:5px;font-size:15px;" /><span>  </span>
+<input type="text" id="datepicker_2" value="To" style="width:85px;margin-left:5px;font-size:15px;"/>
+<input type="button" id="btn_cp" value="generate" onClick="senddata2();"/></div><br>
+<div id="message_cp" style="color:red;"></div>
+<div id="savedocument_cp" style="display:none"><form><p><label for='filename'>Filename</label><br /><input type='text' name='filename' value='CouponUsage_CAS.csv' id='filename_cp' /></p><p><div id="save_result_cp" style="display:none"></div></p><p id='downloadify2'>Click the button below to download your report.</p><input id='saveresult_cp' type='button' size='4' value='Download'/><div id="wait_cp" style="display:none">Please wait...</div></form></div>
+</div>
+
+<div id="d_lb" style="display:none;">
+<h2 style="color:#858585;">Generate labels</h2>
+Please input Product Code:
+<input type="text" id="ad_lb" onKeyDown="checkkey_lb(event);" style="width:250px;"/>
+<p id="tepcontent"></p>
+<ul style="list-style:none;" id="contents_lb"></ul>
+<div id="warning_lb" style="color:red;"></div>
+<input type="button" id="btn_lb" value="Create Label" onClick="displayform();"/>
+
+<div id="labelinfo" style="display:none;">
+<input type="text" id="lname" value="Input label name" onfocus="if(value =='Input label name'){value =''};" onblur="if(value ==''){value='Input label name';}"/>
+<input type="button" id="btn_lc" value="Confirm"/>
+<div id="message_lb" style="color:red;"></div>
+</div>
+
+<h2 style="color:#858585;">Edit labels</h2>
+<div id="showlb"></div>
+<div id="warning_elb" style="color:red;"></div>
+<div id="oldln" style="display:none;"></div>
+</div>
+</div>
+
+<script type="text/javascript">
+//three page design
+function showTab(item){
+for(var i=0;i< arguments.length;i++){
+
+document.getElementById("d_"+arguments[i]).style.display="none";
+document.getElementById("t_"+arguments[i]).className="tb1";
+}
+document.getElementById("d_"+item).style.display="block";
+document.getElementById("t_"+item).className="tb2";
+}
+
+//load old products records
+ $.get("oldP.asp",{}, function(data){
+   if(data!=""){
+   document.getElementById("contents").innerHTML=data;
+    }
+   });
+ $.get("oldC.asp",{}, function(data){
+   if(data!=""){
+   document.getElementById("contents_cp").innerHTML=data;
+   }
+   });
+ $.get("oldA1.asp",{}, function(data){
+   if(data!=""){
+   document.getElementById("contents_auto1").innerHTML=data;
+   }
+   });
+ $.get("oldA2.asp",{}, function(data){
+   if(data!=""){
+   document.getElementById("contents_auto2").innerHTML=data;
+   }
+   });
+
+//input new product codes or label
+function checkkey(e)
+{ 
+   if(e.keyCode == 13)
+	{ var product=document.getElementById("ad_pc").value;
+	      product= product.trim();
+	  var pt=product.toLowerCase();
+	  var ptt=pt + " <img src='delete.png' style='cursor:pointer;' onClick='move(this.parentNode);'/>";
+	  var obj=document.getElementById("contents");
+	  var pl=document.getElementById("contents").innerHTML;
+	  var list = document.createElement("li");
+	  var pll=pl.toLowerCase();
+	  if(pll.indexOf(ptt)==-1 && pll.indexOf(pt)==-1){
+	  $.get("checkexist.asp",{PC:product}, function(data){
+	    if(data=="Y"){ 
+	    list.innerHTML= product + " <img src='delete.png' style='cursor:pointer;' onClick='move(this.parentNode);'/>";
+	    obj.appendChild(list);
+        document.getElementById("ad_pc").value = "";
+        document.getElementById("warning").innerHTML ="";	
+		var x=document.getElementById("contents").innerHTML;	
+	   $.post("writeP.asp",{inputrecord:x}, function(data){});
+	    }
+	    else if(data=="N"){
+	    $.get("//www.cmyimage.com/Product_R/addlabel.php",{ln:product}, function(data){
+	      if(data!=""){
+	       list.innerHTML= "[" + product + "] <img src='delete.png' style='cursor:pointer;' onClick='move(this.parentNode);'/>";
+		   list.title= data;
+	       obj.appendChild(list);
+           document.getElementById("ad_pc").value = "";
+           document.getElementById("warning").innerHTML ="";	
+           var x=document.getElementById("contents").innerHTML;	
+	       $.post("writeP.asp",{inputrecord:x}, function(data){});
+           }
+	     else{
+	      document.getElementById("warning").innerHTML ="This product or label name does not exist, please try again.";
+	      }
+	   });
+	  }
+	  }); 
+	 }
+    else{
+	    document.getElementById("warning").innerHTML ="This product is already in the list!";
+	    }
+  }
+}
+ 
+ function checkkey_cp(e)
+{
+  if(e.keyCode == 13)
+	{var coupon=document.getElementById("cp_cc").value;
+	  coupon=coupon.trim();
+	  var cn=coupon.toLowerCase();
+	  cn=cn + ' <img src="delete.png"';
+	  var obj_cp= document.getElementById("contents_cp");
+	  var ccp= document.getElementById("contents_cp").innerHTML;
+	  var list_cp = document.createElement("li");
+	  var ccpl=ccp.toLowerCase();
+	  $.get("checkcoupon.asp",{cc:coupon}, function(data){
+	  if(data=="Y"){
+	    if((ccpl.indexOf(cn))==-1){
+	    list_cp.innerHTML= document.getElementById("cp_cc").value + " <img src='delete.png' style='cursor:pointer;' onClick='move2(this.parentNode);'/>";
+	    obj_cp.appendChild(list_cp);
+        document.getElementById("cp_cc").value = "";
+        document.getElementById("warning_cp").innerHTML ="";	 
+        var y=document.getElementById("contents_cp").innerHTML;
+		$.post("writeC.asp",{input:y}, function(data){});
+	    }
+	    else{
+	    document.getElementById("warning_cp").innerHTML ="This coupon code is already in the list!";
+	    }
+	  }
+	  else if(data=="N"){
+	   document.getElementById("warning_cp").innerHTML ="This coupon code does not exist, please try again.";
+	  }
+	 });
+	  
+	}
+ }
+ 
+function checkkey_auto1(e)
+{
+  if(e.keyCode == 13)
+	{var product=document.getElementById("auto_pc").value;
+	  product= product.trim();
+	  var pt=product.toLowerCase();
+	  var obj=document.getElementById("contents_auto1");
+	  var pl=document.getElementById("contents_auto1").innerHTML;
+	  var list = document.createElement("li");
+	  var pll=pl.toLowerCase();
+	  $.get("checkexist.asp",{PC:product}, function(data){
+	  if(data=="Y"){
+	    if((pll.indexOf(pt))==-1){
+	    list.innerHTML=document.getElementById("auto_pc").value + " <img src='delete.png' style='cursor:pointer;' onClick='move3(this.parentNode);'/>";
+	    obj.appendChild(list);
+        document.getElementById("auto_pc").value = "";
+        document.getElementById("warning_auto1").innerHTML ="";	 
+        var x=document.getElementById("contents_auto1").innerHTML;
+		x=x.trim();
+	    x=x.replace(/\n/g,"");
+		$.post("writeA1.asp",{input:x}, function(data){});
+	    }
+	    else{
+	    document.getElementById("warning_auto1").innerHTML ="This product is already in the list!";
+	    }
+	  }
+	  else if(data=="N"){
+	   document.getElementById("warning_auto1").innerHTML ="This product does not exist, please try again.";
+	  }
+	 }); 
+	}
+ }
+ 
+ function checkkey_auto2(e)
+{
+  if(e.keyCode == 13)
+	{var email=document.getElementById("auto_re").value;
+	 if(CheckE(email)){
+	  var pt= email.toLowerCase();
+	  var obj=document.getElementById("contents_auto2");
+	  var pl=document.getElementById("contents_auto2").innerHTML;
+	  var list = document.createElement("li");
+	  var pll=pl.toLowerCase();
+	  if((pll.indexOf(pt))==-1){
+	    list.innerHTML= document.getElementById("auto_re").value + " <img src='delete.png' style='cursor:pointer;' onClick='move4(this.parentNode);'/>";
+	    obj.appendChild(list);
+        document.getElementById("auto_re").value = "";
+        document.getElementById("warning_auto2").innerHTML ="";	 
+        var x=document.getElementById("contents_auto2").innerHTML;
+		x=x.trim();
+	    x=x.replace(/\n/g,"");
+		$.post("writeA2.asp",{input:x}, function(data){});
+	    }
+	    else{
+	    document.getElementById("warning_auto2").innerHTML ="This email address is already in the list!";
+	    }
+	  }
+	  else{
+	   document.getElementById("warning_auto2").innerHTML ="This email address is invalid, please try again.";
+	  } 
+	}
+ }
+ 
+ function CheckE(email){
+  reg=/^([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/gi;
+  if(!reg.test(email)){
+  return 0;
+  }
+  else{
+  return 1;}
+  }
+//delete unwanted product codes or warning messages
+ function move(licontent){
+ licontent.remove();
+ var x=document.getElementById("contents").innerHTML;
+ $.post("writeP.asp",{inputrecord:x}, function(data){});
+}
+
+function move2(cp){
+ cp.remove();
+ var y=document.getElementById("contents_cp").innerHTML;
+ $.post("writeC.asp",{input:y}, function(data){});
+}
+function move3(auto){
+ auto.remove();
+ var y=document.getElementById("contents_auto1").innerHTML;
+ 	y=y.trim();
+	y=y.replace(/\n/g,"");
+ $.post("writeA1.asp",{input:y}, function(data){});
+}
+function move4(auto){
+ auto.remove();
+ var y=document.getElementById("contents_auto2").innerHTML;
+ y=y.trim();
+ y=y.replace(/\n/g,"");
+ $.post("writeA2.asp",{input:y}, function(data){});
+}
+
+//generate time period lists 
+    var tmpDate =   new Date(); 
+    var endYear = tmpDate.getFullYear(); 	
+	var endMonth1 = tmpDate.getMonth()+1; 
+	var endMonth2 = tmpDate.getMonth(); 
+	var m=0;
+	var k=0;
+    if (endMonth1== 1) { 
+        endMonth2=12;		
+        endYear--;		
+    }  
+    var startYear = endYear-1;  
+    var startMonth1 = endMonth2;  
+	var startMonth2;
+	if(endMonth2==1){
+	startMonth2=12;
+	}
+	else{
+	startMonth2= endMonth2-1;
+	}
+    var liststart = new Array();  
+	var listend = new Array(); 
+        if(startMonth1==1){
+		 for (var j=1;j<=12;j++){  
+			 liststart[m]=startYear + "-" + j; 			
+             m++;
+		    } 
+         }			
+	   else{
+	   for(var j=startMonth1;j<=startMonth2+12;j++){  
+		     if(j<13){
+			 liststart[k]=startYear + "-" + j; 			
+			 }
+			 else{
+		     var j2;
+			 j2=j-12;
+			 liststart[k]=endYear + "-" + j2; 	
+		     }
+			 k++;
+          }  
+	  } 
+	  if(endMonth1==1){
+		 m=0;
+		 for (var i=1;i<=12;i++){ 		 
+			 listend[m]=endYear + "-" + i; 			
+             m++;
+		    } 
+         }			
+	   else{
+	   k=0;
+	   j2=0;
+	   for(j=endMonth1;j<=endMonth2+12;j++){  
+			 if(j<13){
+			 listend[k]=startYear + "-" + j; 			
+			 }
+			 else{
+			 j2=j-12;
+			 listend[k]=endYear + "-" + j2; 	
+		     }
+			 k++;
+          }  
+	  } 
+	  for(var l=0;l<12;l++){
+	  var startOption = document.createElement("OPTION");
+          startOption.text= liststart[l]; 
+          startOption.value=liststart[l];
+		  document.getElementById("sm").options.add(startOption);
+	 }
+	  for(l=0;l<12;l++){
+	  var endOption = document.createElement("OPTION");
+          endOption.text= listend[l]; 
+          endOption.value=listend[l];
+		  document.getElementById("em").options.add(endOption);}
+	  //set calender
+      $("#datepicker_1").datepicker({
+			dateFormat: 'yy/mm/dd',
+			minDate: '-1y',
+			maxDate: 'today' });
+      $("#datepicker_2").datepicker({
+			dateFormat: 'yy/mm/dd', 
+			minDate: '-1y',
+			maxDate: 'today'});
+	
+	  //send data and generate report
+function senddata() {
+	var sm = $("#sm option:selected").text();
+	var em = $("#em option:selected").text();
+	var v1 = sm.split("-");
+	var v2 = em.split("-");
+	var x = document.getElementById("contents").getElementsByTagName("li");
+	if ((parseInt(v1[0]) == parseInt(v2[0]) && parseInt(v1[1]) >= parseInt(v2[1])) || (parseInt(v1[0]) > parseInt(v2[0]))) {
+		document.getElementById("message").innerHTML = "wrong time period, end time must later than start time.";
+	}
+	else if (x.length < 1) {
+		document.getElementById("message").innerHTML = "No input found, please input product code or label name.";
+	}
+	else {
+		document.getElementById("message").innerHTML = "";
+	    var cont = "";
+	    for (var i=0; i<x.length; i++) {
+			if (x[i].title == "") {
+				var y = x[i].innerHTML.replace(/(<img.*>)/i,"&");
+				cont = cont+ y;
+			}
+			else if (x[i].title != "") {
+				var y = x[i].innerHTML.replace(/(<img.*>)/i,"");
+				cont = cont + y + "$" + x[i].title + "&";
+			}
+	}
+	document.getElementById('savedocument').style.display = "";
+	$('#saveresult').click(function() {
+		document.getElementById('wait').style.display="";
+	    $.post("greport.asp", {inputrecord:cont, start:sm, end:em}, function(data) {
+			var string = data;
+			document.getElementById('saveresult').style.display = "none";
+			document.getElementById('wait').style.display = "none";
+			Downloadify.create('downloadify',{
+				filename: function(){
+				return document.getElementById('filename').value;
+				},
+				data: string,
+				transparent: false,
+				swf: 'media/downloadify.swf',
+				downloadImage: 'images/download.png',
+				width: 100,
+				height: 30,
+				append: false,
+				onComplete: function(){ 
+					alert('Your File Has Been Saved!'); window.location.reload(); 
+				},
+				onCancel: function(){ 
+					alert('You have cancelled the saving of this file.'); window.location.reload();
+				},
+				onError: function(){ 
+					alert('You must put something in the File Contents or there will be nothing to save!'); 
+				}
+			}); 
+		});
+	});
+	}
+}
+	 //send coupon data
+function senddata2() {
+	var sm_cp = $("#datepicker_1").datepicker().val();
+	var em_cp = $("#datepicker_2").datepicker().val();
+	var sm = sm_cp.replace(/\//g,"");
+	var em = em_cp.replace(/\//g,"");
+	var x = document.getElementById("contents_cp").innerHTML;
+	x=x.trim();
+	x=x.replace(/"/g,"'");
+	x=x.replace(/\n/g,"");
+	if (parseInt(sm) > parseInt(em)) {
+		document.getElementById("message_cp").innerHTML = "wrong time period, end time must later than start time.";
+	}
+	else if (x == "") {
+		document.getElementById("message_cp").innerHTML = "No input found, please input coupon codes.";
+	}
+	else {
+		document.getElementById("message_cp").innerHTML = "";
+	    document.getElementById('savedocument_cp').style.display = "";
+	    $('#saveresult_cp').click(function() {
+			document.getElementById('wait_cp').style.display = "";
+			$.post("creport.asp", {cc:x, start:sm_cp, end:em_cp}, function(data) {
+				var string = data;
+				document.getElementById('saveresult_cp').style.display = "none";
+				document.getElementById('wait_cp').style.display = "none";
+				Downloadify.create('downloadify2', {
+					filename: function(){
+						return document.getElementById('filename_cp').value;
+					},
+					data: string,
+					transparent: false,
+					swf: 'media/downloadify.swf',
+					downloadImage: 'images/download.png',
+					width: 100,
+					height: 30,
+					append: false,
+					onComplete: function(){ 
+						alert('Your File Has Been Saved!'); window.location.reload(); 
+					},
+					onCancel: function(){ 
+					alert('You have cancelled the saving of this file.'); 
+					window.location.reload();
+					},
+					onError: function(){ 
+					alert('You must put something in the File Contents or there will be nothing to save!');
+					window.location.reload(); 
+					}
+				}); 
+			}); 
+		});
+	}
+}
+	  
+function sendEmail() {
+	var timep = $("#timep option:selected").val();
+	$.get("mail.asp", {canshu:timep}, function(data) {
+		window.location.reload();
+	});
+}
+	  
+	//******label part js codes*****
+//load existed labels
+$.get("//www.cmyimage.com/Product_R/showlabel.php",{}, function(data){
+	if (data != "") {
+		var tmp = new Array();
+		tmp = data.split("!");
+		for (var i=0; i< tmp.length-1; i++) {
+			var tmp2 = tmp[i].split("$");
+			var a = document.createElement("table"); 
+			var op = document.createElement("option"); 
+			var caption = a.createCaption();  
+			a.style.border = "1px solid";
+			a.style.marginBottom = "20px";
+			var obj = document.getElementById("showlb");
+			caption.innerHTML = tmp2[0];
+			var lb = tmp2[1].split("*");
+			for (var m=0; m< lb.length; m++) {
+				if (lb[m] != "") {
+					lb[m] = lb[m].trim();
+					var tr = a.insertRow(-1);
+					var td = tr.insertCell();
+					td.innerHTML = lb[m] + "  <img src='delete.png' style='cursor:pointer;' onClick='move_lb(this.parentNode);'/>";
+					td.width = "400px";
+					td.colSpan = "3";
+				}
+			}
+		var tr2 = a.insertRow(-1);
+		var td2 = tr2.insertCell(0);
+		var td3 = tr2.insertCell();
+		var td4 = tr2.insertCell(-1);
+		td2.innerHTML = "<input type='button' value='Edit labelname' onClick='editpt(this.parentNode);'>";
+		td3.innerHTML = "<input type='button' value='Add product' onClick='addpt(this.parentNode);'>";
+		td4.innerHTML = "<input type='button' value='Remove label' onClick='moveall(this.parentNode);'>";
+		obj.appendChild(a);
+		}
+	}
+});
+//input new product codes
+var count = 0;
+var liarr = new Array();
+function checkkey_lb(e) {
+	if (e.keyCode == 13) {
+		var product = document.getElementById("ad_lb").value;
+	    var pt = product.toLowerCase();
+		var show = document.getElementById("tepcontent");
+		var pl = document.getElementById("contents_lb").innerHTML;
+		var pll = pl.toLowerCase();
+		$.get("checkexist.asp", {PC:product}, function(data) {
+			if (data == "Y") {
+				if ((pll.indexOf(pt)) == -1) {
+					show.innerHTML = product + "  <input type='text' value='Input Qty' style='color:#FF3030;width:80px;' id='qt' style='width:100px;' onfocus='if(value ==\"Input Qty\"){value =\"\"};' onblur='if(value ==\"\"){value=\"Input Qty\";}' onKeyDown='checkkey_lb2(event, this.parentNode);'/>";
+					document.getElementById("ad_lb").value = "";
+					document.getElementById("warning_lb").innerHTML = "";	  
+				}
+				else {
+					document.getElementById("warning_lb").innerHTML = "The product already in the list!";
+				}
+			}
+			else if (data == "N") {
+				document.getElementById("warning_lb").innerHTML = "This product does not exist, please try again.";
+			}
+		});
+	}
+}
+function checkkey_lb2(e, show) {
+	if (e.keyCode == 13) {
+		if (document.getElementById("qt").value != "") {
+			var qty = document.getElementById("qt").value;
+			var product = show.innerHTML;
+			product = product.replace(/(<input.*>)/i,"");
+			product = product.trim();
+			var obj = document.getElementById("contents_lb");
+			var list = document.createElement("li");
+			liarr[count] = product + ", QTY:" + qty;
+			count++;
+			list.innerHTML = product + ", QTY:" + qty + "  <img src='delete.png' style='cursor:pointer;' onClick='move_lb(this.parentNode);'/>";
+			obj.appendChild(list);
+			document.getElementById("tepcontent").innerHTML = "";
+		}
+		else {
+			alert("Please input valid qty and press enter.");
+		}
+	}
+}
+ 
+
+//delete unwanted product codes
+function move_lb(td) {
+	var tb = td.parentNode.parentNode.parentNode;
+	td.remove();
+	if (td.nodeName == "TD") {
+		var lname = tb.caption.innerHTML;
+		var lc = tb.innerHTML;
+		lc = lc.replace(/<caption>.*<\/caption>/i,"");
+		lc = lc.replace(/<[^>].*?>/g,"*");
+		lc = lc.replace(/\*{2,}/g, "*");
+		$.post("//www.cmyimage.com/Product_R/updatelb.php", {ln:lname, ct:lc}, function(data) {
+			window.location.reload();
+		});
+	}
+}
+
+function moveall(ip) {
+	var td = ip.parentNode;
+	var lname = td.parentNode.parentNode.caption.innerHTML;
+	var abool;
+	abool = confirm ("Are you sure to remove the label?");
+	if (abool == true) {
+		$.get("//www.cmyimage.com/Product_R/removelb.php", {ln:lname}, function(data) {
+			window.location.reload();
+		});
+	}
+}
+
+//create labels and save to db
+function displayform() {
+	var cont = "";
+	for (var i=0; i< count; i++) {
+		cont = cont+ liarr[i]+ "*";
+	}
+	if (cont != "") {
+		document.getElementById("btn_lb").style.display = "none";
+		document.getElementById("labelinfo").style.display = "";
+		$("#btn_lc").click(function() {
+			var lname = document.getElementById("lname").value;
+			if (lname != "") {
+				$.get("//www.cmyimage.com/Product_R/checklabel.php", {ln:lname}, function(data) {
+					if (data == "Y") {
+						document.getElementById("message_lb").innerHTML = "This label name exists, please change another name.";
+					}
+					else if (data == "N") {
+						$.get("checkexist.asp", {PC:lname}, function(data) {
+							if (data == "Y") {
+								document.getElementById("message_lb").innerHTML = "Product code can't be a label name, please change another name.";
+							}
+							else if(data == "N") {
+								document.getElementById("message_lb").innerHTML = "";
+								$.post("//www.cmyimage.com/Product_R/labelinput.php", {ln:lname, ct:cont}, function(data) {
+									window.location.reload();
+								});
+							}
+						});
+					}
+				});
+			}
+			else {
+				document.getElementById("message_lb").innerHTML="Please input the label name.";
+			}
+		});
+	}
+}
+
+//edit label name	  
+function editpt(input) {
+	var tb = input.parentNode.parentNode.parentNode;
+	var title = tb.caption.innerHTML;
+	tb.caption.innerHTML = "<input type='text' id='title' onKeyDown='checkkey_tl(event, this.parentNode);'/>";
+	document.getElementById("title").value = title;
+	document.getElementById("oldln").innerHTML = title;
+	}
+	
+function checkkey_tl(e, caption) {
+	var ot = document.getElementById("oldln").innerHTML;
+	if (e.keyCode == 13) {
+		var nt = document.getElementById("title").value;
+		if (nt != "") {
+			if (nt == ot) {
+				caption.innerHTML = ot;
+			}
+			else {
+				$.get("//www.cmyimage.com/Product_R/checklabel.php", {ln:nt}, function(data) {
+					if (data == "Y") {
+						document.getElementById("warning_elb").innerHTML = "This label name exists, please change another name.";
+					}
+					else if (data == "N") {
+						$.get("checkexist.asp", {PC:nt}, function(data) {
+							if (data == "Y") {
+								document.getElementById("warning_elb").innerHTML = "Product code can't be a label name, please change another name.";
+							}
+							else if (data = "N") {
+								document.getElementById("warning_elb").innerHTML = "";
+								$.get("//www.cmyimage.com/Product_R/labelname.php", {ln:nt, on:ot}, function(data) {
+									window.location.reload();
+								});
+							}
+						});
+					}
+				});
+			}
+		}
+	}
+}
+
+//add product code
+function addpt(td) {
+	var tb = td.parentNode.parentNode.parentNode;
+	var tr = tb.insertRow(0);
+	var td = tr.insertCell();
+	td.innerHTML = "<input type='text' id='newpc' style='width:260px;' onKeyDown='checkkey_add(event, this.parentNode);'/>";
+	td.width = "360px";
+	td.colSpan = "3";
+}
+
+function checkkey_add(e, td) {
+	var tb = td.parentNode.parentNode.parentNode;
+	var nt = tb.caption.innerHTML;
+	if (e.keyCode == 13) {
+		var product = document.getElementById("newpc").value;
+			$.get("checkexist.asp", {PC:product}, function(data) {
+				if (data == "Y") {
+					$.get("//www.cmyimage.com/Product_R/addlabel.php", {ln:nt}, function(data) {
+						if ((data.indexOf(product)) == -1) {
+							td.innerHTML = product + "  <input type='text' value='Input Qty' style='color:#FF3030;width:80px;' id='add_qt' style='width:100px;' onfocus='if(value ==\"Input Qty\"){value =\"\"};' onblur='if(value ==\"\"){value=\"Input Qty\";}' onKeyDown='checkkey_add2(event, this.parentNode);'/>";
+							document.getElementById("warning_elb").innerHTML = "";			
+						}
+						else {
+							document.getElementById("warning_elb").innerHTML = "The product is already in the list!";
+						}
+					});
+				}
+				else {
+					document.getElementById("warning_elb").innerHTML = "This product does not exist!";
+				}
+			});
+	}
+}
+function checkkey_add2(e, td) {
+	var tb = td.parentNode.parentNode.parentNode;
+	var nt = tb.caption.innerHTML;
+	if (e.keyCode == 13) {
+		if (document.getElementById("add_qt").value != "") {
+			var qty = document.getElementById("add_qt").value;
+			var product = td.innerHTML;
+			product = product.replace(/(<input.*>)/i,"");
+			product = product.trim();
+			td.innerHTML = product + ", QTY:" + qty + "  <img src='delete.png' style='cursor:pointer;' onClick='move_lb(this.parentNode);'/>";
+			$.get("//www.cmyimage.com/Product_R/addlabel.php", {ln:nt}, function(data) {
+				var newct = product + ", QTY:" + qty + "*" + data;
+				$.post("//www.cmyimage.com/Product_R/updatelb.php", {ln:nt, ct:newct}, function(data) {
+					window.location.reload();
+				});
+			});
+		}
+		else {
+			alert("Please input valid qty and press enter.");
+		}
+	}
+}
+</script>
+</body>
+</html>

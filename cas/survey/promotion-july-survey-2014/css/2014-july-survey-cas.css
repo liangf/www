@@ -1,0 +1,146 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for CompAndSave.com
+Author: Megan Prior-Pfeifer
+
+Table of Contents:
+0. Page fixes
+1. Text
+2. Layout
+3. Images
+4. Form elements
+
+Created for July survey LP: 
+http://www.compandsave.com/v/newsletter/promotion-july-survey-2014/promotion-july-survey-2014.asp
+
+Naming convention prefix: cas_sur_
+ 
+*/
+/*********************************************************/
+
+/*-- Page fixes --*/
+
+
+/*-- Text --*/
+
+.cas_sur_container h1{
+	text-align:center;
+	line-height:1.2em;
+	font-size:3.2em;
+}
+
+.cas_sur_container p{
+	text-align:left;
+	margin-top:10px;
+}
+
+.cas_sur_container a{
+	color:#0073C0;
+}
+
+.cas_sur_alert{
+	color:#f00 !important;
+}
+
+.cas_sur_coupon{
+	font-size: 4em;
+	line-height: 1;
+	color:#ff3399;
+}
+
+/*-- Layout --*/
+
+.cas_sur_form_block{
+	padding: 1%;
+}
+
+.cas_sur_survey, #cas_sur_form_block, #cas_survey_popout{
+	text-align:left;
+	background: #fafafa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: #ececec 1px solid;
+	padding:10px;
+}
+
+.cas_sur_survey li{
+	padding:10px 0;
+}
+
+#cas_survey_popout{
+	width:400px;
+	position:fixed;
+	z-index:10001;
+	top:50%;
+	margin-top:-100px;
+	left:50%;
+	margin-left:-200px;
+}
+
+#cas_survey_gray{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	height:100%;
+	background:#333;
+	opacity:.7;
+	z-index:10000;
+}
+
+/*-- Images --*/
+
+#product_image{
+	max-width:300px;
+}
+
+/*-- Form elements --*/
+
+.cas_sur_container #cas_sur_form_block input{
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	padding: 5px 0;
+	margin: 0;
+}
+
+#cas_sur_form_block .cas_cms_six.lastCol,
+#cas_sur_form_block .cas_cms_four.lastCol{
+	margin-left:1.5%;
+}
+
+#cas_sur_form_block input[type="checkbox"]{
+	width:auto;
+	min-width:0;
+}
+
+
+#cas_sur_form_block .cas_cms_row{
+	margin:10px auto;
+}
+
+#cas_sur_searchbarContainer{
+	background: #fafafa;
+	padding: 1%;
+	border: #ececec 1px solid;
+	border-radius: 2px;
+}
+
+.cas_sur_searchBar input{
+	padding: 1% !important;
+	margin: 2%;
+	height:auto;
+	font-size:24px;
+}
+
+.cas_sur_searchBar input[type="text"]{
+	width:70%;
+}
+
+.cas_sur_searchBar input[type="submit"]{
+	width:19%;
+}

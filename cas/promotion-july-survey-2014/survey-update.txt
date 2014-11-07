@@ -1,0 +1,56 @@
+http://www.compandsave.com/v/newsletter/promotion-july-survey-2014/promotion-july-survey-2014.asp
+
+CAS - replace this:
+
+<div class="cas_cms_twelve">
+			<h2>Thank you for your time. Your 25% off exclusive coupon code and reusable shopping bag will be sent next week. </h2>
+			<h2>In the meantime, please enjoy this 12% off coupon code:<br><span class="cas_sur_coupon">JULY12</span></h2>
+		</div>
+
+
+With this:
+
+<div class="cas_cms_twelve">
+			<h2>I
+Thank you for your interest, but unfortunately this survey has ended since we’ve reached our maximum amount of entries. If you answered the questions correctly, look forward to your exclusive discount coupon via email on the 16th of July. Otherwise, please enjoy the 12% off coupon code below, before it expires on the 28th of July:<br><span class="cas_sur_coupon">JULY12</span></h2>
+		</div>
+
+----------------------------
+
+http://www.comboink.com/v/newsletter/promotion-july-survey-2014/promotion-july-survey-2014.asp
+
+CI - replace this:
+
+<div class="ci_cms_twelve">
+			<h2>Thank you for your time. Your 25% off exclusive coupon code and reusable shopping bag will be sent next week. </h2>
+			<h2>In the meantime, please enjoy this 12% off coupon code:<br><span class="ci_sur_coupon">JULY12</span></h2>
+		</div>
+
+
+With this:
+
+<div class="ci_cms_twelve">
+			<h2>I
+Thank you for your interest, but unfortunately this survey has ended since we’ve reached our maximum amount of entries. If you answered the questions correctly, look forward to your exclusive discount coupon via email on the 16th of July. Otherwise, please enjoy the 12% off coupon code below, before it expires on the 28th of July:<br><span class="ci_sur_coupon">JULY12</span></h2>
+		</div>
+
+----------------------------
+
+http://www.tomatoink.com/v/newsletter/promotion-july-survey-2014/promotion-july-survey-2014.asp
+
+TI - replace this:
+
+<div class="ti_cms_twelve">
+			<h2>Thank you for your time. Your 25% off exclusive coupon code and reusable shopping bag will be sent next week. </h2>
+			<h2>In the meantime, please enjoy this 12% off coupon code:<br><span class="ti_sur_coupon">JULY12</span></h2>
+		</div>
+
+
+With this:
+
+<div class="ti_cms_twelve">
+			<h2>I
+Thank you for your interest, but unfortunately this survey has ended since we’ve reached our maximum amount of entries. If you answered the questions correctly, look forward to your exclusive discount coupon via email on the 16th of July. Otherwise, please enjoy the 12% off coupon code below, before it expires on the 28th of July:<br><span class="ti_sur_coupon">JULY12</span></h2>
+		</div>
+
+----------------------------

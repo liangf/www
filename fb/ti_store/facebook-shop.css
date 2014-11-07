@@ -1,0 +1,239 @@
+/************* CSS Header **************/
+/*
+Please refer to http://www.877ink.com/public_html/coding-standards.pdf for
+the most up to date coding standards for TomatoInk.com
+Author: Megan Prior-Pfeifer
+
+Table of Contents:
+1. Layout
+2. Text
+3. Elements
+
+Created for the Facebook shop app
+
+Color Reference:
+green:#4CA62E;
+orange:#e67921;
+dark green:#34740E;
+dark orange:#cf6611;
+
+Naming convention: ti_fb
+*/
+/*********************************************************/
+
+/*1. Layout*/
+.ti_fb-shop{
+	width:809px;
+	margin:0;
+	padding:0;
+}
+
+.ti_fb-header{
+	background:url('//www.tomatoink.com/v/mp/facebook-shop/images/background.jpg') repeat #f3f3f3;
+	border-bottom:3px solid #4CA62E;
+	min-height:150px;
+	margin:0 0 1em;
+}
+
+.ti_fb-footer{
+	background:url('//www.tomatoink.com/v/mp/facebook-shop/images/fb-footer.jpg') center center no-repeat #fff;
+	border-top:3px solid #4CA62E;
+	min-height:95px;
+	margin:1em 0 0;
+}
+
+.ti_fb-quarter{
+	width:25%;
+	float:left;
+	border-radius:10px;
+}
+
+.ti_fb-inner{
+	margin:10px;
+	padding:5px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #ffffff 60%, #fff6ee 99%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(60%,#ffffff), color-stop(99%,#fff6ee)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 60%,#fff6ee 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #ffffff 60%,#fff6ee 99%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #ffffff 60%,#fff6ee 99%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #ffffff 60%,#fff6ee 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fff6ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-bottom: 7px solid #4CA62E;
+	text-align:center;
+	min-height:300px;
+	border-radius:10px;
+}
+
+/*2. Text*/
+
+.ti_fb-header h1{
+	margin-left:-99999em;
+	position:absolute;
+}
+
+.ti_fb-header p{
+	font-size: 1.6em;
+	margin: 40px 0;
+	line-height: 2.2em;
+}
+
+.ti_fb-header p a{
+	text-decoration:none;
+	color:#4CA62E;
+}
+
+.ti_fb-header p a:hover{
+	text-decoration:underline;
+	color:#34740E;
+}
+
+.ti_fb-price{
+	color:#e67921;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.ti_fb-quarter h2{
+	font-size:16px;
+	line-height:22px;
+	color:#333;
+	font-weight:normal;
+	text-align:left;
+	margin:5px;
+	height:60px
+}
+
+.ti_fb-quarter a{
+	text-decoration:none;
+}
+
+.ti_fb-quarter a:hover{
+	text-decoration:underline;
+	color:#4CA62E;
+}
+
+.ti_fb-nav p{
+	text-align:center;
+	font-size:28px;
+	font-weight:bold;
+	color:#;
+}
+
+/*3. Elements*/
+
+.ti_fb-shop .ti_fb-quarter input[type="submit"]{
+	margin:0 0 0 1em;
+}
+
+.ti_fb-imgContain{
+	width:170px;
+	height:170px;
+	overflow:hidden;
+	background:#fff;
+	display:block;
+	margin:1em auto;
+	border-radius:10px;
+}
+
+.ti_fb-shop img{
+	width:100%;
+}
+
+.ti_fb-search{
+	background:#e67921;
+	border:#cf6611 2px solid;
+	border-radius:2px;
+	margin:1em auto;
+	width:96%;
+	border-radius:20px;
+}
+
+.ti_fb-searchContain{
+	width:100%;
+	border-radius:20px;
+}
+
+.ti_fb-searchContain input{
+	padding:1% !important;
+	margin:1%;
+	font-family:Verdana,arial, sans-serif;
+	display:block;
+	float:left;
+	height:auto;
+	font-size:24px;
+}
+
+.ti_fb-searchContain input[type="submit"]{
+	width:21%;
+	font-weight:bold;
+}
+
+.ti_fb-searchContain input[type="text"]{
+	width:70%;
+	color:#ccc;
+	border:#cf6611 2px solid;
+	border-radius:20px;
+}
+
+.ti_fb-nav button{
+	border:none;
+	background:url('//www.tomatoink.com/v/mp/facebook-shop/images/fb-navSprite.png') 0 0 no-repeat;
+	background-image:url('//www.tomatoink.com/v/mp/facebook-shop/images/fb-navSprite.png');
+	height: 24px;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 .5em;
+	cursor:pointer;
+}
+
+.ti_fb-nav button#firstpage{
+	width: 34px; 
+}
+
+.ti_fb-nav button#prepage{
+	width: 21px;
+	background-position:-45px 0;
+}
+
+.ti_fb-nav button#nextpage{
+	width: 21px;
+	background-position:-82px 0;
+}
+
+.ti_fb-nav button#lastpage{
+	width: 34px;
+	background-position:-117px 0;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('//secure.compandsave.com/lf/ti_store/fonts/icomoon.eot?-nwyrqt');
+	src:url('//secure.compandsave.com/lf/ti_store/fonts/icomoon.eot?#iefix-nwyrqt') format('embedded-opentype'),
+		url('//secure.compandsave.com/lf/ti_store/fonts/icomoon.woff?-nwyrqt') format('woff'),
+		url('//secure.compandsave.com/lf/ti_store/fonts/icomoon.ttf?-nwyrqt') format('truetype'),
+		url('//secure.compandsave.com/lf/ti_store/fonts/icomoon.svg?-nwyrqt#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+	content: "\e600";
+}
+.icon-bubbles:before {
+	content: "\e601";
+}

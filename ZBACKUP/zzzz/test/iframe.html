@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--
+<iframe src="http://www.w3schools.com">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<div>
+<iframe scrolling="no" frameborder="0" src="https://messenger.providesupport.com/messenger/lubu12.html">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>
+-->
+
+
+
+<!--
+<a href="//www.tomatoink.com/v/dc/yy/chat_page/tomatoink_chat.html" onclick="javascript:void window.open('//www.tomatoink.com/v/dc/yy/chat_page/tomatoink_chat.html','Comboink Chat Page','width=637,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=0,top=0');return false;"><img name="psEkiOimage" src="//www.tomatoink.com/v/vspfiles/templates/10/images/tomatoink/LIVECHAT-ONLINE.png" border="0">
+</a>
+-->
+<p>Click the button to open an a new window called "MsgWindow" with some text.</p>
+<!-- ######## Show egg ######## !-->
+  <link href="//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css" rel='stylesheet' type='text/css'>
+  <div id="cas_eeh_egg1"></div>
+<!-- ######## End Show egg ######## !-->
+<button onclick="openWin()">Open "MsgWindow"</button>
+
+<script>
+function openWin()
+{
+//window.open("http://www.compandsave.com/v/newsletter/promotion-april-2014/egg-1.html","_blank","toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=700, width=502, height=609");
+
+//window.open('http://www.casinkadmin.com/yy/liangf/compandsave/egg-1.html','Comboink Chat Page','width=600,height=609,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=0,top=0');
+
+//window.open('//www.liangfang.us','Comboink Chat Page','width=600,height=609,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=0,top=0');
+var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+    // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+    // At least Safari 3+: "[object HTMLElementConstructor]"
+var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
+
+var output = 'Detecting browsers by ducktyping:<hr>';
+output += 'isFirefox: ' + isFirefox + '<br>';
+output += 'isChrome: ' + isChrome + '<br>';
+output += 'isSafari: ' + isSafari + '<br>';
+output += 'isOpera: ' + isOpera + '<br>';
+output += 'isIE: ' + isIE + '<br>';
+document.body.innerHTML = output;
+}
+
+</script>
+</body>
+</html>

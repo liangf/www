@@ -1,0 +1,5 @@
+http://www.comboink.com/v/dc/yy/liangf/feeds/amazon/amazon-feed.asp
+http://www.877ink.com/liang/ftp/ci_upload_amazon.php
+
+http://www.comboink.com/v/dc/yy/liangf/feeds/shopzilla/shopzilla-feed.asp
+http://www.877ink.com/liang/ftp/ci_upload_shopzilla.php

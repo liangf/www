@@ -1,0 +1,64 @@
+/*1. Layout*/
+.cas_fb-sweepstakes{
+	width:810px;
+	margin:0;
+	padding:0;
+}
+
+.cas_fb-title-image img{
+width: 100%;
+}
+
+#cas_fb-title-banner{
+height:64px;
+background:#000;
+margin:0px;
+width:100%;
+text-align:center;
+font-size:40px;
+font-weight:600;
+color:#FFF;
+}
+
+.cas_fb-half{
+	width:50%;
+	float:left;
+}
+
+.cas_fb-inner{
+	margin:20px;
+	padding:5px;
+	/*border-bottom:3px solid #ddd;*/
+	/*outline:1px solid #ddd;*/
+	/*background:#f8f8f8;*/
+	/*text-align:center;*/
+	min-height:300px;
+}
+
+.cas_fb-inner button{
+color:#FFF;
+font-weight:normal;
+background-color:#4C4C4C;
+border-radius:3px;
+border:medium none;
+height:40px;
+font-size:16px;
+padding:0px 20px;
+transition:#000 0.25s linear 0s;
+cursor:pointer;
+width:100%;
+}
+
+.cas_fb-imgContain{
+	width:60px;
+	height:60px;
+	overflow:hidden;
+	background:#fff;
+	display:block;
+	margin:0em;
+	float:left;
+}
+
+.cas_fb-imgContain img{
+	width:100%;
+}

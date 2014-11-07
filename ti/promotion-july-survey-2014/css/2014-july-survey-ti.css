@@ -1,0 +1,103 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for TomatoInk.com
+Author: Megan Prior-Pfeifer
+
+Table of Contents:
+0. Page fixes
+1. Text
+2. Layout
+3. Images
+4. Form elements
+
+Created for June 2014 survey landing page 
+http://www.tomatoink.com/v/newsletter/promotion-july-survey-2014/promotion-july-survey-2014.asp
+
+Naming convention prefix: ti_sur_
+ 
+*/
+/*********************************************************/
+
+/*-- Page fixes --*/
+
+body{
+	background:#ececec;
+}
+
+/*-- Text --*/
+
+.ti_sur_container h1{
+	text-align:center;
+	line-height:1.2em;
+	font-size:3.2em;
+}
+
+.ti_sur_container p{
+	text-align:left;
+	margin-top:10px;
+}
+
+.ti_sur_container a{
+	color:#34740E;
+}
+
+.ti_sur_alert{
+	color:#f00 !important;
+}
+
+/*-- Layout --*/
+
+.ti_sur_container{
+	background:#fff;
+	border:#ccc 1px solid;
+	border-radius:20px;
+}
+
+.ti_sur_form_block{
+	padding: 1%;
+}
+
+.ti_sur_survey, #ti_sur_form_block{
+	text-align:left;
+	background: #fafafa;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border: #ececec 1px solid;
+	padding:10px;
+}
+
+.ti_sur_survey li{
+	padding:10px 0;
+}
+
+/*-- Images --*/
+
+#ti_sur_freebie_block img{
+	margin-top:-150px;
+}
+/*-- Form elements --*/
+
+.ti_sur_container #ti_sur_form_block input{
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	padding: 5px 0;
+	margin: 0;
+}
+
+#ti_sur_form_block .ti_cms_six.lastCol,
+#ti_sur_form_block .ti_cms_four.lastCol{
+	margin-left:1.5%;
+}
+
+#ti_sur_form_block input[type="checkbox"]{
+	width:auto;
+	min-width:0;
+}
+
+
+#ti_sur_form_block .ti_cms_row{
+	margin:10px auto;
+}

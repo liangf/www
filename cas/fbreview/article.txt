@@ -1,0 +1,37 @@
+<!-- CSS -->
+<link href="//www.compandsave.com/v/mp/css/icomoon.css" rel='stylesheet' type='text/css'>
+<link href="//www.compandsave.com/v/mp/css/cas-article.css" rel='stylesheet' type='text/css'>
+<link href="//www.compandsave.com/v/mp/articles/confirmation-page/css/cas-facebook-reward.css" rel='stylesheet' type='text/css'>
+
+<div class="cas_cms_articleContent_area cas_fbr_contain">
+	<div class="cas_cms_row">
+		<div class="cas_cms_twelve">
+			<h1 class="cas_cms_centerTxt">Get a $5 CompAndSave Giftcard in 3 easy steps:</h1>
+		</div>
+	</div>
+	<div class="cas_cms_row">
+		<div class="cas_cms_four firstCol">
+			<span class="icon-bubble2 cas_fbr_step1Txt"></span>
+			<h3 class="cas_cms_centerTxt">Step 1: Tell everyone what you think</h3>
+			<p><a class="cas_cms_twelve btn step1Btn" href="javascript: void(0)" onclick="window.open('https://www.facebook.com/compandsave.ink?sk=reviews#', 'cas-fb-review', 'width=900, height=600'); return false;">Write a review</a></p>
+			<p>Have you already written a review for us? Feel free to move on to <strong class="cas_fbr_step2Txt">Step 2</strong>.</p>
+		</div>
+		<div class="cas_cms_four">
+			<span class="icon-signup cas_fbr_step2Txt"></span>
+			<h3 class="cas_cms_centerTxt">Step 2: Fill out the form below</h3>
+			<form>
+				<label class="cas_cms_labelHide"><span>Facebook name</span><input type="text" value="Facebook name" onfocus="if(this.value=='Facebook name')this.value='';" onblur="if(this.value=='')this.value='Facebook name';" class="cas_cms_twelve"></label>
+				<label class="cas_cms_labelHide"><span>Date review left</span><input type="text" value="Date review left" onfocus="if(this.value=='Date review left')this.value='';" onblur="if(this.value=='')this.value='Date review left';" class="cas_cms_twelve"></label>
+				<label class="cas_cms_labelHide"><span>CompAndSave account email</span><input type="text" value="CompAndSave account email" onfocus="if(this.value=='CompAndSave account email')this.value='';" onblur="if(this.value=='')this.value='CompAndSave account email';" class="cas_cms_twelve"></label>
+				<p>Replace this p tag with the captcha</p>
+				<input class="cas_cms_twelve step2Btn" value="Claim your reward" type="submit"/>
+			</form>
+		</div>
+		<div class="cas_cms_four lastCol">
+			<span class="icon-alarm2 cas_fbr_step3Txt"></span>
+			<h3 class="cas_cms_centerTxt">Step 3: Wait to be notified</h3>
+			<p>Thank you for taking time to share your experience with others. Your submitted review will be manually checked by one of our representatives and your $5 credit will be transferred to your account once we locate your review on the CompAndSave.com Facebook Page. This process could take up to 2 business days to complete.</p>
+			<p>Please feel free to <a href="mailto:customercare@compandsave.com" target="_blank"><strong  class="cas_fbr_step3Txt">contact us</strong></a> if you have any questions.</p>
+		</div>
+	</div>
+</div>

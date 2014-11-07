@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to make a BUTTON element.</p>
+
+<p id="p1">this is p1.</p>
+  <link href="//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css" rel='stylesheet' type='text/css'>
+  <!--
+  <div id="cas_eeh_egg1" style="display:none"></div>
+  -->
+<p id="p2">this is p2.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+
+function myFunction()
+{
+var eggDiv = document.createElement("div");
+eggDiv.id = "cas_eeh_egg1";
+//document.getElementById("p1").appendChild(div);
+my_div = document.getElementById("p2"); 
+document.body.insertBefore(eggDiv, my_div); 
+
+$('#cas_eeh_egg1').click(function(){      
+  //window.open("http://www.compandsave.com/v/newsletter/promotion-april-2014/egg-1.html","_blank","toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=700, width=502, height=609");
+  window.open("http://www.casinkadmin.com/yy/liangf/compandsave/egg-1.html","_blank","toolbar=yes, scrollbars=yes, resizable=yes, top=100, left=200, width=502, height=609");
+});
+};
+
+</script>
+
+</body>
+</html>

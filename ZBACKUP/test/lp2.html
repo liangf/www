@@ -1,0 +1,57 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+function easter_setCookie(cname,cvalue,exminutes) {
+	var d = new Date();
+	d.setTime(d.getTime()+(exminutes*60*1000));
+	var expires = "expires="+d.toGMTString();
+	document.cookie = cname+"="+cvalue+"; "+expires+"; "+"path="+"/";
+}
+
+function easter_getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+
+function easter_printCookie() {
+	//var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		console.log(c);
+		//if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+	}
+}
+
+function easter_checkCookie() {
+	var user=getCookie("easter_landingpage");
+	if (user!="") {
+		alert("Welcome again " + user);
+	}
+	else {
+		user = prompt("Please enter your name:","");
+		if (user!="" && user!=null) {
+			setCookie("easter_landingpage",user,3);
+		}
+	}
+}
+
+
+$(document).ready(function(){
+	easter_setCookie("easter_landingpage", "lp2", 3);
+    easter_checkCookie();
+});
+</script>
+</head>
+
+<body>
+<h1>This is the Landing Page Two 222.</h1>
+<p>An absolute URL: <a href="http://www.compandsavetest.com/Canon_printer_ink_cartridges_s/169.htm">Cannon page</a></p>
+</body>
+</html>

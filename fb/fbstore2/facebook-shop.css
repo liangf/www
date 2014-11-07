@@ -1,0 +1,179 @@
+/************* CSS Header **************/
+/*
+Please refer to http://www.877ink.com/public_html/coding-standards.pdf for
+the most up to date coding standards for CompAndSave.com
+Author: Megan Prior-Pfeifer
+
+Table of Contents:
+1. Layout
+2. Text
+3. Elements
+
+Created for the Facebook shop app
+
+Color Reference:
+pink: #e92076
+blue:#1d9fe2
+dark blue:#1f70a3;
+
+Naming convention: cas_fb
+*/
+/*********************************************************/
+
+/*1. Layout*/
+.cas_fb-shop{
+	width:810px;
+	margin:0;
+	padding:0;
+}
+
+.cas_fb-header{
+	background:url('//www.compandsave.com/v/mp/facebook-shop/images/fb-header.jpg') center center no-repeat #f3f3f3;
+	border-bottom:3px solid #ddd;
+	min-height:150px;
+	margin:0 0 1em;
+}
+
+.cas_fb-footer{
+	background:url('//www.compandsave.com/v/mp/facebook-shop/images/fb-footer.jpg') center center no-repeat #fff;
+	border-top:3px solid #ddd;
+	min-height:95px;
+	margin:1em 0 0;
+}
+
+.cas_fb-quarter{
+	width:25%;
+	float:left;
+}
+
+.cas_fb-inner{
+	margin:10px;
+	padding:5px;
+	border-bottom:3px solid #ddd;
+	outline:1px solid #ddd;
+	background:#f8f8f8;
+	text-align:center;
+	/*min-height:400px;*/
+}
+
+/*2. Text*/
+
+.cas_fb-header h1{
+	margin-left:-99999em;
+}
+
+.cas_fb-price{
+	color:#e92076;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.cas_fb-quarter h2{
+	font-size:16px;
+	line-height:22px;
+	color:#333;
+	font-weight:normal;
+	text-align:left;
+}
+
+.cas_fb-quarter a{
+	text-decoration:none;
+}
+
+.cas_fb-quarter a:hover{
+	text-decoration:underline;
+}
+
+.cas_fb-nav p{
+	text-align:center;
+	font-size:28px;
+	font-weight:bold;
+	color:#1d9fe2;
+}
+
+/*3. Elements*/
+
+.cas_fb-shop input[type="submit"]{
+	display:inline-block;
+	background:#1d9fe2;
+	border:1px solid #1f70a3;
+}
+
+.cas_fb-shop .cas_fb-quarter input[type="submit"]{
+	margin:0 0 0 1em;
+	font: bold 16px/1 'PT Sans', arial, sans-serif;
+	padding:4px;
+}
+
+.cas_fb-imgContain{
+	width:170px;
+	height:170px;
+	overflow:hidden;
+	background:#fff;
+	display:block;
+	margin:1em auto;
+}
+
+.cas_fb-shop img{
+	width:100%;
+}
+
+.cas_fb-search{
+	background:#e92076;
+	border:#b40952 2px solid;
+	border-radius:2px;
+	margin:1em auto;
+	width:96%;
+}
+
+.cas_fb-searchContain{
+	width:100%;
+}
+
+.cas_fb-searchContain input{
+	padding:1%;
+	margin:1%;
+	font-family:'PT Sans',arial, sans-serif;
+}
+
+.cas_fb-searchContain input[type="submit"]{
+	width:21%;
+	font-size:32px;
+	font-weight:bold;
+}
+
+.cas_fb-searchContain input[type="text"]{
+	width:70%;
+	font-size:24px;
+	color:#ccc;
+	border:#b40952 2px solid;
+}
+
+.cas_fb-nav button{
+	border:none;
+	background:url('//www.compandsave.com/v/mp/facebook-shop/images/fb-navSprite.jpg') 0 0 no-repeat;
+	background-image:url('//www.compandsave.com/v/mp/facebook-shop/images/fb-navSprite.jpg');
+	height: 24px;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 .5em;
+}
+
+.cas_fb-nav button#firstpage{
+	width: 34px; 
+}
+
+.cas_fb-nav button#prepage{
+	width: 21px;
+	background-position:-45px 0;
+}
+
+.cas_fb-nav button#nextpage{
+	width: 21px;
+	background-position:-82px 0;
+}
+
+.cas_fb-nav button#lastpage{
+	width: 34px;
+	background-position:-117px 0;
+}

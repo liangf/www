@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1> Hello, this is my test page.</h1>
+  
+  
+
+ 
+</body>
+<script>
+var isproductpage = 0;
+var url = "http://www.comboink.com/ProductDetails.asp?ProductCode=DRUM-Brother-DR110CL&utm_source=amazon&utm_medium=shoppingengine&utm_campaign=amazonshopping";
+
+if (url.indexOf('http://')>-1) url = url.substr(7);
+if (url.indexOf('/')<0) isproductpage = 0;
+
+$(document).ready(function(){
+	//alert("ready");
+	//alert(url.indexOf('http://'));
+	//alert(url);
+});
+</script>
+</html>

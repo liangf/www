@@ -1,0 +1,248 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for CompAndSave.com
+Author: Sam Chao
+
+Table of Contents:
+1. Global
+2. Header
+3. Navigation
+4. Layout
+	-2 column Layout
+	-3 column Layout
+	-Sidebar Layout
+	-Full Width Layout
+	-Grid Layout
+5. Text
+6. Elements
+	- Buttons
+	- Inputs
+	- Dividers
+	- Tables
+	- Images
+	- Icons
+	- Resizable Images
+	- Resizer
+
+Created for article pages at CompAndSave.com
+
+Color Reference:
+Dark Blue: #435c72;
+Red: #fd2e45
+Yellow: #ffc000
+Navy: #1d2731
+Blue: #1c75bb
+ 
+Naming convention: add cas_mrd_ prefix
+
+*/
+/*********************************************************/
+
+/* -----------------------------------*/
+/* -------->> 1. Global <<<-----------*/
+/* -----------------------------------*/
+
+body {
+	background: #435c72 url(../images/bodyBg.jpg) 0 0 repeat;
+}
+.cas_mrd_boxSizing {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+}
+.rslides {
+	padding:0;
+	margin:0;
+}
+.rslides li {
+	width:100% !important;
+}
+.rslides img {
+	width:100%;
+	border-bottom: 10px solid #ffc000;
+}
+.centered-btns_tabs {
+    text-align: center;
+    position: relative;
+    z-index: 20;
+	clear:both;
+	margin-top:10px;
+}
+.centered-btns_tabs li {
+    display: inline;
+    float: none;
+	margin:0 5px;
+}
+.centered-btns_tabs a {
+    text-indent: -9999px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.3) inset, 1px 1px 0px 0px #FFF;
+    width: 10px;
+    height: 10px;
+}
+.centered-btns_here a {
+    background: none repeat scroll 0% 0% rgba(255, 192, 0, 0.8);
+}
+
+/* -----------------------------------------*/
+/* -------->> 2. Text <<<-----------*/
+/* -----------------------------------------*/
+
+.cas_mrd_contentBg h1,.cas_mrd_contentBg h2,.cas_mrd_contentBg h3, .cas_mrd_contentBg h4, .cas_mrd_contentBg p, .cas_mrd_contentBg li, .cas_mrd_contentBg span {
+	color:#fff;
+}
+.cas_mrd_contentBg h3, .cas_mrd_contentBg p, .cas_mrd_contentBg li , .cas_mrd_contentBg span {
+	text-align:left;
+	font-family: Calibri, arial, sans-serif;
+}
+.cas_mrd_contentBg h1,.cas_mrd_contentBg h2 {
+	font-family: ChunkFive, arial, sans-serif;
+}
+.cas_mrd_contentBg h1 {
+	font-size:52px;
+}
+.cas_mrd_contentBg h2 {
+	font-size:48px;
+	color:#ffc000;
+}
+.cas_mrd_contentBg h3 {
+	font-size:18px;
+	text-align:center;
+}
+.cas_mrd_contentBg h4 {
+	font-weight:100;
+	font-size:13px;
+	margin-top:5px;
+}
+.cas_mrd_contentBg p {
+	font-size:17px;
+	margin: 44px 0px;
+	padding: 0 20px;
+}
+.cas_mrd_disclaimer {
+	font-size: 20px;
+	color: #FFC000;
+	text-align: center;
+	margin: 16px;
+}
+/* -----------------------------------------*/
+/* -------->> 3. Content Area <<<-----------*/
+/* -----------------------------------------*/
+
+.cas_mrd_contentBg {
+	background: #1d2731;
+	box-shadow:2px 2px 2px #212e38;
+	position:relative;
+	display:inline-block;
+	padding:0;
+}
+
+.cas_mrd_slide {
+	width:100%;
+}
+
+/*Donation Meter*/
+
+#donation-meter-block {
+    width: 165px;
+    height: 635px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 2;
+}
+#meter-bar {
+    background: none repeat scroll 0% 0% rgba(255, 226, 18, 0.9);
+	position: absolute;
+	left: 24%;
+	width: 0px;
+	padding: 43px;
+	transform-origin: center bottom 0px;
+	margin-top: 0px;
+	visibility: hidden;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px;
+}
+#donation-meter-foreground {
+    z-index: 1;
+    position: relative;
+    background: url('../images/donationMeter.png') no-repeat scroll center center transparent;
+    margin: -635px auto 0px;
+    height: 619px;
+    width: 256px;
+	display:inline-block;
+}
+#donation-total {
+    background: transparent url(../images/meterTotal.png) 0 0 no-repeat;
+	padding: 10px 5px 10px 20px;
+    color: #fff;
+    width: 154px;
+	height:58px;
+    position: absolute;
+    z-index: 5;
+    margin-top: 15px;
+    left: -31%;
+    visibility: hidden;
+	text-align:center;
+	line-height:1.2em;
+}
+
+/*Search Bar*/
+
+.cas_mrd_search {
+	background: #fd2e45;
+	border-bottom: 10px solid #ffc000;
+	padding-top:25px;
+}
+.cas_mrd_search input[type=text] {
+	width: 100%;
+	font-size: 18px;
+	padding: 6px;
+	box-shadow:inset 2px 2px 2px #333;
+	border:0;
+}
+.cas_mrd_search input[type=submit] {
+	width: 100%;
+	font-size: 18px;
+	box-shadow:2px 2px 2px #961b24;
+}
+.cas_mrd_supporter {
+	background: transparent url(../images/supporter.png) 0 0 no-repeat;
+	width:223px;
+	height:74px;
+	display:inline-block;
+}
+
+/*Footer*/
+
+.cas_mrd_divider {
+	background: transparent url(../images/divider.png) 0 0 no-repeat;
+	width:2px;
+	height:146px;
+	display:inline-block;
+	margin-top:20px;
+}
+.cas_mrd_policy {
+	width:100%;
+}
+.cas_mrd_policy ul li {
+	float:left;
+	list-style:none;
+	margin: 0 5px;
+}
+.cas_mrd_policy a {
+	color:#fff;	
+	text-decoration:underline;
+}
+.cas_mrd_policy a:hover {
+	color:#fd2e45;
+}
+.addthis_32x32_style .dummy .at300bs, .addthis_32x32_style .at300bs, .addthis_32x32_style .at15t {
+	margin:7px;
+	border-radius:5px;
+}
+.cas_mrd_detail ul {
+	padding:0;
+}

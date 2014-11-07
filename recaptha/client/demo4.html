@@ -1,0 +1,44 @@
+
+<!DOCTYPE HTML><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>reCAPTCHA</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>CAPTCHA TEST</h1>
+Email:<input type="text" id="id-email" name="email" value="email" size="" onfocus="if(this.value=='email')this.value='';" onblur="if(this.value=='')this.value='email';">
+<br>
+<p id="captcha">
+  <span id="captcha1">6</span>
+  <span>+</span>
+  <span id="captcha2">2</span>
+  <span>=?</span>
+</p>
+<input type="text" id="code" name="code" value="" size="">
+<button onClick="subForm();">sumbit</button>
+</body>
+<script>
+function subForm() {
+	var num = document.getElementById("code").value;
+	var num1 = document.getElementById("captcha1").innerHTML;
+	var num2 = document.getElementById("captcha2").innerHTML;
+	//if (num==)'
+	num = parseInt(num);
+	num1 = parseInt(num1);
+	num2 = parseInt(num2);
+	//var num = num1 + num2;
+	if (num == num1+num2) {
+		alert("you enter code is correct.");
+	}
+	else alert("you enter code is not correct.");
+}
+
+$(document).ready(function(){
+	document.getElementById("captcha1").innerHTML = Math.floor((Math.random() * 100) + 1);;
+	document.getElementById("captcha2").innerHTML = Math.floor((Math.random() * 100) + 1);;
+	var num1 = document.getElementById("captcha1").innerHTML;
+	var num2 = document.getElementById("captcha2").innerHTML;
+	//alert(num1+","+num2);
+	
+});
+</script>
+</html>

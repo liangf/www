@@ -1,0 +1,8 @@
+Less than $5 Profit        Custom label        Price        Cost price        Shipping cost        Ebay FVF        JL 5% commission        Paypal fee        Net Profit        More than $5 Profit        JL-HP-97-2-FC5-(2C)        12.95        5.24        2.09        0.777        0.6475        0.62375        3.57175        N
+JL-HP-932XL/933XL-4-FC8-(1BK/1C/1M/1Y)        20.49        11.15        2.59        1.2294        1.0245        0.81225        3.68385        N
+JL-HP-96 97-2-FC5-(1BK/1C)        12.45        4.12        2.09        0.747        0.6225        0.61125        4.25925        N
+JL-DE-Series 24-6-FR-(4 BLACK , 2 COLOR)        24.79        11.38        4.95        1.4874        1.2395        0.91975        4.81335        N
+JL-DE-Series 22-6-FR-(4 BLACK , 2 COLOR)        24.79        11.38        4.95        1.4874        1.2395        0.91975        4.81335        N
+JL-DE-Series 23-6-FR-(4 BLACK , 2 COLOR)        24.79        11.38        4.95        1.4874        1.2395        0.91975        4.81335        N
+JL-HP-97-3-FC7-(3C)        17.9        7.86        2.42        1.074        0.895        0.7475        4.9035        N
+JL-BR-LC61-16-FR-(4/4/4/4)        16.19        3.76        4.95        0.9714        0.8095        0.70475        4.99435        N

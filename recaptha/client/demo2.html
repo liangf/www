@@ -1,0 +1,38 @@
+<!DOCTYPE HTML><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>reCAPTCHA</title>
+</head>
+<body>
+
+<script src="//www.compandsave.com/v/mp/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+<script type="text/javascript">
+          //function showRecaptcha() {
+            Recaptcha.create("6Le_y_USAAAAAEgnyWCG0hg2lS3qo_yPtW-iBdF6", 'captchadiv', {
+              
+              
+              
+                tabindex: 1,
+                theme: "white",
+                callback: Recaptcha.focus_response_field
+            });
+          //}
+        </script>
+<div id="captchadiv"></div>
+<!--<input type="button" value="Click Me" onclick="showRecaptcha();">-->
+<input type="submit" name="Button1" value="Submit" onClick="subForm()">
+</body>
+<script>
+function subForm() {
+
+//alert("challenge: "+Recaptcha.get_challenge());
+
+jQuery.post("http://www.877ink.com/liang/recaptha/server/verify.php",
+//jQuery.post("http://www.877ink.com/liang/recaptha/server/test.php",
+			{recaptcha_challenge_field:Recaptcha.get_challenge(),recaptcha_response_field:Recaptcha.get_response()}, 
+			function(data){ 
+				alert(data);
+			}
+);
+}
+</script>
+</html>

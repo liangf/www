@@ -1,0 +1,59 @@
+<!-- CSS -->
+<link href="//www.comboink.com/v/mp/css/icomoon.css" rel='stylesheet' type='text/css'>
+<link href="//www.comboink.com/v/mp/css/ci-article.css" rel='stylesheet' type='text/css'>
+<link href="//www.comboink.com/v/mp/articles/confirmation-page/css/ci-facebook-reward.css" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script type="text/javascript" src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+<script language="javascript" src="//www.comboink.com/v/dc/yy/liangf/fbreview/subForm.js"></script>
+
+<div class="ci_cms_articleContent_area ci_fbr_contain">
+	<div class="ci_cms_row">
+		<div class="ci_cms_twelve"><a name="ci-fbr" title="ci-fbr" id="ci-fbr"></a>
+			<h1 class="ci_cms_centerTxt">Get a $5 ComboInk Giftcard in 3 easy steps:</h1>
+		</div>
+	</div>
+	<div class="ci_cms_row">
+		<div class="ci_cms_four firstCol">
+			<span class="icon-screen ci_fbr_step1Txt"></span>
+			<h3 class="ci_cms_centerTxt">Step 1: Tell everyone what you think</h3>
+			<p><a class="ci_cms_twelve btn ci_cms_redBtn step1Btn" href="javascript: void(0)" onclick="window.open('https://www.facebook.com/comboink?sk=reviews', 'ci-fb-review', 'width=900, height=600'); return false;">Write a Facebook review</a></p>
+			<p>Have you already written a review for us? Feel free to move on to <strong class="ci_fbr_step2Txt">Step 2</strong>.</p>
+		</div>
+		<div class="ci_cms_four">
+			<span class="icon-point-down ci_fbr_step2Txt"></span>
+			<h3 class="ci_cms_centerTxt">Step 2: Fill out the form below</h3>
+
+				<label class="ci_cms_labelHide"><span>Facebook name</span><input id="ci_fbr_name" type="text" value="Facebook name" onfocus="if(this.value=='Facebook name')this.value='';" onblur="if(this.value=='')this.value='Facebook name';" class="ci_cms_twelve"></label>
+				<label class="ci_cms_labelHide"><span>Date review left</span><input id="ci_fbr_date" type="text" value="Date review left" onfocus="if(this.value=='Date review left')this.value='';" onblur="if(this.value=='')this.value='Date review left';" class="ci_cms_twelve"></label>
+				<label class="ci_cms_labelHide"><span>ComboInk account email</span><input id="ci_fbr_email" type="text" value="ComboInk account email" onfocus="if(this.value=='ComboInk account email')this.value='';" onblur="if(this.value=='')this.value='ComboInk account email';" class="ci_cms_twelve"></label>
+				<div class="ci_cms_divider"></div>
+				<div id="recaptcha_widget" style="display:none"><div id="recaptcha_image"></div>
+                                <br>
+                                <span class="recaptcha_only_if_image">Enter the words above:</span>
+                                <span class="recaptcha_only_if_audio">Type what you hear:</span>
+                                <input type="text" id="recaptcha_response_field" name="recaptcha_response_field">
+                                <div><a href="javascript:Recaptcha.reload()" class="btn greyBtn">Get another CAPTCHA</a></div>
+                                <div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type(&#39;audio&#39;)"><span class="icon-volume-high"></span>Get an audio CAPTCHA</a></div>
+                                <div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type(&#39;image&#39;)"><span class="icon-image"></span>Get an image CAPTCHA</a></div>
+
+                                <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LcBR_YSAAAAADYtvY-Smg7SDsRBi-fUM0feT5xe"></script>
+                                <noscript><iframe src="http://www.google.com/recaptcha/api/noscript?k=6Le_y_USAAAAAEgnyWCG0hg2lS3qo_yPtW-iBdF6" height="300" width="500" frameborder="0"></iframe><br>
+                                <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+                                <input type="hidden" name="recaptcha_response_field" value="manual_challenge"></noscript>
+                                </div>
+                                <div class="ci_cms_divider"></div>
+				<input class="ci_cms_twelve ci_cms_greenBtn" value="Claim your reward" type="submit" onClick="subForm()"/>
+                                <p id="ci_fbr_alert"></p>
+
+		</div>
+		<div class="ci_cms_four lastCol">
+			<span class="icon-busy ci_fbr_step3Txt"></span>
+			<h3 class="ci_cms_centerTxt">Step 3: Wait to be notified</h3>
+			<p>Thank you for taking time to share your experience with others. Your submitted review will be manually checked by one of our representatives and your $5 credit will be transferred to your account once we locate your review on the ComboInk.com Facebook Page. This process could take up to 2 business days to complete.</p>
+			<p>Have questions? Send us a message:</p>
+			<p><a href="mailto:customercare@comboink.com" target="_blank" class="ci_cms_twelve btn step3Btn">Email Us</a></p>
+		</div>
+	</div>
+</div>

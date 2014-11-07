@@ -1,0 +1,109 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for ComboInk.com
+Author: Megan Prior-Pfeifer
+
+Table of Contents:
+0. Page fixes
+1. Text
+2. Layout
+3. Images
+4. Form elements
+
+Created for the July 2014 Survey page: 
+http://www.comboink.com/v/newsletter/promotion-july-survey-2014/promotion-july-survey-2014.asp
+
+Naming convention prefix: ci_sur_
+ 
+*/
+/*********************************************************/
+
+/*-- Page fixes --*/
+
+.removeLeft{
+	display:none;
+}
+
+#content_area{
+	width:auto;
+	padding:0;
+}
+
+.socialannex-fblike-adjust{
+	display:none;
+}
+
+.ci_sur_backdrop{
+	margin-top:-30px;
+}
+
+/*-- Text --*/
+
+.ci_sur_container h1{
+	text-align:center;
+}
+
+.ci_sur_container p{
+	text-align:left;
+	margin-top:10px;
+}
+
+.ci_sur_container a{
+	color:#f00;
+}
+
+.ci_sur_alert{
+	color:#f00 !important;
+}
+
+/*-- Layout --*/
+
+.ci_sur_form_block{
+	padding: 1%;
+}
+
+.ci_sur_survey, #ci_sur_form_block{
+	text-align:left;
+	background: #fafafa;
+	padding:10px;
+}
+
+.ci_sur_survey li{
+	padding:10px 0;
+}
+
+/*-- Images --*/
+
+#ci_sur_freebie_block img{
+	margin-top:-150px;
+}
+
+/*-- Form elements --*/
+
+.ci_sur_container input[type="date"]{
+	color:#666;
+}
+
+.ci_sur_container #ci_sur_form_block input{
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	padding: 5px 0;
+	margin: 0;
+}
+
+#ci_sur_form_block .ci_cms_six.lastCol,
+#ci_sur_form_block .ci_cms_four.lastCol{
+	margin-left:1.5%;
+}
+
+#ci_sur_form_block input[type="checkbox"]{
+	width:auto;
+	min-width:0;
+}
+
+
+#ci_sur_form_block .ci_cms_row{
+	margin:10px auto;
+}

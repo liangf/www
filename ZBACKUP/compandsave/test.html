@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+</head>
+
+<body>
+  <h1> This is my test page.</h1>
+  
+		<div class="cas_cms_four">
+			<p>Enter your email address to receive special offers</p>
+			<!--
+			<form name="MailingList" method="post" action="/MailingList_subscribe.asp">
+                <input class="signup-submit" type="submit" value="Subscribe"></input>
+            -->
+			<form name="MailingList" onsubmit="return validateForm()">
+                <input name="emailaddress" type="text" placeholder="Your Email Address">
+				<input class="signup-submit" type="submit" value="Subscribe"></input>
+			</form>
+		</div>
+ 
+</body>
+
+
+</html>

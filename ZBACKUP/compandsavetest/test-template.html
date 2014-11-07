@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+</head>
+
+<body>
+	<h1> This is my test page. Test the Template.</h1>
+  
+	<div id="sa_loyalty">Loyalty</div>
+<!--
+<link href="//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css" rel='stylesheet' type='text/css'>
+<div id="cas_eeh_egg1"></div>
+-->
+
+</body>
+<script>
+$(document).ready(function() {
+	//alert("ready");
+var fileref=document.createElement("link");
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", "//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css");
+document.getElementById("sa_loyalty").appendChild(fileref);
+
+var hreftext = window.location.href;
+//hreftext = "http://www.compandsavetest.com/MailingList_subscribe.asp";
+var reg = new Array(/_s\/169\.htm$/i, /_s\/167\.htm$/i, /_s\/168\.htm$/i, /_s\/212\.htm$/i, /ProductCode\=INK-HP-C9352AN$/i, /ProductCode\=ZINK\-HP\-HP564XL\-Combo9$/i, /MailingList\_subscribe\.asp$/i);
+//var reg1=/_s\/169\.htm$/i;
+//var egg1 = reg1.exec(hreftext);
+
+var eggDiv = document.createElement("div");
+var eggDivId = "cas_eeh_egg";
+var popup_url = "http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-";
+var popup_title = "Compandsave Easter Campaign";
+var popup_style = "width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0";
+
+for (var i=1; i<=7; i++) {
+    var egg = reg[i-1].exec(hreftext);
+    if (egg) {
+        eggDivId += i;
+        popup_url += i;
+        popup_url += ".html";
+		break;
+    }
+}
+
+eggDiv.id = eggDivId;
+document.getElementById("sa_loyalty").appendChild(eggDiv);
+var eggDivId2 = "#" + eggDivId;
+$(eggDivId2).click(function() {  
+    window.open(popup_url, popup_title, popup_style);
+	//window.open("http://www.w3schools.com","_blank","toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=500, width=400, height=400");
+});
+
+});
+</script>
+</html>

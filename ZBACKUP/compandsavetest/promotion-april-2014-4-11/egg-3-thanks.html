@@ -1,0 +1,54 @@
+<html>
+<head>	
+<link href="//www.compandsave.com/v/mp/css/cas-article.css" rel='stylesheet' type='text/css'><link href="//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css" rel='stylesheet' type='text/css'>
+<script src="http://www.casinkadmin.com/yy/liangf/compandsave/js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="cas_cms_articleContent_area cas_cms_bgWhite cas_cms_borderAll cas_cms_centerTxt" id="cas_eeh_popup1Thanks">	
+<div class="cas_cms_row">		
+	<div class="cas_cms_twelve cas_eeh_egg3-bg">			
+		<h1><span class="cas_cms_whiteTxt">Thanks for entering!</span></h1>		
+	</div>	
+</div>	
+<div class="cas_cms_row">		
+	<div class="cas_cms_twelve">			
+		<h2>You&#39;re now entered into our $70 giftcard giveaway. Winners will be notified via email, so please add us to your address book. Only one entry per giveaway permitted, so why not try 
+			<a href="http://www.compandsave.com/v/newsletter/promotion-april-2014/promotion-april-2014.asp" class="cas_cms_blueTxt" target="_blank">hunting for more eggs</a>?
+		</h2>		
+	</div>	
+</div>	
+<div class="cas_cms_row">		
+	<div class="cas_cms_twelve">			
+		<h2>
+			<a class="cas_cms_whiteTxt cas_cms_iconBlock btn" href="http://www.compandsave.com/v/newsletter/promotion-april-2014/promotion-april-2014.asp" target="_blank">Find more eggs</a>
+			<a class="cas_cms_whiteTxt cas_cms_iconBlock btn" onClick="window.close()" target="_blank">Keep Shopping</a>
+		</h2>		
+	</div>	
+</div>	
+<div class="cas_cms_row">		
+	<div class="cas_cms_twelve">			
+		<p><a class="cas_cms_small-font cas_cms_iconBlock" href="http://www.compandsave.com/terms_privacy.asp" target="_blank">Privacy Policy</a>
+		<a class="cas_cms_small-font cas_cms_iconBlock" id="easter_link_lp" href="http://www.compandsave.com/v/newsletter/promotion-april-2014/promotion-april-2014.asp#easter-rules" target="_blank">Contest Rules</a>
+		</p>		
+	</div>	
+</div>
+</div>
+<script>
+function easter_getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+
+
+$(document).ready(function(){
+	var user = easter_getCookie("easter_landingpage");
+	if (user=="lp2") $('#easter_link_lp').attr('href', "http://www.compandsave.com/v/newsletter/promotion-april-2014/promotion-april-2014-2.asp#easter-rules");
+});
+</script>
+</body>
+</html>

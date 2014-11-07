@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+
+</head>
+<body>
+
+<h1> Hello, this is my test page.</h1>
+
+<div id="fb-root">foot-root</div>
+
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_US/all.js#xfbml=1";
+/*
+  js.onload = function(){
+  FB.Event.subscribe('xfbml.render',
+    function(response) {
+        alert("share clicked!");
+    });
+  }; 
+*/  
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<div class="fb-like" data-href="http://www.liangfang.us" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+
+<div class="fb-share-button" data-href="http://www.liangfang.us/test/test.html" data-type="button_count"></div>
+<!--
+<button type="button" name="shareButton" onclick="alert('Hello world!')">Click Me!</button>
+
+<script>
+$('#shareButton').click(function() {
+    FB.ui({
+        method: 'feed',
+        link: 'https://developers.facebook.com/docs/dialogs/',
+        caption: 'An example caption',
+    }, function(response){
+        if (response === null) {
+            console.log('was not shared');
+        } else {
+            console.log('shared - post id is ' + response.post_id);
+        }
+    });
+});
+</script>
+-->
+</body>
+</html>

@@ -1,0 +1,202 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for CompAndSave.com
+Author: Megan Prior-Pfeifer
+
+Table of Contents:
+0. Page fixes
+1. Text
+2. Layout
+3. Images
+4. Elements
+5. Carousel
+
+Created for July survey LP: 
+http://www.compandsave.com/v/newsletter/promotion-july-survey-2014/promotion-july-survey-respond-2014.asp
+
+Thank you to http://sorgalla.com/jcarousel/
+
+Naming convention prefix: cas_surRe_
+ 
+*/
+/*********************************************************/
+
+/*-- Page fixes --*/
+
+
+/*-- Text --*/
+
+.cas_surRe_container h1{
+	text-align:center;
+	line-height:1.2em;
+	font-size:2.4em;
+}
+
+.cas_surRe_container h2,
+.cas_surRe_container h3{
+	color:#333;
+}
+
+.cas_surRe_container h3{
+	margin:20px 0;
+}
+
+.cas_surRe_container sup{
+	font-size:.8em;
+	vertical-align: top;
+}
+
+.cas_surRe_container p{
+	text-align:center;
+}
+
+.cas_surRe_container .cas_surRe_disclaim p{
+	text-align:left;
+}
+
+.cas_surRe_container a{
+	color:#0073C0;
+}
+
+.cas_surRe_container a:hover{
+	color:#0069BB;
+}
+
+.cas_surRe_coupon{
+	font-size: 1.5em;
+	line-height: 0.8;
+	color: #F39;
+}
+
+h2.cas_surRe_dollar, p.cas_surRe_dollar, .cas_surRe_price{
+	font-weight:bold;
+	font-size:1.5em;
+	margin:0;
+	line-height:1.2;
+}
+
+h2.cas_surRe_dollar{
+	color: #F39;
+}
+
+p.cas_surRe_dollar{
+	font-size:1.2em;
+}
+
+.cas_surRe_retail{
+	text-decoration:line-through;
+}
+
+/*-- Layout --*/
+
+.cas_surRe_topProduct{
+	width:916px;
+	background:#f4f4f4;
+	border:2px solid #ccc;
+	border-radius:2px;
+	padding:10px;
+	margin:10px 0;
+}
+
+.cas_surRe_topProduct:hover{
+	background:#fafafa;
+}
+
+/*-- Images --*/
+
+.cas_surRe_topProduct img{
+	width:80%;
+	display:block;
+	margin:0 auto;
+	background:#fff;
+	border-radius:2px;
+	padding:8px;
+}
+
+/*-- Elements --*/
+
+.cas_surRe_qty{
+	width:70px;
+}
+
+.cas_surRe_checklist{
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+.cas_surRe_checklist .cas_surRe_check{
+	float: left;
+	width: 90%;
+	vertical-align: middle;
+}
+
+.cas_surRe_container .cas_surRe_checklist li{
+	text-align:left;
+	list-style: none outside none;
+}
+
+.cas_surRe_container .cas_surRe_checklist .icon-checkmark{
+	color:#f39;
+	width: 5%;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+
+/*-- Carousel --*/
+
+.cas_surRe_container .jcarousel {
+    position: relative;
+    overflow: hidden;
+	width: 960px;
+}
+
+.cas_surRe_container .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.cas_surRe_container .jcarousel li {
+    float: left;
+	width: 278px;
+	min-height:400px;
+	border:1px solid #ccc;
+	border-radius:2px;
+	background:#fafafa;
+	padding:10px;
+	margin:0 10px;
+	list-style: none outside none;
+	position:relative;
+	z-index:1;
+}
+
+.cas_surRe_container .jcarousel img{
+	padding:10px;
+	background:#fff;
+	max-width:50%;
+	margin:0 auto;
+}
+
+.cas_surRe_container .jcarousel-controls{
+	top: 150px;
+	position:absolute;
+	z-index:0;
+	width:960px;
+}
+
+.cas_surRe_container .jcarousel-controls .jcarousel-control-prev{
+	left:-50px;
+	position:absolute;
+}
+
+.cas_surRe_container .jcarousel-controls .jcarousel-control-next{
+	right:-50px;
+	position:absolute;
+}
+
+.cas_surRe_container .jcarousel-controls span{
+	font-size:3em;
+}

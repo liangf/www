@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+</head>
+
+<body>
+  <h1> This is my test page.</h1>
+  
+  <link href="//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css" rel='stylesheet' type='text/css'>
+  <div id="cas_eeh_egg1"></div>
+  
+
+
+<!-- Show the eggs on the brand page !-->
+<script type="text/javascript">
+
+var hreftext = window.location.href;
+var reg1=/\.htm$/i;
+var reg2=/ProductDetails\.asp\?ProductCode/i;
+
+var result1 = reg1.exec(hreftext);
+var result2 = reg2.exec(hreftext);
+
+if (result1||result2) {
+    console.log("This is the test");
+}
+
+console.log("-----egg test-------");
+console.log(hreftext);
+console.log("-----egg test-------");
+
+</script>
+<!-- Show the eggs on the brand page !-->
+ 
+</body>
+
+
+</html>

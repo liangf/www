@@ -1,0 +1,142 @@
+
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<style>
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+
+div.div-table
+{
+  float: left;
+  margin: 5px;
+}
+#div-activelist2
+{
+  position: absolute;
+  left: 780px;
+  top: 200px;
+}
+</style>
+</head>
+
+<body>
+	<h2>Add Active List</h2>
+  <div id="div-activelist">
+	<table id="tab-activelist">
+		<tr>
+			<td style="width:450px">
+			<a title="Sort" href="//casinkadmin.com/liang/ebayproject/2tables.html?sortname=label&sort=desc"><b>Custom label
+			<img src="./img/s_asc.png" alt="Ascending" title="Ascending" id="s_asc" height="12" width="12">
+			</a>
+			</td>
+			<td style="width:150px"><b>Cost price</td>		
+			<td style="width:150px"><b>Shipping cost</td>
+		</tr>
+		<tr>
+			<td>JL-LM-100XL-10-FR-(Bx4/Cx2/Mx2/Yx2)</td>
+			<td>13.5</td>		
+			<td>4.95</td>
+		</tr>
+		<tr  bgcolor="#FF0000">
+			<td>JL-LM-100XL-11-FR-(Bx5/Cx2/Mx2/Yx2)</td>
+			<td>14.85</td>		
+			<td>4.95</td>
+		</tr>
+		<tr>
+			<td>JL-LM-100XL-12-FR-(Bx3/Cx2/Mx2/Yx2)</td>
+			<td>16.2</td>		
+			<td>4.95</td>
+		</tr>
+	</table>
+  </div>
+  
+  <div id="div-activelist2">
+	<table id="tab-activelist2">		
+		<tr>
+			<td style="width:450px"><b>Custom label</td>
+			<td style="width:150px"><b>Cost price</td>		
+			<td style="width:150px"><b>Shipping cost</td>
+			<td style="width:150px"><b>Time</td>
+		</tr>
+		<tr>
+			<td style="width:450px"><b>test</td>
+			<td style="width:150px"><b>test</td>		
+			<td style="width:150px"><b>test</td>
+			<td style="width:150px"><b>test</td>
+		</tr>
+	</table>	
+  </div>
+</body>
+<script>
+function deleterow()
+{
+document.getElementById("tab-activelist2").deleteRow(0);
+}
+
+function insertrow(n)
+{
+	var table = document.getElementById("tab-activelist2");
+
+	var row = table.insertRow(0);
+	var cell1 = row.insertCell(0);
+	var cell2 = row.insertCell(1);
+	var cell3 = row.insertCell(2);
+	var cell4 = row.insertCell(3);
+	cell1.innerHTML = "Custom label";
+	cell2.innerHTML = "Cost price";
+	cell3.innerHTML = "Shipping cost";
+	cell4.innerHTML = "Time";
+
+	//alert(n+1);
+	var row = table.insertRow(1);	
+	var cell1 = row.insertCell(0);
+	var cell2 = row.insertCell(1);
+	var cell3 = row.insertCell(2);
+	var cell4 = row.insertCell(3);
+	cell1.innerHTML = "NEW CELL1";
+	cell2.innerHTML = "NEW CELL2";
+	cell3.innerHTML = "NEW CELL3";
+	cell4.innerHTML = "NEW CELL4";
+}
+
+function initial() {
+    var table = document.getElementById("tab-activelist");
+    var rows = table.rows; // or table.getElementsByTagName("tr");
+    for (var i = 0; i < rows.length; i++) {
+		rows[i].style.backgroundColor='#FFFFFF';
+	}
+}
+
+function example4() {
+    var table = document.getElementById("tab-activelist");
+    var rows = table.rows; // or table.getElementsByTagName("tr");
+    for (var i = 0; i < rows.length; i++) {
+        rows[i].onclick = (function() {
+            var cnt = i; 
+            return function() {
+				initial();
+				$(this).attr("style","background-color: #FFFFBB;");
+				var current_pos = $(this).position();
+				//alert("Top position: " + current_pos.top + " Left position: " + current_pos.left);
+				//alert("row"+cnt+" data="+this.cells[0].innerHTML);
+				var rowCount = document.getElementById('tab-activelist2').rows.length;
+				//alert(rowCount)
+				for (var i=0; i<rowCount; i++) deleterow();
+				insertrow(cnt);
+            }    
+        })(i);
+    }
+}
+
+
+
+$(document).ready(function() {
+	//alert("test123");
+	example4();
+});
+</script>
+</head>	

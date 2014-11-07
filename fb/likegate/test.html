@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Responsive Like To Show Content Demo</title>
+  
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+
+<script type='text/javascript'>  	
+     
+	//The main script
+  FB.Event.subscribe('edge.create', function(href, widget) {  
+   setTimeout( 'loader();' );
+    });
+  
+  function loader(){  
+	$("#intro").hide("explode", { pieces: 9 }, 500);   // pieces: 9 controls that it will explode in 9 pieces
+	setTimeout(function(){
+		$("#hidden").css({"display":"block"}); 
+    },1000);  
+  }  	// End of main script
+
+</script> 
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=278775902258446";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div class="wrapper"> 
+  
+
+   
+    <!-- Here starts the main html script -->
+    <div id="intro">  
+    <p>This is a demo page aiming to demonstrate how to successfully use the FB.Event.subscribe method to receive a callback when someone presses the like button on your webpage. This is a basic <b>Like Gate</b> example and you can also use it in your facebook app.<br><br>
+     To test it, click the like button in order to view more content.
+    </p>
+    <div class="fb-like" data-href="http://ftutorials.com/" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+    <p style="margin-top:30px;"><a href="http://ftutorials.com/facebook-like-gate/">Go back to the Tutorial</a></p>
+    </div>
+    
+    <div id="hidden">
+    Congratulations. You have just unlocked the hidden content via our Like Gate. 
+    <br><br>
+    <a href="http://ftutorials.com/facebook-like-gate/">Go back to the Tutorial</a>
+    </div>
+   
+	</div>
+
+
+</body>
+</html>

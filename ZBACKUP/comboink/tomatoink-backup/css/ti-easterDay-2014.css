@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+/************* CSS Header **************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for the most up to date coding standards for TomatoInk.com
+Author: Sam Chao
+
+Table of Contents:
+1. Global
+2. Grid
+3. Text
+4. Page specific styling
+
+Created for the landing page //www.tomatoink.com/v/newsletter/promotion-Apr2014/ti-easterDay-2014.asp
+
+Color Reference:
+brown:#141313
+*/
+/*********************************************************/
+
+
+
+
+
+
+
+/* -----------------------------------*/
+/* -------->> 1. Global <<<-----------*/
+/* -----------------------------------*/
+
+
+.width100 { width: 100%; }
+.width75 { width: 75%; }
+.width50 { width: 50%; }
+.floatLeft { float: left !important; }
+.floatRight { float: right !important; }
+.alignLeft { text-align: left; }
+.alignRight { text-align: right; }
+.marginCollapse{ margin:0 !important; }
+.paddingCollapse{ padding:0 !important; }
+.fixed { position:fixed !important; }
+.bgWhite{ background-color:#FFFFFF;}
+.bgGrey{ background-color:#ececec;}
+.borderRight{ border-right:#ccc 1px solid;}
+.borderLeft{ border-left:#ccc 1px solid;}
+.borderAll{ border:#ccc 1px solid;}
+.shadowGrey{ box-shadow:#ccc 0 0 5px;}
+.center{ float:none !important; margin:0 auto !important; position:relative !important;}
+.strong{font-weight:bold;}
+.textCenter{text-align:center;}
+.white{color:#fff !important;text-shadow:0 0 2px #000;}
+
+
+/* -----------------------------------*/
+/* -------->> 2. Grid <<<-----------*/
+/* -----------------------------------*/
+
+
+.col{
+float:left;
+min-height: 1px;
+padding: 1% 0.7% 1% 1.4%;
+position: relative;
+margin: auto 0.4%;
+}
+
+
+.one{
+width:5%;
+}
+
+.two{
+width:13%;
+}
+
+.three{
+width:20%;
+}
+
+.four{
+width:30%;
+}
+
+.five{
+width:38%;
+}
+
+.six{
+width:47%;	
+}
+
+.seven{
+width:55%;	
+}
+
+.eight{
+width:63%;	
+}
+
+.nine{
+width:68%;	
+}
+
+.ten{
+width:80%;	
+}
+
+.eleven{
+width:88%;	
+}
+
+.twelve{
+width:900px;
+margin:0 0 0 8px;	
+}
+
+.thirdteen {
+width:100%;
+}
+
+/* -----------------------------------*/
+/* -------->> 3. Text <<<-----------*/
+/* -----------------------------------*/
+
+.col h1, .col h2, .col h3, .col h4, .col p, .col ul, .col li, .col a {
+color:#000;
+font-family:"Lao UI", Arial, sans-serif;	
+line-height:1.5em;
+}
+
+.col h1, .col h2, .col h3, .col h4{
+margin:0.2em 0;	
+text-align:center;
+}
+
+
+.col h1{
+font-family: 'Leckerli One', cursive, sans-serif;
+color:#fbb040;
+font-size:46px;	
+line-height:0.7em;
+text-shadow:0px 3px 5px rgba(0,0,0,1);
+font-weight:100;
+width:800px;
+margin:10px auto 0;
+}
+
+
+.col h2{
+color:rgb(0, 115, 192);	
+font-size:2em;
+}
+
+.col h3{
+font-size:30px;
+font-weight:100;
+color:#141313;
+}
+
+.col h4{
+font-size:24px;
+font-weight:100;
+text-align:right;
+margin-right:49px;
+color:#141313;
+}
+
+/* ------------------------------------------*/
+/* ---->> 4. Page specific styling <<<-------*/
+/* ------------------------------------------*/
+
+/****Promotion Section****/
+.promoSection {
+	width:945px;
+	height:677px;
+	background:#414042;
+}
+.ti-ed-fight {
+	width:940px;
+	height:300px;
+	background:transparent url(../images/fightBg.jpg) 0 0 no-repeat;
+	float:left;
+	position:relative;
+	top:-44px;
+}
+.ti-ed-rabbitImg {
+	width:470px;
+	height:300px;
+	position:relative;
+	background:transparent url(../images/rabbitImg.png) 0 0 no-repeat;
+	float:left;
+	animation:rabbit 3s;
+	animation-timing-function:ease-in-out;
+	-webkit-animation:rabbit 3s;
+	-webkit-animation-timing-function:ease-in-out:
+}
+	@keyframes rabbit
+	{
+		0% {left:-200px;background:transparent url(../images/rabbitImg.png) 0 0 no-repeat;}
+		70% {left:0px;background:transparent url(../images/rabbitImg.png) 0 0 no-repeat;}
+		85% {left:0px;background:#fff;}
+		100% {left:0px;background:transparent url(../images/rabbitImg.png) 0 0 no-repeat;}
+	}
+	@-webkit-keyframes rabbit
+	{
+		0% {left:-200px;background:transparent url(../images/rabbitImg.png) 0 0 no-repeat;}
+		70% {left:0px;background:transparent url(../images/rabbitImg.png) 0 0 no-repeat;}
+		85% {left:0px;background:#fff;}
+		100% {left:0px;background:transparent url(../images/rabbitImg.png) 0 0 no-repeat;}
+	}
+.ti-ed-chickenImg {
+	width:470px;
+	height:300px;
+	position:relative;
+	background:transparent url(../images/chickenImg.png) 0 1px no-repeat;
+	float:left;
+	animation:chicken 3s;
+	animation-timing-function:ease-in-out;
+	-webkit-animation:chicken 3s;
+	-webkit-animation-timing-function:ease-in-out:
+}
+	@keyframes chicken
+	{
+		0% {left:200px;background:transparent url(../images/chickenImg.png) 0 0 no-repeat;}
+		70% {left:0px;background:transparent url(../images/chickenImg.png) 0 0 no-repeat;}
+		85% {left:0px;background:#fff;}
+		100% {left:0px;background:transparent url(../images/chickenImg.png) 0 0 no-repeat;}
+	}
+	@-webkit-keyframes chicken
+	{
+		0% {left:200px;background:transparent url(../images/chickenImg.png) 0 0 no-repeat;}
+		70% {left:0px;background:transparent url(../images/chickenImg.png) 0 0 no-repeat;}
+		85% {left:0px;background:#fff;}
+		100% {left:0px;background:transparent url(../images/chickenImg.png) 0 0 no-repeat;}
+	}
+.ti-ed-rabbitSign, .ti-ed-chickenSign {
+	width:80px;
+	height:75px;
+	float:left;
+	position:relative;
+	z-index:40;
+}
+.ti-ed-rabbitSign {
+	background:transparent url(../images/rabbitSign.png) 0 0 no-repeat;
+	left:-55px;
+	top:30px;
+}
+.ti-ed-chickenSign {
+	background:transparent url(../images/chickenSign.png) 0 0 no-repeat;
+	left: 815px;
+	top: -1px;
+}
+.ti-ed-voteBar {
+	width:940px;
+	height:30px;
+	position:relative;
+	float:left;
+	z-index:30;
+	top:-53px;
+	border:3px solid #ff9;
+}
+.ti-ed-rabbitBar {
+	width:40%;
+	height:30px;
+	/*background:transparent url(../images/rabbitBar.jpg) 0 0 repeat-x;*/
+	background:#f00;
+	float:left;
+}
+.ti-ed-chickenBar {
+	width:60%;
+	height:30px;
+	/*background:transparent url(../images/chickenBar.jpg) 0 0 repeat-x;*/
+	background:#00f;
+	float:left;
+}
+.ti-ed-text {
+	width:940px;
+	float:left;
+	color:white;
+	position:relative;
+	top:-52px;
+}
+.ti-ed-rabbitText {
+	float:left;
+	margin-left:21px;
+}
+.ti-ed-chickenText {
+	float:right;
+	margin-right:21px;
+}
+.ti-ed-voteBtn, .ti-ed-rabbitBtn, .ti-ed-chickenBtn {
+	float:left;
+}
+.ti-ed-voteBtn {
+	width:940px;
+	position:relative;
+	top:-31px;
+}
+ .ti-ed-rabbitBtn, .ti-ed-chickenBtn {
+	width:49%;
+	padding:5px 0;
+	font-weight:bold;
+	font-size:1.8em;
+	color:#fff;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+ }
+ .ti-ed-rabbitBtn {
+	background:#f00;
+	border-top:1px solid #ff8f8f;
+	border-left:1px solid #ff8f8f;
+	border-bottom:1px solid #5e0000;
+	border-right:1px solid #5e0000;	
+	float:left;
+ }
+ .ti-ed-chickenBtn {
+	background:#00f;
+	border-top:1px solid #8181fc;
+	border-left:1px solid #8181fc;
+	border-bottom:1px solid #01013a;
+	border-right:1px solid #01013a;	
+	float:right;
+ }
+ .ti-ed-rabbitBtn:hover{
+	background:#a50404;
+	border-top:1px solid #5e0000;
+	border-left:1px solid #5e0000;	
+	border-bottom:1px solid #ff8f8f;
+	border-right:1px solid #ff8f8f;
+	color:#aaa;
+ }
+ 
+ .ti-ed-chickenBtn:hover {
+	background:#030393;
+	border-top:1px solid #01013a;
+	border-left:1px solid #01013a;	
+	border-bottom:1px solid #8181fc;
+	border-right:1px solid #8181fc;
+	color:#aaa;
+ }
+.ti-ed-couponCode {
+	width:940px;
+	height:187px;
+	background:#fbb040;
+	float:left;
+	margin-top:-20px;
+ }
+.ti-ed-coupon, .ti-ed-preCode {
+	width:940px;
+	height:170px;
+	font-size:18px;
+	margin:14px auto 0;
+	float:left;
+}
+.ti-ed-highlight {
+	font-size:46px;
+	font-weight:bold;
+	color:#fff;
+	text-shadow:1px 1px 1px #000;
+	-webkit-text-shadow:1px 1px 1px #000;
+}
+/****Search Bar****/
+.keyword_search {
+    background: #141313;
+    width: 830px;
+	padding:10px 0px 10px 44px;
+	margin-left:left;
+	margin-top:-96px;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	float:left;
+	margin-left:34px;
+}
+.keyword_search  td{
+	display:inline-table !important;
+}
+.keyword_search table {
+	width:94%;
+}
+.search_input_style input[type="text"] {
+	width:515px;
+	font-size:24px;
+	padding:5px;
+}
+.search_submit{
+	background:#b11bb3;
+	border:2px solid #7b127c;
+	color:#fff;
+	min-width:161px;
+	cursor:pointer;
+	font-size:24px;
+	padding:5px 11px;
+	-moz-box-shadow: 0 1px 2px #19320e;
+	-webkit-box-shadow: 0 1px 2px #19320e;
+	box-shadow: 0px 1px 2px #19320e;
+}
+.search_submit:hover {
+	background:#7b127c;
+	border:2px solid #b11bb3;
+	color:aaa;
+	-moz-box-shadow: 0 0px 1px #19320e;
+	-webkit-box-shadow: 0 0px 1px #19320e;
+	box-shadow: 0px 0px 1px #19320e;
+}

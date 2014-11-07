@@ -1,0 +1,4 @@
+[26-Mar-2014 22:59:43 UTC] PHP Fatal error:  Uncaught OAuthException: This IP can't make requests for that application.
+  thrown in /home/liangfan/public_html/facebookphp/src/base_facebook.php on line 1340
+[26-Mar-2014 22:59:54 UTC] PHP Fatal error:  Uncaught OAuthException: This IP can't make requests for that application.
+  thrown in /home/liangfan/public_html/facebookphp/src/base_facebook.php on line 1340

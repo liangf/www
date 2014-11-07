@@ -1,0 +1,38 @@
+
+<!DOCTYPE HTML><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>reCAPTCHA</title>
+<style>
+#recaptcha_image img { width: 193px; height: 57px; border: solid 1px #a3a9ac; }
+#recaptcha_image { width: 193px; height: 57px; margin: 3px 0 5px 0;}
+</style>
+</head>
+<body>
+<form method="GET" action="http://www.compandsave.com/v/dc/yy/liangf/recaptha/demo5.html">
+
+<script type="text/javascript">
+          var RecaptchaOptions = {
+            
+              tabindex: 1,
+              theme: 'custom',
+              custom_theme_widget: 'recaptcha_widget'
+          };
+        </script>
+<div id="recaptcha_widget" style="display:none"><div id="recaptcha_image"></div>
+<span class="recaptcha_only_if_image">Enter the words above:</span>
+<span class="recaptcha_only_if_audio">Type what you hear:</span>
+<input type="text" id="recaptcha_response_field" name="recaptcha_response_field">
+<div><a href="javascript:Recaptcha.reload()">Get another CAPTCHA</a></div>
+<div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type(&#39;audio&#39;)">Get an audio CAPTCHA</a></div>
+<div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type(&#39;image&#39;)">Get an image CAPTCHA</a></div>
+
+<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6Le_y_USAAAAAEgnyWCG0hg2lS3qo_yPtW-iBdF6"></script>
+<noscript><iframe src="http://www.google.com/recaptcha/api/noscript?k=6Le_y_USAAAAAEgnyWCG0hg2lS3qo_yPtW-iBdF6" height="300" width="500" frameborder="0"></iframe><br>
+<textarea name="recaptcha_challenge_field" rows="3" cols="40">
+             </textarea>
+<input type="hidden" name="recaptcha_response_field" value="manual_challenge"></noscript></div>
+<script type="text/javascript">
+          window.onload = function() {
+              Recaptcha.focus_response_field();
+          }
+        </script>
+<table cellspacing="0" cellpadding="4" border="0" style="font-family: Helvetica, sans-serif; color: #000000; font-size: 12px;"><tr><td><div><input type="submit" name="Button1" value="Submit"></div></td></tr></table></form></body></html>

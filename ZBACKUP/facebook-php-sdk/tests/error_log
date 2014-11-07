@@ -1,0 +1,1 @@
+[26-Mar-2014 22:56:27 UTC] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/liangfan/public_html/facebookphp/tests/tests.php on line 18

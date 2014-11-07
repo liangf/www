@@ -1,0 +1,38 @@
+<!DOCTYPE HTML><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>reCAPTCHA</title>
+<style type="text/css">
+      body {
+        font-family: Helvetica, sans-serif;
+        color: #000000;
+        font-size: 12px;
+        border: none;
+        background-color: transparent;
+      }
+    </style></head>
+<body>
+<form method="POST" action="http://www.877ink.com/liang/recaptha/server/verify.php">
+<!--<form method="GET" action="">-->
+
+<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+<script type="text/javascript">
+          function showRecaptcha() {
+            Recaptcha.create("6Le_y_USAAAAAEgnyWCG0hg2lS3qo_yPtW-iBdF6", 'captchadiv', {
+              
+              
+              
+                tabindex: 1,
+                theme: "clean",
+                callback: Recaptcha.focus_response_field
+            });
+          }
+        </script>
+<div id="captchadiv"></div>
+<input type="button" value="Click Me" onclick="showRecaptcha();">
+<table cellspacing="0" cellpadding="4" border="0" style="font-family: Helvetica, sans-serif; color: #000000; font-size: 12px;">
+<tr><td><div>
+<input type="submit" name="Button1" value="Submit">
+</div></td></tr>
+</table>
+</form>
+</body>
+</html>

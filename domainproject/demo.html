@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas {width: 640px; height: 480px}
+    </style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--	
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIh-mfP3diXw96w_F7iQtIHfO3amHsdxs">
+    </script>
+-->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
+  </head>
+  <body>
+  <h1>office supply nearby</h1>
+  <p id="latitude" style="display:none"></p>
+  <p id="longitude" style="display:none"></p>
+    <div id="map-canvas"/>
+  </body>
+<script type="text/javascript">
+function showPosition(position) {
+	//alert(position.coords.latitude);
+	document.getElementById("latitude").innerHTML = position.coords.latitude;
+	document.getElementById("longitude").innerHTML = position.coords.longitude;
+}
+
+function initialize(position) {
+  //alert(position.coords.latitude);
+  var pyrmont = new google.maps.LatLng(37.7815276,-122.4095004);
+  if (position) pyrmont = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+
+
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: pyrmont,
+    zoom: 14
+  });
+
+  var request = {
+    location: pyrmont,
+    radius: 5000,
+	keyword: 'office supply',
+    types: ['store']
+  };
+  infowindow = new google.maps.InfoWindow();
+  var service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, callback);
+}
+
+function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      createMarker(results[i]);
+    }
+  }
+}
+
+function createMarker(place) {
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    //infowindow.setContent(place.name);
+    //infowindow.open(map, this);
+    var address = '';
+    if (place.address_components) {
+      address = [
+        (place.address_components[0] && place.address_components[0].short_name || ''),
+        (place.address_components[1] && place.address_components[1].short_name || ''),
+        (place.address_components[2] && place.address_components[2].short_name || '')
+      ].join(' ');
+    }
+	console.log("address:" + place.vicinity);
+    //infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+	infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + place.vicinity);
+    infowindow.open(map, marker);	
+  });
+}
+
+//google.maps.event.addDomListener(window, 'load', initialize);	 
+
+jQuery(document).ready(function(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(initialize);
+    }
+	else initialize();
+});
+ 
+</script> 
+</html>

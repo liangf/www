@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema id="Products" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="Products" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">		
+				<xs:element name="Product">
+         			<xs:complexType>
+         				<xs:sequence>
+         					<xs:element msprop:TableNameXsd="Products" name="SKU"  msprop:maxLength="255" msprop:SqlDbType="VarChar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element  name="Name"  msprop:maxLength="255" msprop:SqlDbType="VarChar" type="xs:string" minOccurs="0" maxOccurs="255"/>
+         			        <xs:element name="URL" msprop:maxLength="255" msprop:SqlDbType="VarChar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="Price" msprop:maxLength="255" msprop:SqlDbType="money" type="xs:decimal" minOccurs="0" maxOccurs="1"/> 
+							<xs:element name="RetailPrice" msprop:maxLength="255" msprop:SqlDbType="money" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="p.Photos_Cloned_From" msprop:maxLength="255" msprop:SqlDbType="VarChar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="Full_Image" msprop:maxLength="255" msprop:SqlDbType="VarChar" type="xs:string" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="Thumbnail_Image" msprop:maxLength="255"  msprop:SqlDbType="VarChar" type="xs:string" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="Description" msprop:maxLength="255"  msprop:SqlDbType="VarChar" type="xs:string" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="Search_Terms" msprop:maxLength="255" msprop:SqlDbType="VarChar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="ReservedForFutureUse" msprop:maxLength="255" msprop:SqlDbType="money" type="xs:int" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="base" msprop:maxLength="255" msprop:SqlDbType="VarChar" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			    		</xs:sequence>  
+					</xs:complexType>	
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>		
+	</xs:element>
+</xs:schema>

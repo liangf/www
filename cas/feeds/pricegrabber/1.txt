@@ -1,0 +1,124 @@
+dictProducts.Add "INK-Epson-T078120", "true"
+If dictProducts.Item("INK-Epson-T078120")="true" Then
+	Response.Write(dictProducts.Item("INK-Epson-T078120") & "<br>")
+Else
+	Response.Write("no found!" & "<br>")
+End If
+
+'dictProducts.Add "INK-Epson-T078120", "true"
+
+If dictProducts.Item("INK-Epson-T078120")="" Then
+	dictProducts.Add "INK-Epson-T078120", "true"
+Else
+	Response.Write("added." & "<br>")
+End If
+
+
+
+
+
+Dim dictProducts
+Set dictProducts=Server.CreateObject("Scripting.Dictionary")
+
+
+Dim newproduct
+Dim objFileToRead
+Set objFileToRead = CreateObject("Scripting.FileSystemObject").OpenTextFile(Server.MapPath(CONFIGURATION_NEW_PRODUCT_PATH))
+Dim strLine
+do while not objFileToRead.AtEndOfStream
+	strLine = objFileToRead.ReadLine()
+	newproduct = Mid(strLine, InStr(strLine, "=")+1)
+	newproduct = Trim(newproduct)
+	'dictProducts.Add Trim(newproduct), "true"
+	'Response.Write(newproduct & "<br>")
+	'If dictProducts.Item(newproduct)="" Then
+	'	dictProducts.Add newproduct, "true"
+	'Else
+	'	Response.Write(newproduct & "<br>")
+	'End If
+	
+	'If dictProducts.Item(newproduct)<>"" Then
+	'	Response.Write(newproduct & "<br>")
+	'Else
+	'	dictProducts.Add newproduct, "true"
+	'End If
+loop
+objFileToRead.Close
+Set objFileToRead = Nothing
+
+
+Function isIn(newproducts, item)
+	Dim found = 0
+	For i = 1 To 592
+		If item=newproducts(i) Then
+			found = 1
+		End If
+	Next
+	isIn = found
+End Function
+
+
+
+Function isIn(item)
+	For i = 1 To 592
+		response.write(newproducts(i) & "<br>")
+	Next
+End Function
+
+Dim item
+item = "1234"
+isIn(item)
+
+
+
+Function isIn(item)
+	Dim found
+	found = 0
+	For i = 1 To 592
+		'response.write(newproducts(i) & "<br>")
+		Response.Write(i & "<br>")
+		If item=newproducts(i) Then Exit For
+	Next
+	isIn = found
+End Function
+
+Dim item
+Dim isfound
+item = "1234"
+For i = 1 To 592
+	Response.Write(i & " ")
+	
+	item = newproducts(i)
+	isfound = isIn(item)
+	Response.Write(i & "<br>")
+Next
+
+
+
+'For i = 1 To 592
+'  response.write(newproduct(i) & "<br>")
+'Next
+
+Function isIn(item)
+	Dim found
+	found = 0
+
+	isIn = found
+End Function
+
+For i = 1 To 592
+	cleanproduct(i) = "0"
+Next
+
+Dim item
+Dim isfound
+item = "1234"
+Dim j
+For i = 1 To 592
+	item = newproducts(i)
+	For j = 1 To 592
+		If item=cleanproducts(j) Then
+		End If
+		If cleanproducts(j)=0 Then Exit For
+	Next
+Next

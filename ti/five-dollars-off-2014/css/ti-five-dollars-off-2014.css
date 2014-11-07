@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/************* CSS Header **************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for the most up to date coding standards for TomatoInk.com
+Author: Sam Chao
+
+Table of Contents:
+1. Template Page Adjustment
+2. Text
+3. Page specific styling
+
+Created for the landing page //www.tomatoink.com/v/newsletter/five-dollars-off-2014/ti-five-dollars-off-2014.asp
+
+*/
+/*********************************************************/
+
+/* -----------------------------------------------------*/
+/* -------->> 1. Template Page Adjustment <<<-----------*/
+/* -----------------------------------------------------*/
+
+#display_seals table {
+	margin-left:0 !important;
+}
+#left_nav, .three-promos {
+	visibility:hidden;
+}
+.socialannex-fblike-adjust {
+	margin-left:307px;
+}
+.sa_s12_likebox {
+	right:-151px;
+}
+#content {
+	padding:0px;
+}
+#content table[cellpadding="0"] {
+	width:100%;
+	margin-top:15px;
+}
+#content td:first-child {
+	display:none;
+}
+.header_ie {
+	background: none repeat scroll 0% 0% #fff !important;
+	margin: 0px 0 -45px 0 !important;
+	height: 76px;
+	position: relative;
+	top: -31px;
+	padding: 30px 0 !important;
+	border-bottom:: 1px solid #2F521B;
+	width:100% !important;
+}
+
+body {
+	background: none repeat scroll 0% 0% #F3FFE7;	
+}
+
+
+/* -----------------------------------*/
+/* -------->> 2. Text <<<-----------*/
+/* -----------------------------------*/
+
+
+#ti_fdo_content h1, #ti_fdo_content h3, #ti_fdo_content h4 {
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#ti_fdo_content h1{
+	font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+	color:#70BF44;
+	font-size:37px;	
+	text-align:center;
+	font-weight:bold;
+	line-height:1.2em;
+}
+
+#ti_fdo_content h2{
+	font-size:37px;
+	font-weight:100;
+	text-align:right;
+	text-align:center;
+	width:100%;
+	color:#70BF44;
+	line-height:1.2em;
+	margin:28px 0;
+}
+
+#ti_fdo_content .ti_fdo_promo {
+	color:#FF5C2A;
+}
+#ti_fdo_content .ti_fdo_code {
+	font-weight:bold;
+}
+
+#ti_fdo_content h3 {
+	color:#FF5C2A;
+	font-weight:normal;
+	font-size: 18px;
+	line-height: 1.2em;
+}
+
+#ti_fdo_coupon .ti_fdo_coupon{
+	font-size:9em;
+	line-height:1em;
+	color:#FF5C2A;
+	margin:5px 0;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+#ti_fdo_disclaimer{
+	text-align:left;	
+}
+
+#ti_fdo_disclaimer p, #ti_fdo_disclaimer h3 {
+	color:#2C7A00;
+}
+
+
+#ti_fdo_steps span[class^=icon-] {
+	color: #FF5C2A;
+	font-size: 7em;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+#ti_fdo_steps span[class^=icon-]:hover {
+    text-shadow: 0px 0px 60px #FFF;
+    color: #FF4208;
+}
+
+body {
+counter-reset:numIndex;
+}
+
+#ti_fdo_steps h3 {
+	counter-increment: numIndex;
+}
+
+#ti_fdo_steps h3:before {
+	content:counter(numIndex)". ";
+}
+
+
+/* ------------------------------------------*/
+/* ---->> 5. Page specific styling <<<-------*/
+/* ------------------------------------------*/
+
+#ti_fdo_content {
+	background: none repeat scroll 0% 0% #ffffff;
+	border: 1px solid #C2E5B7;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+}
+#ti_fdo_content .ti_fdo_searchbarContainer {
+    background: #70bf44;
+	float:none;
+	border-radius:40px;
+	-webkit-border-radius:40px;
+	-moz-border-radius:40px;
+}
+#ti_fdo_content .ti_fdo_searchbarContainer input[type="text"] {
+	color:#FF5C2A;
+	font-size:24px;
+	padding:8px 5px;
+	float:none;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+}
+#ti_fdo_content .ti_fdo_searchSubmit{
+	background:#ff5c2a;
+	border-top:1px solid #f8c4b4;
+	border-left:1px solid #f8c4b4;
+	border-bottom:1px solid #b4401c;
+	border-right:1px solid #b4401c;
+	color:#fff;
+	cursor:pointer;
+	font-size:24px;
+	padding:5px 0;
+	-moz-box-shadow: 0 1px 2px #273949;
+	-webkit-box-shadow: 0 1px 2px #273949;
+	box-shadow: 0px 1px 2px #273949;
+	float:none;
+}
+#ti_fdo_content .ti_fdo_searchSubmit:hover {
+	background:#d34b21;
+	border-bottom:1px solid #f8c4b4;
+	border-right:1px solid #f8c4b4;
+	border-top:1px solid #b4401c;
+	border-left:1px solid #b4401c;
+	color:aaa;
+	-moz-box-shadow: 0 0px 1px #273949;
+	-webkit-box-shadow: 0 0px 1px #273949;
+	box-shadow: 0px 0px 1px #273949;
+}

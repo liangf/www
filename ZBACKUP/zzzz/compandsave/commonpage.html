@@ -1,0 +1,64 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+function setCookie(cname,cvalue,exminutes) {
+	var d = new Date();
+	d.setTime(d.getTime()+(exminutes*60*1000));
+	var expires = "expires="+d.toGMTString();
+	document.cookie = cname+"="+cvalue+"; "+expires+"; "+"path="+"/";
+}
+
+function getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+
+function printCookie() {
+	//var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		console.log(c);
+		//if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+	}
+}
+
+function checkCookie() {
+	var user=getCookie("username");
+	if (user!="") {
+		alert("Welcome again " + user);
+	}
+	else {
+		user = prompt("Please enter your name:","");
+		if (user!="" && user!=null) {
+			setCookie("username",user,3);
+		}
+	}
+}
+
+
+$(document).ready(function(){
+	//setCookie("username", "tom", 3);
+    checkCookie();
+	printCookie();
+	var user = getCookie("username");
+	if (user!="" && user=="tom") alert("come from lp1");
+	if (user!="" && user=="jim") alert("come from lp2");
+	//alert("this is the landing page 1.");
+	//setCookie("username1", "tom", 3);
+	//setCookie("username2", "Jim", 3);
+	//printCookie();
+});
+</script>
+</head>
+<body>
+<h1>Landing Page 1 -->This.</h1>
+<h1>Landing Page 2 -->This.</h1>
+</body>
+</html>

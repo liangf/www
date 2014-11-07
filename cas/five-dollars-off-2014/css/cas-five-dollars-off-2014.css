@@ -1,0 +1,181 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for CompAndSave.com
+Author: Sam Chao
+
+Table of Contents:
+0. Page fixes
+1. Text
+2. Layout
+3. Images
+4. Searchbar
+
+Created for July 2014 project crystal landing page at CompAndSave.com: 
+http://www.compandsave.com/v/newsletter/five-dollars-off-2014/cas-five-dollars-off-2014.asp
+
+Naming convention prefix: cas_fdo_
+ 
+*/
+/*********************************************************/
+
+/*-- Page fixes --*/
+
+.cas_cms_small-font{
+	font-family:Verdana, sans-serif;
+	font-size:0.6em;
+	line-height:1.5em;
+}
+
+body {
+	background:#0099CC;
+}
+
+/*-- Text --*/
+#cas_fdo_container p, #cas_fdo_container a,#cas_fdo_container h3 , #cas_fdo_container input{
+	font-family:tahoma,arial,hevetica,sans-serif;
+}
+
+#cas_fdo_container h3,
+#cas_fdo_container p {
+	color:#FFE274;
+	font-weight:normal;
+}
+
+#cas_fdo_container h2 {
+	color:#ffffff;
+	font-size:2.5em;
+
+}
+
+#cas_fdo_container #cas_fdo_tagline h1,
+#cas_fdo_container #cas_fdo_tagline p {
+	line-height:1.2em;
+	color:#ffffff;
+
+}
+#cas_fdo_container #cas_fdo_tagline h1 {
+	font-family: 'Kreon', serif;
+	font-size:3em;
+}
+#cas_fdo_container #cas_fdo_tagline .cas_fdo_highlight {
+	color:#ffffff;
+	text-shadow:2px 2px 1px #052E6C;
+}
+#cas_fdo_container .cas_fdo_promo {
+	color:#FFE274;
+}
+#cas_fdo_container .cas_fdo_code {
+	font-weight:bold;
+}
+#cas_fdo_container h3 {
+	font-size:21px;
+	line-height:1.2em;
+}
+
+#cas_fdo_coupon .cas_fdo_coupon{
+	font-size:8em;
+	line-height:1em;
+	color:#FFE274;
+	margin:15px 0;
+	text-shadow:2px 2px 1px #052E6C;
+}
+
+#cas_fdo_disclaimer{
+	text-align:left;	
+}
+
+#cas_fdo_disclaimer p, #cas_fdo_disclaimer h3 {
+	color:#ffffff;
+}
+
+
+#cas_fdo_steps span[class^=icon-] {
+	color: #FFE274;
+	font-size: 7em;
+	text-shadow: 2px 2px 1px #052E6C;
+}
+
+body {
+counter-reset:numIndex;
+}
+
+#cas_fdo_steps h3 {
+	counter-increment: numIndex;
+}
+
+#cas_fdo_steps h3:before {
+	content:counter(numIndex)". ";
+}
+/*-- Layout --*/
+
+#cas_fdo_tagline {
+	margin-bottom:20px;
+}
+
+/*-- Images --*/
+
+/*-- Searchbar --*/
+
+#cas_fdo_container input{
+	font-size:18px;
+	margin:0 auto;
+	padding:auto;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#cas_fdo_search{
+	padding:12px 5px;
+	background:#C10081;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#cas_fdo_search input[type="text"]{
+	width:64%;
+	border:1px solid #a62a73;
+	color:#d34799;
+}
+
+#cas_fdo_search input[type="submit"]{	
+	text-shadow:1px 1px 0 #fff;
+	color:#656311;
+	width:34%;
+	border:1px solid #8C890B;	
+	box-shadow:2px 2px 1px #4D2545;
+	-webkit-box-shadow:2px 2px 1px #4D2545;
+	-moz-box-shadow:2px 2px 1px #4D2545;
+background: #ffeb3d; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZlYjNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTklIiBzdG9wLWNvbG9yPSIjZmZmNDkxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(center, ellipse cover,  #ffeb3d 30%, #fff491 99%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%,#ffeb3d), color-stop(99%,#fff491)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #ffeb3d 30%,#fff491 99%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #ffeb3d 30%,#fff491 99%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #ffeb3d 30%,#fff491 99%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #ffeb3d 30%,#fff491 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeb3d', endColorstr='#fff491',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+
+
+
+
+
+	
+}
+#cas_fdo_search input[type="submit"]:hover{
+background: #ffee82; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZlZTgyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTklIiBzdG9wLWNvbG9yPSIjZmZmNmE4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(center, ellipse cover,  #ffee82 30%, #fff6a8 99%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%,#ffee82), color-stop(99%,#fff6a8)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #ffee82 30%,#fff6a8 99%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #ffee82 30%,#fff6a8 99%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #ffee82 30%,#fff6a8 99%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #ffee82 30%,#fff6a8 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffee82', endColorstr='#fff6a8',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}

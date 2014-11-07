@@ -1,0 +1,40 @@
+<head>
+    <script type="text/javascript">
+        function GetChar (event){
+            var keyCode = ('which' in event) ? event.which : event.keyCode;
+            alert ("The Unicode key code is: " + keyCode);
+        }
+    </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+</head>
+<body>
+    <input size="40" value="Write a character into this field!" onkeydown="GetChar (event);"/>
+</body>
+<script>
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function cas_getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+var tt = document.cookie;
+console.log("cookie: " + tt);
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+$(document).ready(function(){
+	document.cookie = 'coupon=ADV10;path=/';
+	document.cookie = 'user=fangl;path=/';
+	var test = cas_getCookie("cname");
+	var coupon_flag = getUrlVars()["couponcode"];
+
+});
+</script>

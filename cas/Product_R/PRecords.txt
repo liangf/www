@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>ZINK-HP-HP564XL-Combo9 <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li><li>ZINK-HP-HP564XL-Combo11 <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li>
+<li>ZINK-HP-HP564XL-Combo5 <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li><li>ZINK-HP-HP564XL-Combo4 <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li><li>INK-HP-CB324WN <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li><li>INK-HP-CB323WN <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li><li>INK-HP-CB325WN <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li><li>INK-HP-CB321WN <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li><li>INK-HP-CB322WN <img src="delete.png" style="cursor:pointer;" onclick="move(this.parentNode);"></li>
+

@@ -1,0 +1,243 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for ComboInk.com
+Author: Megan Prior-Pfeifer
+
+Table of Contents:
+0. Page fixes
+1. Text
+2. Layout
+3. Images
+4. Elements
+5. Carousel
+
+Created for July survey LP: 
+http://www.comboink.com/v/newsletter/promotion-july-survey-2014/promotion-july-survey-respond-2014.asp
+
+Thank you to http://sorgalla.com/jcarousel/
+
+Naming convention prefix: ci_surRe_
+ 
+*/
+/*********************************************************/
+
+/*-- Page fixes --*/
+
+.removeLeft{
+	display:none;
+}
+
+#content_area{
+	width:auto;
+	padding:0;
+	overflow:visible;
+}
+
+#content{
+	overflow:visible;
+}
+
+.socialannex-fblike-adjust{
+	display:none;
+}
+
+.ci_surRe_container{
+	margin-top:-30px;
+}
+
+/*-- Text --*/
+
+.ci_surRe_container h1{
+	text-align:center;
+	line-height:1.2em;
+	font-size:2.4em;
+	margin:10px 0;
+	color:#08cfdb;
+}
+
+.ci_surRe_container h2,
+.ci_surRe_container h3{
+	color:#333;
+	text-align:center;
+	line-height:1.2em;
+}
+
+.ci_surRe_container h3{
+	margin:20px 0;
+}
+
+.ci_surRe_container sup{
+	font-size:.8em;
+	vertical-align: top;
+}
+
+.ci_surRe_container p{
+	text-align:left;
+}
+
+.ci_surRe_container .ci_surRe_disclaim p{
+	text-align:left;
+}
+
+.ci_surRe_container a{
+	color:#f00;
+}
+
+.ci_surRe_container a:hover{
+	color:#b80506;
+	text-decoration:none;
+}
+
+.ci_surRe_coupon{
+	font-size: 1.5em;
+	line-height: 0.8;
+	color: #b80506;
+}
+
+h2.ci_surRe_dollar, p.ci_surRe_dollar, .ci_surRe_price{
+	font-weight:bold;
+	font-size:1.5em;
+	margin:0;
+	line-height:1.2;
+}
+
+h2.ci_surRe_dollar{
+	color: #b80506;
+	text-align:left;
+}
+
+p.ci_surRe_dollar{
+	font-size:1.2em;
+}
+
+.ci_surRe_retail{
+	text-decoration:line-through;
+}
+
+/*-- Layout --*/
+
+.ci_surRe_topProduct{
+	width: 888px;
+	background: none repeat scroll 0% 0% #F4F4F4;
+	padding: 10px;
+	border: 1px solid #F4F4F4;
+	box-shadow: 0px 0px 5px #CCC;
+	margin: 10px 20px;
+	}
+
+.ci_surRe_topProduct:hover{
+	background:#fafafa;
+	border: 1px solid #fafafa;
+}
+
+/*-- Images --*/
+
+.ci_surRe_topProduct img{
+	width:80%;
+	display:block;
+	margin:0 auto;
+	background:#fff;
+	border-radius:2px;
+	padding:8px;
+}
+
+/*-- Elements --*/
+
+.ci_surRe_help{
+	cursor:help;
+}
+
+.ci_surRe_qty{
+	width:70px;
+}
+
+.ci_surRe_checklist{
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+.ci_surRe_checklist .ci_surRe_check{
+	float: left;
+	width: 90%;
+	vertical-align: middle;
+}
+
+.ci_surRe_container .ci_surRe_checklist li{
+	text-align:left;
+	list-style: none outside none;
+}
+
+.ci_surRe_container .ci_surRe_checklist .icon-checkmark{
+	color:#08cfdb;
+	width: 5%;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+
+.ci_surRe_container input{
+	height: auto;
+	padding: 5px;
+	font-size: 14px;
+}
+
+/*-- Carousel --*/
+
+.ci_surRe_container .jcarousel {
+    position: relative;
+    overflow: hidden;
+	width: 920px;
+}
+
+.ci_surRe_container .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.ci_surRe_container .jcarousel li {
+    float: left;
+	width: 270px;
+	min-height:400px;
+	background:#fafafa;
+	padding:10px;
+	margin:0 10px;
+	list-style: none outside none;
+	position:relative;
+	z-index:1;
+	text-align:center;
+}
+
+.ci_surRe_container .jcarousel p{
+	text-align:center;
+}
+
+.ci_surRe_container .jcarousel img{
+	padding:10px;
+	background:#fff;
+	max-width:50%;
+	margin:0 auto;
+}
+
+.ci_surRe_container .jcarousel-controls{
+	top: 150px;
+	position:absolute;
+	z-index:0;
+	width:930px;
+}
+
+.ci_surRe_container .jcarousel-controls .jcarousel-control-prev{
+	left:-20px;
+	position:absolute;
+}
+
+.ci_surRe_container .jcarousel-controls .jcarousel-control-next{
+	right:-20px;
+	position:absolute;
+}
+
+.ci_surRe_container .jcarousel-controls span{
+	font-size:3em;
+}

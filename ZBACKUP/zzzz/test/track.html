@@ -1,0 +1,32 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49914645-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+<h1> This is the tracking test page.</h1>
+<button type="button" onclick="myfun()">Click Me!</button>
+
+</body>
+<script>
+function myfun() {
+  //alert("you click!!!");
+	//_gaq.push(['_trackEvent', 'button', 'clicked'])
+	_gaq.push(['_trackEvent', 'Easter', 'Canon', 'Eggclick']);
+}
+</script>
+</html>

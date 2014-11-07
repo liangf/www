@@ -1,0 +1,273 @@
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+</head>
+<body>
+<h2 style="color:#858585;">Generate labels</h2>
+Please input Product Code:
+<input type="text" id="ad_lb" onKeyDown="checkkey_lb(event);" style="width:250px;"/>
+<p id="tepcontent"></p>
+<ul style="list-style:none;" id="contents_lb"></ul>
+<div id="warning_lb" style="color:red;"></div>
+<input type="button" id="btn_lb" value="Create Label" onClick="displayform();"/>
+
+<div id="labelinfo" style="display:none">
+<input type="text" id="lname" value="Input label name" onfocus="if(value =='Input label name'){value =''};" onblur="if(value ==''){value='Input label name';}"/>
+<input type="button" id="btn_lc" value="Confirm"/>
+<div id="message_lb" style="color:red;"></div>
+</div>
+
+<h2 style="color:#858585;">Edit labels</h2>
+<div id="showlb"></div>
+<div id="warning_elb" style="color:red;"></div>
+<div id="oldln" style="display:none;"></div>
+
+
+
+<script type="text/javascript">
+//load existed labels
+$.get("//www.cmyimage.com/Product_R/showlabel.php",{}, function(data){
+   if(data!=""){
+   var tmp=new Array();
+   tmp=data.split("!");
+   for(var i=0; i< tmp.length-1; i++){
+      var tmp2=tmp[i].split("$");
+      var a=document.createElement("table"); 
+      var op=document.createElement("option"); 
+      var caption=a.createCaption();  
+      a.style.border="1px solid";
+      a.style.marginBottom="20px";
+      var obj=document.getElementById("showlb");
+      caption.innerHTML=tmp2[0];
+      var lb=tmp2[1].split("*");
+      for(var m=0; m< lb.length; m++){
+	  if(lb[m]!=""){
+	    lb[m]=lb[m].trim();
+        var tr=a.insertRow(-1);
+        var td=tr.insertCell();
+        td.innerHTML= lb[m] + "  <img src='delete.png' style='cursor:pointer;' onClick='move_lb(this.parentNode);'/>";
+        td.width="360px";
+        td.colSpan="3";
+       }
+	  }
+     var tr2=a.insertRow(-1);
+     var td2=tr2.insertCell(0);
+     var td3=tr2.insertCell();
+     var td4=tr2.insertCell(-1);
+     td2.innerHTML="<input type='button' value='Edit labelname' onClick='editpt(this.parentNode);'>";
+     td3.innerHTML="<input type='button' value='Add product' onClick='addpt(this.parentNode);'>";
+     td4.innerHTML="<input type='button' value='Remove label' onClick='moveall(this.parentNode);'>";
+     obj.appendChild(a);
+       }
+     }
+   });
+//input new product codes
+var count=0;
+var liarr=new Array();
+function checkkey_lb(e)
+{
+  if(e.keyCode == 13)
+	{ var product=document.getElementById("ad_lb").value;
+	  var pt=product.toLowerCase();
+	  var show=document.getElementById("tepcontent");
+	  var pl=document.getElementById("contents_lb").innerHTML;
+	  var pll=pl.toLowerCase();
+	  $.get("checkexist.asp",{PC:product}, function(data){
+	  if(data=="Y"){
+	    if((pll.indexOf(pt))==-1){
+	    show.innerHTML= product + "  <input type='text' value='Input Qty' style='color:#FF3030;width:80px;' id='qt' style='width:100px;' onfocus='if(value ==\"Input Qty\"){value =\"\"};' onblur='if(value ==\"\"){value=\"Input Qty\";}' onKeyDown='checkkey_lb2(event, this.parentNode);'/>";
+		document.getElementById("ad_lb").value = "";
+        document.getElementById("warning_lb").innerHTML ="";	  
+	    }
+	    else{
+	    document.getElementById("warning_lb").innerHTML ="The product already in the list!";
+	    }
+	  }
+	  else if(data=="N"){
+	   document.getElementById("warning_lb").innerHTML ="This product does not exist, please try again.";
+	  }
+	 });
+	  
+	}
+ }
+ function checkkey_lb2(e, show){
+ if(e.keyCode == 13) {
+  if(document.getElementById("qt").value!=""){
+   var qty= document.getElementById("qt").value;
+   var product= show.innerHTML;
+   product= product.replace(/(<input.*>)/i,"");
+   product=product.trim();
+   var obj=document.getElementById("contents_lb");
+   var list=document.createElement("li");
+   liarr[count]=product + ", QTY:" + qty;
+   count++;
+   list.innerHTML= product + ", QTY:" + qty + "  <img src='delete.png' style='cursor:pointer;' onClick='move_lb(this.parentNode);'/>";
+   obj.appendChild(list);
+   document.getElementById("tepcontent").innerHTML="";
+   }
+  else{
+  alert("Please input valid qty and press enter.");}
+ }
+}
+ 
+
+//delete unwanted product codes
+ function move_lb(td){
+ var tb=td.parentNode.parentNode.parentNode;
+ td.remove();
+ if(td.nodeName=="TD"){
+  var lname=tb.caption.innerHTML;
+  var lc=tb.innerHTML;
+   lc=lc.replace(/<caption>.*<\/caption>/i,"");
+   lc=lc.replace(/<[^>].*?>/g,"*");
+   lc=lc.replace(/\*{2,}/g, "*");
+   $.post("//www.cmyimage.com/Product_R/updatelb.php",{ln:lname, ct:lc}, function(data){
+    window.location.reload();
+  });
+ }
+}
+ function moveall(ip){
+ var td=ip.parentNode;
+ var lname= td.parentNode.parentNode.caption.innerHTML;
+ var abool;
+ abool = confirm ("Are you sure to remove the label?");
+ if(abool==true){
+ $.get("//www.cmyimage.com/Product_R/removelb.php",{ln:lname}, function(data){
+  window.location.reload();
+   });
+  }
+ }
+//create labels and save to db
+function displayform(){
+var cont= "";
+for(var i=0;i< count; i++){
+cont= cont+ liarr[i]+ "*";}
+if(cont!=""){
+document.getElementById("btn_lb").style.display="none";
+document.getElementById("labelinfo").style.display="";
+$("#btn_lc").click(function(){
+  var lname=document.getElementById("lname").value;
+  if(lname!=""){
+  $.get("//www.cmyimage.com/Product_R/checklabel.php",{ln:lname}, function(data){
+   if(data=="Y"){
+   document.getElementById("message_lb").innerHTML="This label name exists, please change another name.";
+   }
+   else if(data=="N"){
+     $.get("checkexist.asp",{PC:lname}, function(data){
+     if(data=="Y"){
+     document.getElementById("message_lb").innerHTML="Product code can't be a label name, please change another name.";
+     }
+     else if(data="N"){
+     document.getElementById("message_lb").innerHTML="";
+     $.post("//www.cmyimage.com/Product_R/labelinput.php",{ln:lname, ct:cont}, function(data){
+       window.location.reload();
+       });
+     }
+	});
+   }
+   });
+  }
+  else{
+  document.getElementById("message_lb").innerHTML="Please input the label name.";
+  }
+  });
+ }
+}
+//edit label name	  
+function editpt(input){
+var tb=input.parentNode.parentNode.parentNode;
+var title=tb.caption.innerHTML;
+tb.caption.innerHTML= "<input type='text' id='title' onKeyDown='checkkey_tl(event, this.parentNode);'/>";
+document.getElementById("title").value=title;
+document.getElementById("oldln").innerHTML=title;
+}
+function checkkey_tl(e,caption){
+var ot=document.getElementById("oldln").innerHTML;
+if(e.keyCode == 13) {
+  var nt=document.getElementById("title").value;
+  if(nt!=""){
+   if(nt==ot){
+   caption.innerHTML=ot;
+   }
+   else{
+  $.get("//www.cmyimage.com/Product_R/checklabel.php",{ln:nt}, function(data){
+   if(data=="Y"){
+   document.getElementById("warning_elb").innerHTML="This label name exists, please change another name.";
+   }
+   else if(data=="N"){
+     $.get("checkexist.asp",{PC:nt}, function(data){
+     if(data=="Y"){
+     document.getElementById("warning_elb").innerHTML="Product code can't be a label name, please change another name.";
+     }
+     else if(data="N"){
+     document.getElementById("warning_elb").innerHTML="";
+	 alert("old label name: " + ot + "new label name: " + nt);
+     $.get("//www.cmyimage.com/Product_R/labelname.php",{ln:nt, on:ot}, function(data){
+       window.location.reload();
+       });
+      }
+     });
+	}
+   });
+   }
+  }
+ }
+}
+//add product code
+function addpt(td){
+var tb=td.parentNode.parentNode.parentNode;
+var tr=tb.insertRow(0);
+var td=tr.insertCell();
+td.innerHTML= "<input type='text' id='newpc' style='width:260px;' onKeyDown='checkkey_add(event, this.parentNode);'/>";
+td.width="360px";
+td.colSpan="3";
+}
+function checkkey_add(e, td){
+var tb=td.parentNode.parentNode.parentNode;
+var nt=tb.caption.innerHTML;
+if(e.keyCode == 13) {
+ var product=document.getElementById("newpc").value;
+ $.get("checkexist.asp",{PC:product}, function(data){
+	  if(data=="Y"){
+	   $.get("//www.cmyimage.com/Product_R/addlabel.php",{ln:nt}, function(data){
+	   if((data.indexOf(product))==-1){
+	    td.innerHTML= product + "  <input type='text' value='Input Qty' style='color:#FF3030;width:80px;' id='add_qt' style='width:100px;' onfocus='if(value ==\"Input Qty\"){value =\"\"};' onblur='if(value ==\"\"){value=\"Input Qty\";}' onKeyDown='checkkey_add2(event, this.parentNode);'/>";
+        document.getElementById("warning_elb").innerHTML ="";			
+	    }
+	    else{
+	    document.getElementById("warning_elb").innerHTML ="The product is already in the list!";
+	    }
+       });
+      }
+	  else{
+	  document.getElementById("warning_elb").innerHTML ="This product does not exist!";
+	  }
+    });
+ }
+}
+function checkkey_add2(e, td){
+var tb=td.parentNode.parentNode.parentNode;
+var nt=tb.caption.innerHTML;
+if(e.keyCode == 13) {
+  if(document.getElementById("add_qt").value!=""){
+   var qty= document.getElementById("add_qt").value;
+   var product= td.innerHTML;
+   product= product.replace(/(<input.*>)/i,"");
+   product=product.trim();
+   td.innerHTML= product + ", QTY:" + qty + "  <img src='delete.png' style='cursor:pointer;' onClick='move_lb(this.parentNode);'/>";
+   $.get("//www.cmyimage.com/Product_R/addlabel.php",{ln:nt}, function(data){
+   var newct= product + ", QTY:" + qty + "*" + data;
+   $.post("//www.cmyimage.com/Product_R/updatelb.php",{ln:nt, ct:newct}, function(data){
+   window.location.reload();
+   });
+   });
+  }
+  else{
+   alert("Please input valid qty and press enter.");}
+ }
+}
+</script>
+</body>
+</html>
+	 

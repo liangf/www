@@ -1,0 +1,11 @@
+http://www.compandsave.com/v/dc/yy/liangf/feeds/amazon/amazon-feed.asp
+http://www.877ink.com/liang/ftp/cas_upload_amazon.php
+
+http://www.compandsave.com/v/dc/yy/liangf/feeds/shopping/shopping-feed.asp
+http://www.877ink.com/liang/ftp/cas_upload_shopping.php
+
+http://www.compandsave.com/v/dc/yy/liangf/feeds/nextag/nextag-feed.asp
+http://www.877ink.com/liang/ftp/cas_upload_nextag.php
+
+http://www.compandsave.com/v/dc/yy/liangf/feeds/shopzilla/shopzilla-feed.asp
+http://www.877ink.com/liang/ftp/cas_upload_shopzilla.php

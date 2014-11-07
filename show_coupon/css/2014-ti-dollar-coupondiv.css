@@ -1,0 +1,45 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for TomatoInk.com
+Author: Megan Prior-Pfeifer
+
+Table of Contents:
+0. Page fixes
+1. Text
+2. Layout
+3. Images
+4. Searchbar
+
+Created for $1 inks at TomatoInk.com 
+
+ 
+*/
+/*********************************************************/
+
+#page-wrap{
+	position:relative;
+}
+
+#content_area {position:relative;}
+
+#ti_couponDiv{
+	position: absolute;
+	top: 210px;
+	right: 85px;
+	border: 3px dashed #ccc;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding: 5px;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1em;
+	background: #fff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+}
+
+#ti_onedollar_code{
+	font-size:1.5em;
+	color:#2079B2;
+}

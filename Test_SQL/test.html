@@ -1,0 +1,99 @@
+<html>
+<head>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src="responsiveslides.min.js"></script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+var ShipAddress1 = "";
+var ShipAddress2 = "";
+var ShipCity = "";
+var ShipPostalCode = "";
+var ShipState = "";
+
+
+jQuery(document).ready(function() {
+	document.cookie ="test=123456; expires=Tue, 31 Jan 2014 23:59:59 UTC; path=/";
+	var pagecheck = CheckOutPage();
+
+	var testflag = getCookie('test');
+	console.log(pagecheck + " " + testflag);
+
+	if (pagecheck && testflag == "123456") {        		
+		vertify_address();
+	}
+});
+
+function CheckOutPage() {
+	var href = window.location.href; 
+	var reg = /one-page-checkout.asp/;
+	var shipchoice_flag = false;
+	var result = false; 
+
+	if (href.match(reg)) {
+		console.log("in page match");
+
+
+		var ShipChoice = document.getElementsByTagName('select');
+		for (var i=0; i<ShipChoice.length; i++) {
+			if (ShipChoice[i].name == "ShippingSpeedChoice" && ShipChoice[i].value != "0") {
+				shipchoice_flag = true;
+			}
+		}
+
+		if (shipchoice_flag) {
+			console.log("in shipaddress value check");
+			var input_array = document.getElementsByTagName('input');
+			for (var i=0; i<input_array.length; i++) {
+				if (input_array[i].name == "ShipAddress1" && input_array[i].value != "") {
+					ShipAddress1 = input_array[i].value;
+				}
+				if (input_array[i].name == "ShipAddress2" && input_array[i].value != "") {
+					ShipAddress2 = input_array[i].value;
+				}
+				if (input_array[i].name == "ShipCity" && input_array[i].value != "") {
+					ShipCity = input_array[i].value;
+				}
+				if (input_array[i].name == "ShipPostalCode" && input_array[i].value != "") {
+					ShipPostalCode = input_array[i].value;
+				}
+
+			}
+
+			ShipState = $('#ShipState_dropdown').value; 
+
+			if (ShipAddress1 != "" && ShipCity != "" && ShipPostalCode != "" && ShipState != "") result = true; 
+		}
+	}
+
+	return result;
+}
+
+
+function vertify_address() {
+	console.log("vertify address");
+	var url = "https://api.smartystreets.com/street-address?street=";
+	var reg = / /g;
+//2123-2+Medallion+Drive&city=Union+City&state=CA&zipcode=94587&candidates=5&auth-token=825544894584281826";
+	ShipAddress1.replace(reg, "+");
+	url += ShipAddress1;
+	if (ShipAddress2 != "") {
+		ShipAddress2.replace(reg, "+");
+		url += "&street2=";
+	}
+
+	ShipCity.replace(reg, "+");
+	url += "&city=" + ShipCity + "&state=" + ShipState + "&zipcode=" + ShipPostalCode + "&auth-token=825544894584281826";
+
+	$.get(url, function(data){console.log("This is what we get: " + data);});
+
+}
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!-- 
+DYNAMIC PAGE-SPECIFIC META TAGS WILL BE PLACED HERE
+DO NOT ADD YOUR OWN META TAGS
+ONLY PUT CSS/JAVSCRIPT INCLUDES IN YOUR HEAD TAG
+-->
+<link href="/v/vspfiles/templates/10/css/Imports.css" rel="stylesheet" type="text/css">
+<link href="/v/vspfiles/V4_Backup/css/style.css" rel="stylesheet" type="text/css">
+<link href="/v/re-order/css/re-order.css" rel="stylesheet" type="text/css">
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="/v/vspfiles/images/favicon.ico">
+<script type="text/javascript" src="/v/unified.js.asp"></script>
+
+<!-- google base pid result code -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+window.onload = $(function(){
+				$.get("/v/searchresults/product_trackingTest.asp?ProductCode=" + getParameterByName("googlebasepid"),function(data){
+					$("#test").append(data);
+					var name=$('#pname').val();
+					var cost=$('#price').val();
+					$('#get_name').val(name);
+					$('#get_price').val(cost);
+					//alert("Test Name: " + name + " Test Cost "+ cost);//result to see but when real code make line comment
+
+var session = '<%=Session["SessionID"].ToString() %>';
+        alert(session);			
+				});
+				return false;
+});
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+
+function displayProductName()
+{
+var x=document.getElementById("get_name").value;
+return x;
+}
+
+function displayProductPrice()
+{
+var x=document.getElementById("get_price").value;
+return x;
+}
+
+console.log("pathname: "+window.location.pathname);
+if(location.pathname == "/login.asp")
+{
+	console.log("I am login page woohoo");
+	document.write('<scr'+'ipt src="//cdn.socialannex.com/s13/signon-all.js?id=6766730" type="text/javascript" ></scr'+'ipt>');
+        $(document).ready(function(){
+           console.log("document loaded");
+           socialannex.show_buttons("","http://compandsavetest.com/myaccount.asp","","");
+        });
+}
+
+ var sa_page='4';
+  (function() {function sa_async_load() { var sa = document.createElement('script');sa.type = 'text/javascript';sa.async = true;sa.src = '//cdn.socialannex.com/partner/6766730/universal.js';var sax = document.getElementsByTagName('script')[0];sax.parentNode.insertBefore(sa, sax); }if (window.attachEvent) {window.attachEvent('onload', sa_async_load);}else {window.addEventListener('load', sa_async_load,false);}})();
+
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+</script>
+
+
+
+<!-- BEGIN GOOGLE ANALYTICS HEAD TRACKING CODE -->
+<!--
+<script type="text/javascript" language="Javascript1.2">
+var gaJsHost = (("https:" == document.location.protocol) ? " https://ssl." : "http://www.");
+document.write("<" + "script type='text/javascript' src='" + gaJsHost + "google-analytics.com/ga.js'><" + "/script>");
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-253302-1");
+pageTracker._trackPageview();
+} catch(err) {}</script> !-->
+<!-- END -->
+
+
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+var _vwo_code=(function(){
+var account_id=27762,
+settings_tolerance=2000,
+library_tolerance=1500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+<!-- Start of SAS/CJ Double Commission Script !-->
+<script type="text/javascript" language="Javascript">
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function setCookie(c_name,value,exdays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate() + exdays);
+var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+document.cookie=c_name + "=" + c_value;
+}
+
+function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+{
+  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==c_name)
+    {
+    return unescape(y);
+    }
+  }
+}
+
+var sasref = getUrlVars()["ref"];
+
+if(sasref == 'undefined' || sasref ==" " || sasref ==null) {
+
+//do nothing
+
+} else {
+
+setCookie("sasaff",sasref,30);
+
+}
+
+</script>
+<!-- End of SAS/CJ Double Commission Script !-->
+
+
+
+<!-- This is used to get the SKU code from the current URL !-->
+<script type="text/javascript">
+function getSKU() {
+  var str="ProductCode"; 
+  var regexS = "[\\?&]"+str+"=([^&#]*)";
+  var regex = new RegExp( regexS, "i" );
+  var URL = decodeURIComponent(window.location.href);
+  var results = regex.exec( URL );
+
+  if( results == null || results[1] == "") {
+    str="p";
+    regexS = "[\\-_]"+str+"/([^&#]*).(html|htm)";
+    regex = new RegExp( regexS, "i" );
+    results = regex.exec( URL );
+
+    if( results == null || results[1] == "") {sku = "";}
+    else {sku = results[1];}
+  }
+  else {sku = results[1];}
+  return sku.toUpperCase();
+}
+</script>
+
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<link rel="stylesheet" type="text/css" href="/v/vspfiles/templates/10/css/ie8-and-down.css" />
+<![endif]-->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49914645-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+
+
+
+
+
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="updateHeaderCartSummary()">
+<!-- ######## Style Product Price and Coupon Code Seletors ######## !-->
+
+<!---
+<%
+
+if (!WebSecurity.IsAuthenticated)
+{
+Response.Write("you are not logged in")
+}
+else
+{
+Response.Write("you are logged in")
+}
+if(Session.Session_Token != NULL)
+
+%> 
+There are <%response.write(Application("visitors"))%>online now!
+Username: <%Response.Write(Session.SessionID)%>
+token<%Response.Write("you are logged in")%>
+-->
+<script type="text/javascript"> 
+//<![CDATA[ 
+if (location.pathname == "/shoppingcart.asp"
+||  location.pathname == "/ShoppingCart.asp") 
+{
+document.writeln("\n<style type='text/css'>.smalltext{font-size:11.5px; font-weight:bold; color: #3f3a39;}</style>\n\n"); 
+document.writeln("\n<style type='text/css'>select[name='ShippingSpeedChoice']{font-size:12px !important;}</style>\n\n");
+document.writeln("\n<style type='text/css'>input[name='email']{width:170px !important; padding:4px !important;}</style>\n\n");
+document.writeln("\n<style type='text/css'>input[name='password']{width:170px !important; padding:4px !important;}</style>\n\n");
+}
+//]]> </script>
+<script type="text/javascript"> 
+//<![CDATA[ 
+if (location.pathname == "/ProductDetails.asp"
+|| location.pathname.indexOf("-p/") != -1 
+|| location.pathname.indexOf("_p/") != -1)
+{
+document.writeln("\n<style type='text/css'>.pricecolor{font-size:16px;}</style>\n\n"); 
+}
+//]]> </script>
+<script type="text/javascript"> 
+//<![CDATA[ 
+if (location.pathname == "/one-page-checkout.asp") 
+{
+document.writeln("\n<style type='text/css'>.carttext{font-size:11px !important;}</style>\n\n");
+document.writeln("\n<style type='text/css'>input[name='btncalc_shipping']{font-size:12px !important;}</style>\n\n");
+document.writeln("\n<style type='text/css'>select[name='ShippingSpeedChoice']{font-size:12px !important;}</style>\n\n");
+document.writeln("\n<style type='text/css'>table{margin-left:auto !important; margin-right:auto !important;}</style>\n\n");
+document.writeln("\n<style type='text/css'>td, div{text-align:left; !important;}</style>\n\n");
+document.writeln("\n<style type='text/css'>.pricecolor font{font-size:14px !important;}</style>\n\n");
+}
+//]]> </script>
+
+
+
+
+<div id="top-nav-head-container">
+<!-- ######## Top Navigation ######## !-->
+<div id="topbar">
+    <ul class="container">
+    <li class="first"><a href="Config_FullStoreURLArticles.asp?ID=194"><img src="/v/vspfiles/images/sign_triangle.gif" width="10" height="13" alt="Yellow Triangle" style="border-style:none;" ><b>FREE SHIPPING OVER $50</b> <span>regular $3.99</span></a></li>
+    <li class="second"><a href="Config_FullStoreURL">Home</a></li>
+    <li><a href="Config_FullStoreURLmyaccount.asp" rel="nofollow">My Account</a></li>
+    <li><a href="Config_FullStoreURLv/order-tracking/" rel="nofollow">Order Status</a></li>
+    <li><a href="Config_FullStoreURLorders.asp" rel="nofollow">ReOrder</a></li> 
+    <li><a href="Config_FullStoreURLArticles.asp?ID=196" rel="nofollow">Help</a></li>
+    <li><a href="Config_FullStoreURLlogin.asp?logout=yes" rel="nofollow">Sign Out</a></li>
+    </ul>
+</div>
+<br class="clear">
+<div class="container adjust-width">
+
+<div id="ratc-cart">
+<a href="/shoppingcart.asp" rel="nofollow"><div class="cart"><div class="icon shopping-cart"></div><div style="display:none;" id="view_cart_text_right"></div></div></a></div>
+</div>
+<div id="display_cart_summary">Cart Summary</div>
+<br class="clear">
+<!-- ######## End Top Navigation ######## !-->
+
+
+
+
+<!-- ######## Header ######## !-->
+<header>
+ <div class="container">
+ <a href="Config_FullStoreURL"><div id="CAS">CompAndSave.com</div></a>
+ <div id="promo"><img name="promo_pic" src="/v/vspfiles/images/toll-free-free-ship-2.jpg" border=0 alt="Free shipping on orders over $50! Call 877-465-6888 M-F 8AM - 5PM (PST)." title="Free shipping on orders over $50! Call 877-465-6888 M-F 8AM - 5PM (PST)."></div>
+ <div id="contact">
+ <div id="inner-rect">
+    <table cellpadding="0" cellspacing="0" border="0" class="contact">
+    <tr>
+    <td class="live-chat">
+    <!-- BEGIN ProvideSupport.com Custom Images Chat Button Code -->
+<div id="ciEkiO" style="z-index:100;position:absolute"></div><div id="scEkiO" style="display:inline"></div><div id="sdEkiO" style="display:none"></div><script type="text/javascript">var seEkiO=document.createElement("script");seEkiO.type="text/javascript";var seEkiOs=(location.protocol.indexOf("https")==0?"https":"http")+"://image.providesupport.com/js/lubu12/safe-standard.js?ps_h=EkiO&ps_t="+new Date().getTime()+"&online-image=//www.compandsave.com/v/vspfiles/templates/10/images/template12/live-chat-online.png&offline-image=//www.compandsave.com/v/vspfiles/templates/10/images/template12/live-chat-offline.png";setTimeout("seEkiO.src=seEkiOs;document.getElementById('sdEkiO').appendChild(seEkiO)",1)</script><noscript><div style="display:inline"><a href="http://www.compandsave.com/chat_pages/compandsave_chat.html" onClick="javascript:void window.open('http://www.compandsave.com/chat_pages/compandsave_chat.html','CompandSave Chat Page','width=637,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=0,top=0');return false;">Live Chat</a></div></noscript>
+    <!-- END ProvideSupport.com Custom Images Chat Button Code -->
+    </td>
+    </tr>
+    </table>
+ </div></div>
+ </div>
+</header>
+<br class="clear">
+<!-- ######## END Header ######## !-->
+
+
+
+<!-- ######## Navigation (Brand Names) ######## !-->
+<nav>
+<div id="display_menu_1" class="container">Display_Menu 1</div>
+<div class="separator container"></div>
+<div id="display_menu_2" class="container">Display_Menu 2</div>
+</nav>
+<!-- ######## END Navigation (Brand Names) ######## !-->
+
+
+<div class="clear"></div>
+</div>
+
+<!-- ######## Search Bar ######## !-->
+<div id="search">
+   <div id="search-bar-bg" class="container">
+      <div class="left-curve">&nbsp;</div>
+      <div class="middle-bar">
+         <form name="form1" method="get" id="nxt-ac-form" action="http://search.compandsave.com/search" OnSubmit="return submitSearch();">
+         <table cellpadding="0" cellspacing="0" border="0" id="search-bar">
+         <tr><td><input type="text" name="keywords" autocomplete="off" value="Cartridge or printer model..." id="search_v5_1" onFocus="if(this.value=='Cartridge or printer model...')this.value='';" onBlur="if(this.value=='')this.value='Cartridge or printer model...';" onkeypress="return handleEnter(this,event)"></td>
+         <td><input name="imageField" type="submit" width="61" height="21" border="0" value="search" onclick="javascript:submitSearch()"></td>
+         </tr></table>
+         </form>
+<!-- google base pid result div need to put into searchbar div in order to maintain position-->
+
+<div id="test">
+<input type="hidden" id="get_name" />
+<input type="hidden" id="get_price" />
+</div>
+<div id="pidresult"></div>
+
+
+      </div>
+      <div class="right-curve">&nbsp;</div>
+   </div>
+
+</div>
+<!-- ######## END Search Bar ######## !-->
+<br class="clear">
+<script type="text/javascript">
+(function () {
+var inonload = window.onload;
+window.onload = function(){
+  
+  
+  $('#pidresult-inner img').error(function() {
+    
+    
+      $(this).attr("src", "/v/vspfiles/photos/generic.jpg");
+   
+  });
+ if(inonload){inonload()}};
+}());
+</script>
+<!-- google base pid result div -->
+<style>
+#pidresult {
+
+}
+
+#pidresult-inner{
+
+-moz-border-radius:5px;
+border-radius:5px;
+border:3px solid #FF00B7;
+position:relative;
+top:57px;
+left:613px;
+min-height:200px;
+width:290px;
+z-index:998;
+box-shadow: 0px 2px 3px rgba(34, 25, 25, 0.3);
+padding:10px;
+background: #FFF;
+}
+
+
+#pidresult-inner img{
+display:inline-block;
+max-width:140px;
+max-height:190px;
+float:left;
+padding:0;
+margin:0;
+border:0;
+}
+
+#buy-now-pid{
+padding:5px;
+width:140px;
+display: inline-block;
+float: right;
+position: relative;
+top: 30px;
+}
+
+#pid-text{
+display: inline-block;
+padding-top: 10px;
+color: rgb(0, 115, 192);
+margin-top: 10px;
+border-top: dashed 1px #000000;
+}
+
+
+#pid-price{
+font-weight:bold;
+font-size: 15px;
+color: rgb(0, 115, 192);
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+(function () {
+var nonload = window.onload;
+window.onload = function(){
+  if (getParameterByName("googlebasepid") == null || getParameterByName("googlebasepid") == "" || displayProductName() == null || displayProductName() == "" || displayProductPrice() == null || displayProductPrice() == "")
+	{	var xmlhttp;
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+	var URLstr = window.location.href;
+	var imagename="default";
+	var imageURL=URLstr.replace(/(.*_s\/){1,}(\d+)\.htm+.*/ig, "$2");
+        var flag=imageURL.indexOf(".");
+      if(flag!=-1){
+        imageURL=URLstr.replace(/(.*\/searchresults.asp\?cat=){1}(\d+).*/i,"$2");
+        flag=imageURL.indexOf(".");
+        if(flag!=-1){
+        //do nothing
+		}
+        else{
+		imagename=imageURL;
+          }
+        }
+	 else{imagename=imageURL;}
+	 if(imagename!="default"){
+    imageURL= "http://www.compandsavetest.com/v/vspfiles/photos/categories/printers/" + imagename + ".jpg";
+    xmlhttp.open("GET", imageURL, true);
+    xmlhttp.send();
+    xmlhttp.onreadystatechange=function()
+        {  
+           if (xmlhttp.readyState==4 && xmlhttp.status==200){
+           document.getElementById("pidresult").innerHTML = "<div style='border:0; top:80px; box-shadow:none' id='pidresult-inner'><img style='max-width:290px;max-height:213px; float:right;' src=" + imageURL + "></img></div>";
+            }
+
+	  }
+	  }
+		
+        }
+	else
+	{
+		document.getElementById("pidresult").innerHTML = "<div id='pidresult-inner'><img src='/v/vspfiles/photos/" + getParameterByName("googlebasepid") + "-2.jpg' ></br>" + "<div id='buy-now-pid' ><span id='pid-price'>Price: $" + displayProductPrice()+"</span><br><form target='_top' style='display: inline;' action='http://www.compandsave.com/ShoppingCart.asp' method='post'><table border='0' cellpadding='3' cellspacing='0' ><tbody><tr><td valign='top' align='left'>Qty: <input name='QTY." + getParameterByName("googlebasepid")+ "' size='3' maxlength='8' onkeydown='javascript:QtyEnabledAddToCart();' value='1' type='textbox'></td></tr><tr><td align='left'><input src='http://www.compandsave.com/v/mp/btn_addtocart_2.png' name='btnaddtocart' alt='Add to cart' border='0' type='image' width='140px' height='42px' id='btn-shadow'><input name='ReplaceCartID' value='' type='hidden'><input name='ProductCode' value='" + getParameterByName("googlebasepid") + "' type='hidden'><input name='e' value='' type='hidden'><input name='ReturnTo' value='ShoppingCart.asp' type='hidden'></td></tr></tbody></table></form></div>"+"<div id='pid-text'>"+ displayProductName() + "</div></div>";
+	}// your code
+
+  if(nonload){nonload()}};
+}());
+</script>
+
+<script type="text/javascript">
+document.getElementById('search_v5_1') ? document.getElementById('search_v5_1').value="Cartridge or printer model..." : null;
+</script>
+
+
+<div id="page-wrap">
+<!--  SOCIAL ANNEX  
+<div style="float:right;margin-top:50px;z-index:100;position:relative;"><div class="socialannex"></div><span><a href="http://www.compandsave.com/Articles.asp?ID=195"><img border="0" title="Share News Feed" alt="Share News Feed" src="//cdn.socialannex.com/custom_images/6766731/XTK6BB_CAS-part-2.png"></a></span></div>
+  SOCIAL ANNEX  -->
+<!-- SOCIAL LOYALTY !-->
+<div id="sa_loyalty"></div>
+<!-- SOCIAL LOYALTY !-->
+
+<!-- ######## Show egg ######## !-->
+<!--
+<link href="//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-hidden-egg.css" rel='stylesheet' type='text/css'>
+<link href="//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css" rel='stylesheet' type='text/css'>
+<link href="//www.compandsave.com/v/newsletter/promotion-may2014/css/2014-cas-dollar-coupondiv.css" rel='stylesheet' type='text/css'>
+<div id="cas_eeh_egg2"></div>
+  <div id="cas_eeh_egg1" style="display:none"></div>
+  <div id="cas_eeh_egg1" style="display:block"></div>
+-->
+<!-- ######## End Show egg ######## !-->
+
+<!-- ######## Show couponcode ######## !-->
+<div id="couponDiv" style="display:none">
+
+    <p class="colDetails">$1 ONLY with coupon code</p>
+    <p><strong class="attnMain couponMain" id="onedollar_code">GET564BK</strong></p>
+     <p class="colDetails">at checkout</p>
+
+</div>
+<!-- ######## End Show couponcode ######## !-->
+
+<div id="content_area" class="container content-top-margin" align="center">
+CONTENT AREA</div>
+
+
+</div>
+
+
+
+
+<br class="clear">
+<!-- ######## Footer ######## !-->
+<footer>
+  <div class="top-grey"></div>
+  <div class="main">
+     <div class="pattern top"><div class="gradient-mask-top"></div></div>
+     <div id="main-body" class="container">
+        <a name="shop-by-series"></a>
+        <div id="printer-series">
+          <div class="title">Shop by <span>Printer Series</span></div>
+          <div class="separator-h"></div>
+          <div id="body">
+              <div class="printer-series-text first">
+                <!-- ################################ HP !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLHP_Compatible_Toner_Cartridge_s/167.htm">HP (Hewlett Packard)</a></li>
+                <li><a href="Config_FullStoreURLHP_OfficeJet_Series_Ink_and_Toner_Cartridges_s/175.htm">OfficeJet</a></li>
+                <li><a href="Config_FullStoreURLHP_DeskJet_Series_Ink_and_Toner_Cartridges_s/176.htm">DeskJet</a></li>
+                <li><a href="Config_FullStoreURLHP_DesignJet_Series_Ink_and_Toner_Cartridges_s/177.htm">DesignJet</a></li>
+                <li><a href="Config_FullStoreURLHP_PhotoSmart_Series_Ink_and_Toner_Cartridges_s/181.htm">PhotoSmart</a></li>
+                <li><a href="Config_FullStoreURLHP_DeskWriter_Series_Ink_and_Toner_Cartridges_s/178.htm">DeskWriter</a></li>
+                <li><a href="Config_FullStoreURLHP_Color Copier_Series_Ink_and_Toner_Cartridges_s/179.htm">Color Copier</a></li>
+                <li><a href="Config_FullStoreURLHP_Fax_Series_Ink_and_Toner_Cartridges_s/180.htm">Fax</a></li>
+                <li><a href="Config_FullStoreURLHP_PSC_Series_Ink_and_Toner_Cartridges_s/187.htm">Printer/Scanner/Copier</a></li>
+                <li><a href="Config_FullStoreURLHP_Business_Series_Ink_and_Toner_Cartridges_s/182.htm">Business</a></li>
+                <li><a href="Config_FullStoreURLHP_Digital_Series_Ink_and_Toner_Cartridges_s/183.htm">Digital</a></li>
+                <li><a href="Config_FullStoreURLHP_2000_Series_Ink_and_Toner_Cartridges_s/184.htm">2000</a></li>
+                <li><a href="Config_FullStoreURLHP_CP_Series_Ink_and_Toner_Cartridges_s/185.htm">CP</a></li>
+                <li><a href="Config_FullStoreURLHP_LaserJet_Series_Ink_and_Toner_Cartridges_s/137.htm">LaserJet</a></li>
+                <li><a href="Config_FullStoreURLHP_Color LaserJet_Series_Ink_and_Toner_Cartridges_s/136.htm">Color LaserJet</a></li>
+                <li><a href="Config_FullStoreURLHP_Envy_Series_Ink_and_Toner_Cartridges_s/100.htm">Envy</a></li>
+                <li><a href="Config_FullStoreURLHP_Other_Series_Ink_and_Toner_Cartridges_s/186.htm">Other</a></li>
+                </ul>
+                <!-- ################################ BROTHER !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLBrother_Printer_Ink_Toner_s/205.htm">BROTHER</a></li>
+                <li><a href="Config_FullStoreURLBrother_DP_Series_Ink_and_Toner_Cartridges_s/206.htm">DP</a></li>
+                <li><a href="Config_FullStoreURLBrother_DCP_Series_Ink_and_Toner_Cartridges_s/207.htm">DCP</a></li>
+                <li><a href="Config_FullStoreURLBrother_IntelliFAX_Series_Ink_and_Toner_Cartridges_s/208.htm">IntelliFAX</a></li>
+                <li><a href="Config_FullStoreURLBrother_MFC_Series_Ink_and_Toner_Cartridges_s/209.htm">MFC</a></li>
+                <li><a href="Config_FullStoreURLBrother_WP_Series_Ink_and_Toner_Cartridges_s/210.htm">WP</a></li>
+                <li><a href="Config_FullStoreURLBrother_HL_Series_Ink_and_Toner_Cartridges_s/108.htm">HL</a></li>
+                <li><a href="Config_FullStoreURLBrother_FAX_Series_Ink_and_Toner_Cartridges_s/107.htm">Fax</a></li>
+                <li><a href="Config_FullStoreURLBrother_PPF_Series_Ink_and_Toner_Cartridges_s/152.htm">PPF</a></li>
+                <li><a href="Config_FullStoreURLBrother_Other_Series_Ink_and_Toner_Cartridges_s/211.htm">Other</a></li>
+                </ul>
+                <!-- ################################ CANON !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLCanon_Printer_Ink_Cartridges_s/169.htm">CANON</a></li>
+                <li><a href="Config_FullStoreURLCanon_BJ_Series_Ink_and_Toner_Cartridges_s/188.htm">BJ</a></li>
+                <li><a href="Config_FullStoreURLCanon_BJC_Series_Ink_and_Toner_Cartridges_s/189.htm">BJC</a></li>
+                <li><a href="Config_FullStoreURLCanon_Inkjet_Fax_Series_Ink_and_Toner_Cartridges_s/190.htm">InkJet Fax</a></li>
+                
+                </ul>
+              </div>
+              <div class="separator-v"></div>
+              <div class="printer-series-text">
+                <!-- ################################ CANON !-->
+                <ul>
+                <li class="list-style-none"><a href="Config_FullStoreURLCanon_MultiPASS_Series_Ink_and_Toner_Cartridges_s/191.htm">MultiPASS</a></li>
+                <li><a href="Config_FullStoreURLCanon_I_Series_Ink_and_Toner_Cartridges_s/192.htm">I</a></li>
+                <li><a href="Config_FullStoreURLCanon_S_Series_Ink_and_Toner_Cartridges_s/193.htm">S</a></li>
+                <li><a href="Config_FullStoreURLCanon_StarWriter_Series_Ink_and_Toner_Cartridges_s/194.htm">Star Writer</a></li>
+                <li><a href="Config_FullStoreURLCanon_Smartbase_Series_Ink_and_Toner_Cartridges_s/195.htm">Smartbase</a></li>
+                <li><a href="Config_FullStoreURLCanon_Pixma_Series_Ink_and_Toner_Cartridges_s/196.htm">Pixma</a></li>
+                <li><a href="Config_FullStoreURLCanon_ImagePrograf_Series_Ink_and_Toner_Cartridges_s/69.htm">ImagePrograf</a></li>
+                <li><a href="Config_FullStoreURLCanon_Selphy_Series_Ink_and_Toner_Cartridges_s/31.htm">Selphy</a></li>
+                <li><a href="Config_FullStoreURLCanon_Toner_Fax_Series_Ink_and_Toner_Cartridges_s/120.htm">Toner</a></li>
+                <li><a href="Config_FullStoreURLCanon_FC_Series_Ink_and_Toner_Cartridges_s/158.htm">FC</a></li>
+                <li><a href="Config_FullStoreURLCanon_PC_Series_Ink_and_Toner_Cartridges_s/121.htm">PC</a></li>
+                <li><a href="Config_FullStoreURLCanon_LaserCLASS_Series_Ink_and_Toner_Cartridges_s/126.htm">LaserCLASS</a></li>
+                <li><a href="Config_FullStoreURLCanon_ImageCLASS_Series_Ink_and_Toner_Cartridges_s/127.htm">ImageCLASS</a></li>
+                <li><a href="Config_FullStoreURLCanon_LBP_Series_Ink_and_Toner_Cartridges_s/122.htm">LBP</a></li>
+                <li><a href="Config_FullStoreURLCanon_P_Series_Ink_and_Toner_Cartridges_s/124.htm">P</a></li>
+                <li><a href="Config_FullStoreURLCanon_Others_Series_Ink_and_Toner_Cartridges_s/197.htm">Other</a></li>
+                </ul>
+                <!-- ################################ DELL !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLDell_Printer_Ink_Cartridges_s/220.htm">DELL</a></li>
+                <li><a href="Config_FullStoreURLDell_Photo_All_in_one_Series_Ink_and_Toner_Cartridges_s/223.htm">Photo All-in-one </a></li>
+                <li><a href="Config_FullStoreURLDell_Laser_Series_Ink_and_Toner_Cartridges_s/36.htm">Laser</a></li>
+                </ul>
+                <!-- ################################ EPSON !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLEpson_Printer_Ink_Cartridges_s/168.htm">EPSON</a></li>
+                <li><a href="Config_FullStoreURLEpson_MJ_Series_Ink_and_Toner_Cartridges_s/199.htm">MJ</a></li>
+                <li><a href="Config_FullStoreURLEpson_Stylus_Series_Ink_and_Toner_Cartridges_s/200.htm">Stylus</a></li>
+                <li><a href="Config_FullStoreURLEpson_Stylus_color_Series_Ink_and_Toner_Cartridges_s/201.htm">Stylus color</a></li>
+                <li><a href="Config_FullStoreURLEpson_Stylus_Photo_Series_Ink_and_Toner_Cartridges_s/202.htm">Stylus photo</a></li>
+                <li><a href="Config_FullStoreURLEpson_Stylus_Pro_Series_Ink_and_Toner_Cartridges_s/203.htm">Stylus pro</a></li>
+                <li><a href="Config_FullStoreURLEpson_Stylus_Scan_Series_Ink_and_Toner_Cartridges_s/204.htm">Stylus scan</a></li>
+                <li><a href="Config_FullStoreURLEpson_Workforce_Series_Ink_and_Toner_Cartridges_s/149.htm">Workforce</a></li>
+                <li><a href="Config_FullStoreURLEpson_Artisan_Series_Ink_and_Toner_Cartridges_s/154.htm">Artisan</a></li>
+                <li><a href="Config_FullStoreURLEpson_Expression_Series_Ink_and_Toner_Cartridges_s/171.htm">Expression</a></li>
+                <li><a href="Config_FullStoreURLEpson_Workforce_Pro_Series_Ink_and_Toner_Cartridges_s/172.htm">Workforce Pro</a></li>
+                <li><a href="Config_FullStoreURLEpson_Other_Series_Ink_and_Toner_Cartridges_s/56.htm">Other</a></li>
+                </ul>
+              </div>
+              <div class="separator-v"></div>
+              <div class="printer-series-text">
+                <!-- ################################ LEXMARK !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLLexmark_Printer_Ink_Cartridges_s/212.htm">LEXMARK</a></li>
+                <li><a href="Config_FullStoreURLLexmark_ColorJet_Series_Ink_and_Toner_Cartridges_s/213.htm">ColorJet </a></li>
+                <li><a href="Config_FullStoreURLLexmark_Medley_Series_Ink_and_Toner_Cartridges_s/214.htm">Medley</a></li>
+                <li><a href="Config_FullStoreURLLexmark_Optra_Series_Ink_and_Toner_Cartridges_s/215.htm">Optra</a></li>
+                <li><a href="Config_FullStoreURLLexmark_OptraImage_Series_Ink_and_Toner_Cartridges_s/50.htm">OptraImage</a></li>
+                <li><a href="Config_FullStoreURLLexmark_C_Series_Ink_and_Toner_Cartridges_s/198.htm">C</a></li>
+                <li><a href="Config_FullStoreURLLexmark_E_Series_Ink_and_Toner_Cartridges_s/26.htm">E</a></li>
+                <li><a href="Config_FullStoreURLLexmark_P_Series_Ink_and_Toner_Cartridges_s/216.htm">P</a></li>
+                <li><a href="Config_FullStoreURLLexmark_T_Series_Ink_and_Toner_Cartridges_s/84.htm">T</a></li>
+                <li><a href="Config_FullStoreURLLexmark_X_Series_Ink_and_Toner_Cartridges_s/217.htm">X</a></li>
+                <li><a href="Config_FullStoreURLLexmark_Z_Series_Ink_and_Toner_Cartridges_s/218.htm">Z</a></li>
+                <li><a href="Config_FullStoreURLLexmark_Other_Series_Ink_and_Toner_Cartridges_s/219.htm">Other</a></li>
+                </ul>
+                 <!-- ################################ APOLLO !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLApollo_Printer_Ink_Cartridges_s/67.htm">APOLLO</a></li>
+                <li><a href="Config_FullStoreURLApollo_Series_Ink_and_Toner_Cartridges_s/67.htm">All series</a></li>
+                </ul>
+                 <!-- ################################ APPLE !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLApple_Printer_Ink_Cartridges_s/11.htm">APPLE</a></li>
+                <li><a href="Config_FullStoreURLApple_Color_Stylewriter_Series_Ink_and_Toner_Cartridges_s/57.htm">Color Stylewriter </a></li>
+                <li><a href="Config_FullStoreURLApple_Stylewriter_Series_Ink_and_Toner_Cartridges_s/68.htm">Stylewriter</a></li>
+                <li><a href="Config_FullStoreURLApple_LaserWriter_Series_Printer_Ink_Toner_s/150.htm">LaserWriter</a></li>
+                <li><a href="Config_FullStoreURLApple_Personal_LaserWriter_Series_Printer_Ink_Toner_s/148.htm">Personal LaserWriter</a></li>
+                </ul>
+                 <!-- ################################ APOLLO !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLCompaq_Printer_Ink_Cartridges_s/37.htm">COMPAQ</a></li>
+                <li><a href="Config_FullStoreURLCompaq_Series_Ink_and_Toner_Cartridges_s/37.htm">All series</a></li>
+                </ul>
+                  <!-- ################################ IBM !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLIBM_Printer_Ink_Cartridges_s/55.htm">IBM</a></li>
+                <li><a href="Config_FullStoreURLIBM_InfoPrint_Series_Ink_and_Toner_Cartridges_s/85.htm">InfoPrint</a></li>
+                <li><a href="Config_FullStoreURLIBM_Other_Series_Ink_and_Toner_Cartridges_s/144.htm">Other</a></li>
+                </ul>
+              </div>
+              <div class="separator-v"></div>
+              <div class="printer-series-text">
+               <!-- ################################ KODAK !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLKodak_Printer_Ink_Cartridges_s/114.htm">KODAK</a></li>
+                <li><a href="Config_FullStoreURLKodak_ESP_Series_Ink_and_Toner_Cartridges_s/129.htm">ESP</a></li>
+                <li><a href="Config_FullStoreURLKodak_EasyShare_Series_Ink_and_Toner_Cartridges_s/117.htm">EasyShare</a></li>
+                <li><a href="Config_FullStoreURLKodak_PM_Series_Ink_and_Toner_Cartridges_s/130.htm">PM</a></li>
+                <li><a href="Config_FullStoreURLKodak_All_in_one_Series_Ink_and_Toner_Cartridges_s/116.htm">All-in-one</a></li>
+                </ul>
+                <!-- ################################ KONICA-MINOLTA !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLKonica_Minolta_Printer_Ink_Cartridges_s/166.htm">KONICA-MINOLTA</a></li>
+                <li><a href="Config_FullStoreURLMinolta_MagiColor_Series_Ink_and_Toner_Cartridges_s/93.htm">MagiColor</a></li>
+                <li><a href="Config_FullStoreURLKonica_Minolta_Pagepro_Series_Printer_Ink_Toner_s/95.htm">PagePro</a></li>
+                </ul>
+                <!-- ################################ KYOCERA-MITA !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLKyocera_Mita_Printer_Ink_Cartridges_s/8.htm">KYOCERA-MITA</a></li>
+                <li><a href="Config_FullStoreURLKyocera_FS_Series_Ink_and_Toner_Cartridges_s/39.htm">FS</a></li>
+                <li><a href="Config_FullStoreURLKyocera_FA_Series_Ink_and_Toner_Cartridges_s/12.htm">FA</a></li>
+                <li><a href="Config_FullStoreURLKyocera_KM_Series_Ink_and_Toner_Cartridges_s/141.htm">KM</a></li>
+                <li><a href="Config_FullStoreURLKyocera_Other_Series_Ink_and_Toner_Cartridges_s/79.htm">Other</a></li>
+                </ul>
+                <!-- ################################ KYOCERA-MITA !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLOkidata_Printer_Ink_Cartridges_s/41.htm">OKIDATA</a></li>
+                <li><a href="Config_FullStoreURLOkidata_Oki_Series_Ink_and_Toner_Cartridges_s/41.htm">Oki</a></li>
+                </ul>
+                <!-- ################################ PITNEY BOWES !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLPitney_Bowes_Printer_Ink_Cartridges_s/119.htm">PITNEY BOWES</a></li>
+                <li><a href="Config_FullStoreURLPitney_Bowes_Digital_Mailing_Series_Ink_Cartridges_s/151.htm">Digital Mailing</a></li>
+                <li><a href="Config_FullStoreURLPitney_Bowes_Personal_Post_Meters_Series_Ink_Cartridges_s/135.htm">Personal Post Meters</a></li>
+                <li><a href="Config_FullStoreURLPitney_Bowes_MailStation_Series_Ink_Cartridges_s/35.htm">MailStation</a></li>
+                <li><a href="Config_FullStoreURLPitney_Bowes_Laser_Printer_Series_Ink_Cartridges_s/164.htm">Laser Printer</a></li>
+                <li><a href="Config_FullStoreURLPitney_Bowes_AddressRight_Series_Ink_Cartridges_s/22.htm">AddressRight</a></li>
+                <li><a href="Config_FullStoreURLPitney_Bowes_PostPerfect_Series_Ink_s/66.htm">PostPerfect</a></li>
+                </ul>
+                <!-- ################################ RICOH !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLRicoh_Printer_Ink_Cartridges_s/21.htm">RICOH</a></li>
+                <li><a href="Config_FullStoreURLRicoh_Printer_Ink_Toner_Cartridges_s/21.htm">Fax</a></li>
+                </ul>
+              </div>
+              <div class="separator-v"></div>
+              <div class="printer-series-text last">
+                <!-- ################################ SAMSUNG !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLSamsung_Printer_Ink_Cartridges_s/19.htm">SAMSUNG</a></li>
+                <li><a href="Config_FullStoreURLSamsung_SF_Series_Ink_and_Toner_Cartridges_s/20.htm">SF</a></li>
+                <li><a href="Config_FullStoreURLSamsung_FX_Series_Ink_and_Toner_Cartridges_s/18.htm">FX</a></li>
+                <li><a href="Config_FullStoreURLSamsung_SCX_Series_Ink_and_Toner_Cartridges_s/54.htm">SCX</a></li>
+                <li><a href="Config_FullStoreURLSamsung_ML_Series_Ink_and_Toner_Cartridges_s/143.htm">ML</a></li>
+                <li><a href="Config_FullStoreURLSamsung_QL_Series_Ink_and_Toner_Cartridges_s/146.htm">QL</a></li>
+                <li><a href="Config_FullStoreURLSamsung_CLP_Series_Ink_and_Toner_Cartridges_s/142.htm">CLP</a></li>
+                <li><a href="Config_FullStoreURLSamsung_CLX_Series_Ink_and_Toner_Cartridges_s/42.htm">CLX</a></li>
+                <li><a href="Config_FullStoreURLSamsung_MSYS_6750_Toner_Cartridges_s/3118.htm">MSYS</a></li>    
+                <li><a href="Config_FullStoreURLSamsung_Other_Series_Ink_and_Toner_Cartridges_s/17.htm">Other</a></li>
+                </ul>
+                <!-- ################################ SHARP !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLSharp_Printer_Ink_Cartridges_s/10.htm">SHARP</a></li>
+                <li><a href="Config_FullStoreURLSharp_Series_Ink_and_Toner_Cartridges_s/10.htm">All series</a></li>
+                </ul>
+                <!-- ################################ XEROX !-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLXerox_Printer_Ink_Cartridges_s/4.htm">XEROX</a></li>
+                <li><a href="Config_FullStoreURLXerox_DocuPrint_Series_Ink_and_Toner_Cartridges_s/5.htm">DocuPrint</a></li>  
+                <li><a href="Config_FullStoreURLXerox_WorkCentre_Series_Ink_and_Toner_Cartridges_s/88.htm">WorkCentre</a></li>
+                <li><a href="Config_FullStoreURLXerox_Phaser_Series_Ink_and_Toner_Cartridges_s/86.htm">Phaser</a></li>
+                <li><a href="Config_FullStoreURLXerox_ColorQube_Series_Ink_and_Toner_Cartridges_s/170.htm">ColorQube</a></li>
+                <li><a href="Config_FullStoreURLXerox_Other_Series_Ink_and_Toner_Cartridges_s/2.htm">Other</a></li>
+                </ul>
+                <!-- ################################ OTHER BRANDS!-->
+                <ul>
+                <li class="brand"><a href="Config_FullStoreURLOther_Brands_Printer_Ink_Cartridges_s/111.htm">OTHER BRANDS</a></li>
+                <li><a href="Config_FullStoreURLAstroJet_Series_Ink_and_Toner_Cartridges_s/1547.htm">AstroJet</a></li>  
+                <li><a href="Config_FullStoreURLBryce_Series_Ink_and_Toner_Cartridges_s/75.htm">Bryce</a></li>
+                <li><a href="Config_FullStoreURLHasler_Series_Ink_and_Toner_Cartridges_s/1603.htm">Hasler</a></li>
+                <li><a href="Config_FullStoreURLMimaki_Series_Ink_and_Toner_Cartridges_s/2991.htm">Mimaki</a></li>
+                <li><a href="Config_FullStoreURLMutoh_Series_Ink_and_Toner_Cartridges_s/3124.htm">Mutoh</a></li>
+                <li><a href="Config_FullStoreURLNeoPost_Series_Ink_and_Toner_Cartridges_s/1599.htm">NeoPost</a></li>
+                <li><a href="Config_FullStoreURLRena_Series_Ink_and_Toner_Cartridges_s/165.htm">Rena</a></li>
+                <li><a href="Config_FullStoreURLRoland_Series_Ink_and_Toner_Cartridges_s/2992.htm">Roland</a></li>
+                <li><a href="Config_FullStoreURLSecap_Series_Ink_and_Toner_Cartridges_s/23.htm">Secap</a></li>
+                </ul>
+              </div>
+           </div>
+        <br class="clear">
+        </div>
+        <br>
+        <div class="separator-h"></div>
+        <div id="cas-sen">&quot; CompAndSave provides top quality printer ink cartridges, laser toner cartridges, and photo paper. &quot;</div>
+        <div class="separator-h"></div>
+        
+
+        <br><br>
+        <div id="two-sec">
+           <div id="newsletter">
+              <div class="body">
+                 <div class="icon newsletter"></div>
+                 <div class="two-sec-text"><div class="title">sign up <i>for</i> compandsave news <br><div>and get subscriber exclusive discounts!</div></div>
+                 <div class="cas-signup">
+                    <form name="MailingList" method="post" action="/MailingList_subscribe.asp">
+                    <input name="emailaddress" type="text" placeholder="Your Email Address">
+                    <button class="signup-submit" type="submit">
+                    <center><div class="go"></div></center>
+                    </button>
+                    </form>
+				 </div>
+                 </div>                 
+              </div>
+           </div>
+           <div id="contact-us">
+              <div class="body">
+                  <div class="icon contact-us"></div>
+                  <div class="two-sec-text"><div class="title">contact us <i>for</i> lifetime support <br><div>Monday to Friday 8am to 5pm PST</div></div>
+                    <table cellpadding="0" cellspacing="0" border="0" class="contact-us">
+                    <tr><td class="declare">toll free:</td><td class="call">877-465-6888</td><td class="declare">or</td><td class="chat"><a href="https://messenger.providesupport.com/messenger/lubu12.html" rel="nofollow" onclick="javascript:void window.open('https://messenger.providesupport.com/messenger/lubu12.html','1336001881546','width=650,height=750,toolbar=0,menubar=0,location=0,status=0,scrollbars=1,resizable=1,left=0,top=0');return false;">live chat</a></td><td><a href="https://messenger.providesupport.com/messenger/lubu12.html" rel="nofollow" onclick="javascript:void window.open('https://messenger.providesupport.com/messenger/lubu12.html','1336001881546','width=650,height=750,toolbar=0,menubar=0,location=0,status=0,scrollbars=1,resizable=1,left=0,top=0');return false;"><div class="go"><div></div></div></div></td></tr>
+                    </table>
+                  </div>     
+              </div>
+           </div>
+           <br class="clear">
+        </div>
+        <br class="clear"><br>
+        <div class="separator-h"></div>
+        <div id="general-info">
+           <div> <!-- Company Info !-->
+                 <ul>
+                 <li class="title">Company</li>
+                 <li><a href="Config_FullStoreURLaboutus.asp">About CompAndSave</a></li>
+                 <li><a href="Config_FullStoreURLv/c/contact-us.asp">Contact Us</a></li>
+                 <li><a href="Config_FullStoreURLterms_privacy.asp" rel="nofollow">Privacy Policy</a></li>
+                 <li><a href="Config_FullStoreURLterms.asp" rel="nofollow">Terms &amp; Conditions</a></li>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=192" rel="nofollow">Corporate Account</a></li>
+                 <li><a href="Config_FullStoreURLv/r/reseller.asp" rel="nofollow">Reseller Program</a></li>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=125" rel="nofollow">Become An Affiliate</a></li>
+                 </ul>
+           </div>
+           <div>
+                 <ul>
+                 <li class="title">Account Info</li>
+                 <li><a href="Config_FullStoreURLlogin.asp?message=To+access+your+account%2C+please+enter+your+e-mail+address+and+password+below." >My Account</a></li>
+                 <li><a href="Config_FullStoreURLshoppingcart.asp?Check=True" rel="nofollow">View Cart</a></li>
+                 <li><a href="Config_FullStoreURLv/order-tracking/" rel="nofollow">Order Status</a></li>
+                 <li><a href="Config_FullStoreURLorders.asp" rel="nofollow">Fast ReOrder</a></li>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=196" rel="nofollow">Help</a></li>
+                 </ul>
+           </div>
+           <div>
+                 <ul>
+                 <li class="title">Resources</li>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=194" rel="nofollow">Shipping Policy</a></li>
+                 <li><a href="Config_FullStoreURLreturns.asp" rel="nofollow">Return Policy</a></li>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=193" rel="nofollow">Low Price Guarantee</a>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=172" rel="nofollow">Ink Troubleshooting</a></li>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=201" rel="nofollow">Ink Knowledge Base</a></li>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=186" rel="nofollow">Printer Support &amp; Driver</a></li>
+                 <li><a href="Config_FullStoreURLArticles.asp?ID=234" rel="nocl">Eco-friendly Ink</li>
+                 </ul>
+           </div>
+           <div class="last">
+                <ul>
+                <li class="title">Follow Compandsave</li>
+                <li>
+                   <table cellpadding="0" cellspacing="0" border="0" class="social-icons">
+                   <tr>
+                   <td align="center"><a href="http://www.facebook.com/compandsave.ink" target="_blank" rel="nofollow"><div class="icon facebook"></div></a></td>
+                   <td align="center"><a href="https://twitter.com/#!/compandsave" target="_blank" rel="nofollow"><div class="icon twitter"></div></a></td>
+                   <td align="center"><a href="http://blog.compandsave.com/" target="_blank"><div class="icon blogger"></div></a></td>
+                   <td align="center"><a href="https://plus.google.com/108369701472348717735/posts" target="_blank" rel="nofollow"><div class="icon google"></div></a></td>
+                   <td align="center"><a href="http://www.linkedin.com/company/compandsave" target="_blank" rel="nofollow"><div class="icon linkedin"></div></a></td>
+	           <td align="center"><a href="http://pinterest.com/compandsave/" target="_blank" rel="nofollow"><div class="icon pinterest"></div></a></td>
+                   <td align="center"><a href="http://www.youtube.com/channel/UCtgoxvLGCIYZFFEhXKyKzLw" target="_blank" rel="nofollow"><div class="icon youtube"></div></a></td>
+                   </tr>
+                   <tr>
+                   <td align="center"><a href="http://www.facebook.com/compandsave.ink" target="_blank" rel="nofollow">facebook</a></td>
+                   <td align="center"><a href="https://twitter.com/#!/compandsave" target="_blank" rel="nofollow">twitter</a></td>
+                   <td align="center"><a href="http://blog.compandsave.com/" target="_blank">blogger</a></td>
+                   <td align="center"><a href="https://plus.google.com/108369701472348717735/posts" target="_blank" rel="nofollow">google+</a></td>
+                   <td align="center"><a href="http://www.linkedin.com/company/compandsave" rel="nofollow">linkedin</a></td>
+                   <td align="center"><a href="http://pinterest.com/compandsave/" rel="nofollow">pinterest</a></td>	
+                   <td align="center" width="70"><a href="http://www.youtube.com/channel/UCtgoxvLGCIYZFFEhXKyKzLw" rel="nofollow">YouTube</a></td>
+                   </tr>
+                   </table>
+                </li>
+                </ul>
+                
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="address">
+                <tr>
+                <td><div class="separator-v"></div></td>
+                <td><div class="icon home"></div></td>
+                <td><b>Where we are</b><br>
+                38929 CHERRY ST, NEWARK, CA 94560
+                </td>
+                </tr>
+                </table>
+           </div>
+        </div>
+        <br class="clear">
+     </div>
+     <div class="pattern bottom"><div class="gradient-mask-bottom"></div></div>
+  </div>
+</footer>
+
+<footer id="seals">
+   <table cellpadding="0" cellspacing="5" border="0" class="container" width="100%">
+   <tr>
+    <td><script type="text/javascript" src="//sealserver.trustwave.com/seal.js?style=invert&size=65x36&code=9281337f3a3c426f8e48d962b1221f3f"></script></td>
+    <td><div id="ffb9aa3c-3827-44b7-9fe5-a58a5169e127"> <script type="text/javascript" src="//privacy-policy.truste.com/privacy-seal/CompAndSave-com-Inc-/asc?rid=ffb9aa3c-3827-44b7-9fe5-a58a5169e127"></script><a href="//privacy.truste.com/privacy-seal/CompAndSave-com-Inc-/validation?rid=b6c73371-b9db-41ca-a2e1-f4a0cfacdbe1" title="TRUSTe online privacy certification" target="_blank"><img style="border: none" src="//privacy-policy.truste.com/privacy-seal/CompAndSave-com-Inc-/seal?rid=b6c73371-b9db-41ca-a2e1-f4a0cfacdbe1" alt="TRUSTe online privacy certification"/></a></div></td>
+    <td><script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=WWW.COMPANDSAVE.COM&amp;size=S&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script></td>   
+    <td><style type="text/css">#volusion_ssl_seal { behavior: url(/a/iepngfix.htc); }</style><a href="javascript:void(0);" onClick="window.open('https://www.volusion.com/ssl.asp?url=www.compandsave.com', 'VolusionSSL', 'top=10,left=10,menubar=0,resizable=0,scrollbars=0,width=467,height=467')"><img id="volusion_ssl_seal" src="/a/i/seal_volusion2.png" border="0" height="44" width="104"></a></td>
+    <td><a id="bbblink" class="rbhzbus" href="http://www.bbb.org/greater-san-francisco/business-reviews/ink-cartridge-refill-and-sales/comp-and-save-in-newark-ca-450702#bbbseal" title="Comp and Save, Ink Cartridge - Refill & Sales, Newark, CA" style="display: block;position: relative;overflow: hidden; width: 100px; height: 38px; margin: 0px; padding: 0px;"><img style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-goldengate.bbb.org/logo/rbhzbus/comp-and-save-450702.png" width="200" height="38" alt="Comp and Save, Ink Cartridge - Refill & Sales, Newark, CA" /></a><script type="text/javascript">var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "http://" ); document.write(unescape("%3Cscript src='" + bbbprotocol + 'seal-goldengate.bbb.org' + unescape('%2Flogo%2Fcomp-and-save-450702.js') + "' type='text/javascript'%3E%3C/script%3E"));</script></td>
+    <td><div class="demo-only">Apple, Brother, Dell, HP, IBM, Lexmark, Canon, Epson, Xerox and other 
+manufacturer brand names and logos are registered trademarks of their 
+respective owners. Any and all brand name designations or references 
+are made solely for purposes of demonstrating compatibility.</div></td>
+   </tr>
+   </table>
+</footer>
+
+
+<footer id="copyright">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="container">
+<tr>
+<td class="copyright-text">Copyright &copy; <script type="text/javascript">document.write((new Date()).getFullYear());</script> CompAndSave.Com Inc., All Rights Reserved.</td>
+<td class="volusion-text" align="right">Built with <a href="http://www.volusion.com" class="footer" target="_blank" rel="nofollow">Volusion</a><a href="http://www.volusion.com" class="footer" target="_blank" rel="nofollow">Volusion</a></td>
+</tr></table>
+</footer>
+<br class="clear" />
+
+<footer id="additional">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="container">
+<tr>
+<td><div class="icon lets-talk"></div></td>
+<td class="title" width="60">let&acute;s talk</td>
+<td class="phone">1.877.465.6888</td>
+<td width="600">
+<!-- Socialannex FB Like Code Start -->
+ <span id="socialannex-s15-twfollow" border="0"></span><span id="socialannex-fblike" border="0"></span>
+<!-- Socialannex FB Like Code End   -->
+</td>
+<td><div class="icon heart"></div></td>
+<td><div class="g-movetop"><g:plusone href="http://www.compandsave.com/" size="medium"></g:plusone></div></td>
+</tr>
+</table>
+</footer>
+<!-- ######## END Footer ######## !-->
+
+
+
+<script type="text/javascript"> <!-- Google Plus Asynchronous JavaScript Loading !-->
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+
+<!-- Start Nextopia Search !-->
+
+<script language="javascript">
+    function handleEnter(inField, e) {
+        var charCode;
+        if(e && e.which){
+           charCode = e.which;
+
+        }else if(window.event){
+           e = window.event;
+           charCode = e.keyCode;
+        }
+
+        if(charCode == 13) {
+           submitSearch();
+           return false;
+        }
+    }
+     
+    function submitSearch() {
+        if (document.getElementById("search_v5_1").value != "") {
+            var searchUrl = "http://search.compandsave.com/search?keywords=";
+            window.location = searchUrl + escape(document.getElementById("search_v5_1").value);
+        }
+        return false;
+    }
+</script>
+
+
+<div id="nxt-ac-container"></div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+(function() {
+	var nxt_host = (("https:" == document.location.protocol) ? "https://" : "http://"); nxt_host += "vector.nextopiasoftware.com/";
+	document.write(unescape("%3C") + "script src='" + nxt_host + "nxt-ac-js-ui-3.0-min.js' type='text/javascript'" + unescape("%3E%3C/script%3E"));
+	document.write(unescape("%3C") + "link rel='stylesheet' type='text/css' href='" + "//www.compandsave.com/v/vspfiles/templates/10/css/ac-3.0-theme2-min.css'" + unescape("%3E"));
+})();
+
+</script>
+
+<script type="text/javascript">
+(function() {
+	var jnxtac = jQuery.noConflict(true);
+	jnxtac("#search_v5_1").nxt_autocomplete({cid:'bd27cabefc4fb8a847a80f5eb1b9c3e5'});
+        jnxtac("#search_v5_1").nxt_autocomplete("option", "footer", '');
+
+        jnxtac.ui.nxt_autocomplete.prototype._handleSectionSelect = function (d) {
+		var c = this.selectedItem.data("nxt-autocomplete.item");
+		location.href = 'http://search.compandsave.com/search?keywords=' + c;
+	};
+})();
+</script>
+
+
+
+
+<!-- End Nextopia Search !-->
+
+
+
+<script type="text/javascript">
+adroll_adv_id = "25JE4YODYBHR7MXBU4FPTJ";
+adroll_pix_id = "QQ6UVDUX6FHNRITUZZXYYH";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   document.documentElement.firstChild.appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+
+
+
+<!-- Old Nextopia Script ---
+
+<div id="nxt-ac-container"></div>
+<script type="text/javascript">
+	var nxt_ac_words=new Array();
+	var nxt_ac_searchbox_id = "search_v5_1";
+	var nxt_ac_searchform_id = "nxt-ac-form";
+	var nxt_ac_container_id = "nxt-ac-container";
+	var nxt_host = (("https:" == document.location.protocol) ? "https://" : "http://"); nxt_host += "vector.nextopiasoftware.com/";
+	document.write(unescape("%3C") + "link rel='stylesheet' type='text/css' href='" + "//www.compandsave.com/v/vspfiles/templates/10/css/yui-autocomplete.css'" + unescape("%3E"));
+	document.write(unescape("%3C") + "script src='" + nxt_host + "ac_js/bd27cabefc4fb8a847a80f5eb1b9c3e5.js' type='text/javascript'" + unescape("%3E%3C/script%3E"));
+	document.write(unescape("%3C") + "script src='/v/sitesearch/yui-autocomplete-min.js' type='text/javascript'" + unescape("%3E%3C/script%3E"));
+</script>
+!-->
+
+
+<%
+baseURL =
+Request.ServerVariables("URL")
+If
+inStr(baseURL,"_p/") = 0 Then 
+%>
+<script language="JavaScript" src="//secure.merchantadvantage.com/inchannel/maq.js">
+</script>
+<%
+End If
+%>
+
+
+
+<script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+
+
+
+
+
+<!-- Google Code for Main -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1058805413;
+var google_conversion_label = "RQZ2CM_DqwUQpa3w-AM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1058805413/?value=0&amp;label=RQZ2CM_DqwUQpa3w-AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+<!-- BEGIN: Google Trusted Store -->
+<script type="text/javascript">
+  var gts = gts || [];
+
+  gts.push(["id", "10443"]);
+  gts.push(["google_base_offer_id", getSKU()]);
+  gts.push(["google_base_subaccount_id", "1143078"]);
+  gts.push(["google_base_country", "US"]);
+  gts.push(["google_base_language", "en"]);
+
+  (function() {
+    var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+    var gts = document.createElement("script");
+    gts.type = "text/javascript";
+    gts.async = true;
+    gts.src = scheme + "www.googlecommerce.com/trustedstores/gtmp_compiled.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gts, s);
+  })();
+</script>
+<!-- END: Google Trusted Store -->
+
+
+<!--Start checking criteo tag of listing and product page -->
+<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var hreftext = window.location.href;
+var reg1=/_s\/\d*\.htm/i;
+var reg2=/SearchResults\.asp\?Cat=/i;
+var reg3=/.*(?=\.htm)/;
+
+
+//var reg=/[1-9]\d*(?=\.htm)/gi;
+var result1 = reg1.exec(hreftext);
+var result2 = reg2.exec(hreftext);
+
+if (result1||result2)
+
+{   var criteo_q = window.criteo_q || [];
+    var productid = new Array();
+	var hrefarray = new Array();
+	var temp = new Array();
+	var num=0;
+	hrefarray = document.getElementsByClassName('productnamecolor colors_productname');
+	if(hrefarray[0])
+    {
+    	for (var i=0;i<hrefarray.length;i++)
+    	{
+    		if (hrefarray[i].href)
+    		{
+                 temp = hrefarray[i].href.split("/");
+                 productid[num] = reg3.exec(temp[temp.length-1]);
+                 productid[num] = decodeURI(productid[num]);
+                 num++;
+                 
+    		}
+    	}
+
+//for (var j=0;j<productid.length;j++)
+//{
+//   alert(productid[j]);
+//}
+//criteo_q.push(
+//    { event: "setAccount", account: 4737 },
+//    { event: "setSiteType", type: "LISTING"},
+//    { event: "viewList", product: productid, keywords: "" }
+//);
+
+    }
+
+}
+else if (typeof global_Current_ProductCode != "undefined")
+{
+    
+var productcode = global_Current_ProductCode;     
+//    var criteo_q = window.criteo_q || [];
+//criteo_q.push(
+//    { event: "setAccount", account: 4737 },
+//    { event: "setSiteType", type: "PRODUCT"},
+//    { event: "viewItem", product: productcode } );
+}
+
+var texttest = typeof global_Current_ProductCode;
+});
+
+
+
+</script>
+<!--End of checking criteo tag of listing and product page -->
+
+
+
+
+<!-- Start of Adhesive Tracking Code !-->
+<script type="text/javascript">
+
+var hreftext = window.location.href;
+var reg1=/\.htm$/i;
+var reg2=/ProductDetails\.asp\?ProductCode/i;
+
+var result1 = reg1.exec(hreftext);
+var result2 = reg2.exec(hreftext);
+
+if (result1||result2) {
+    console.log("This is the test");
+}
+
+</script>
+<!--End of Adhesive Tracking Code -->
+
+
+<!-- Hidden the eggs on 7 pages !-->
+<script type="text/javascript">
+/*******************************************************/
+/* Compandsave Easgter Day Campaign*/
+/* Description: Hidden the eggs on 7 pages */
+/* Author: liangf */
+/* Version: 4/11 */
+/*******************************************************/
+/*
+var test_flag = getUrlVars()["test"];
+//if (test_flag == "1") {
+var fileref=document.createElement("link");
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+//fileref.setAttribute("href", "//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css");
+fileref.setAttribute("href", "//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-hidden-egg.css");
+document.getElementById("content_area").appendChild(fileref);
+
+var easter_hreftext = window.location.href;
+var easter_brand = new Array("Canon", "HP", "Epson", "Lexmark", "HP22", "HP564", "News");
+//hreftext = "http://www.compandsavetest.com/MailingList_subscribe.asp";
+var reg = new Array(/_s\/169\.htm/i, /_s\/167\.htm/i, /_s\/168\.htm/i, /_s\/212\.htm/i, /INK\-HP\-C9352AN/i, /ZINK\-HP\-HP564XL\-Combo9/i, 
+
+/MailingList\_subscribe\.asp/i);
+
+var eggDiv = document.createElement("div");
+var eggDivId = "cas_eeh_egg";
+var popup_url = "http://www.compandsavetest.com/v/dc/liang/cas/easter/html/4-12/egg-";
+//var popup_url = "http://www.compandsave.com/v/newsletter/promotion-april-2014/egg-";
+//var popup_title = "Compandsave_Easter_Campaign";
+var popup_title = "_blank";
+//var popup_style = "width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0";
+var popup_style = "width=620,height=660,left=400,top=0,menubar=0,scrollbars=1,resizable=1";
+
+var i;
+for (i=1; i<=7; i++) {
+    var egg = reg[i-1].exec(easter_hreftext);
+    if (egg) {
+        eggDivId += i;
+        popup_url += i;
+        popup_url += ".html";
+		break;
+    }
+}
+
+eggDiv.id = eggDivId;
+document.getElementById("content_area").appendChild(eggDiv);
+var eggDivId2 = "#" + eggDivId;
+if ($(eggDivId2)) $(eggDivId2).click(function() { 
+//var you_click = "you click" + easter_brand[i-1] + "egg." alert(you_click); 
+_gaq.push(['_trackEvent', 'Easter', easter_brand[i-1], 'Eggclick']);
+    //window.open(popup_url, popup_title, popup_style);
+var randomnumber = Math.floor((Math.random()*100)+1); 
+//window.open(popup_url,popup_title,'PopUp'+randomnumber+',scrollbars=1,menubar=0,resizable=1,width=850,height=500');
+window.open(popup_url,popup_title,'PopUp'+randomnumber+','+popup_style);
+});
+//}
+*/
+</script>
+<!-- End of Hidden the eggs on 7 page !-->
+
+
+<!-- Show coupon on the product page !-->
+<script type="text/javascript">
+/*******************************************************/
+/* Description: Show couponcode on the product page */
+/* Author: liangf */
+/* Version: 5/8 */
+/*******************************************************/
+var fileref=document.createElement("link");
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+var couponDiv = document.createElement("div");
+var coupon_flag = getUrlVars()["couponcode"];
+var utm_flag = getUrlVars()["utm_source"];
+
+if(typeof global_Current_ProductCode != "undefined") {
+    if (typeof coupon_flag != "undefined" && coupon_flag != "") {
+        fileref.setAttribute("href", "//www.compandsave.com/v/newsletter/promotion-may2014/css/2014-cas-dollar-coupondiv.css");
+        document.getElementById("content_area").appendChild(fileref);
+        document.getElementById('couponDiv').style.display='block';
+        document.getElementById('onedollar_code').innerHTML=coupon_flag;
+    }
+    if (utm_flag == "amazon") {
+        fileref.setAttribute("href", "//www.compandsave.com/v/mp/css/2014-cas-amazon-coupondiv.css");
+        document.getElementById("content_area").appendChild(fileref);
+        couponDiv.id = "cas_cms_couponDivAmazon";
+        document.getElementById("content_area").appendChild(couponDiv);
+        document.getElementById("cas_cms_couponDivAmazon").innerHTML = '<p>Special offer for<img src='+'"//www.compandsave.com/v/mp/images/amazon-logo.png"'+'/>shoppers:</p>'+'<p>10% OFF with coupon code:</p>'+'<p><strong id="cas_cms_codeAmazon"></strong></p>';	
+        document.getElementById('cas_cms_codeAmazon').innerHTML="10AMA";        
+    }
+    if (utm_flag == "shoppingcom") {
+        fileref.setAttribute("href", "//www.compandsave.com/v/mp/css/2014-cas-amazon-coupondiv.css");
+        document.getElementById("content_area").appendChild(fileref);
+        couponDiv.id = "cas_cms_couponDivAmazon";
+        document.getElementById("content_area").appendChild(couponDiv);
+        document.getElementById("cas_cms_couponDivAmazon").innerHTML = '<p>Special offer for<img src='+'"//img.shoppingshadow.com/jfe/bb/logos/default_192x44_sdc_us.png"'+'/>customers:</p>'+'<p>10% OFF with coupon code:</p>'+'<p><strong id="cas_cms_codeAmazon"></strong></p>';	
+        document.getElementById('cas_cms_codeAmazon').innerHTML="SCOM10";        
+    }
+}
+</script>
+<!-- End Show coupon on the product page !-->
+
+
+</body>
+
+
+</html>

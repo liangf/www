@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+/************* CSS Header **************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for the most up to date coding standards for ComboInk.com
+Author: Sam Chao
+
+Table of Contents:
+1. Global
+2. Grid
+3. Text
+4. Page specific styling
+
+Created for the landing page //www.comboink.com/v/newsletter/promotion-Apr2014/ci-easterDay-2014.asp
+
+Color Reference:
+green:#60b539
+red:#c3020a
+*/
+/*********************************************************/
+
+
+
+
+
+
+
+/* -----------------------------------*/
+/* -------->> 1. Global <<<-----------*/
+/* -----------------------------------*/
+
+
+.width100 { width: 100%; }
+.width75 { width: 75%; }
+.width50 { width: 50%; }
+.floatLeft { float: left !important; }
+.floatRight { float: right !important; }
+.alignLeft { text-align: left; }
+.alignRight { text-align: right; }
+.marginCollapse{ margin:0 !important; }
+.paddingCollapse{ padding:0 !important; }
+.fixed { position:fixed !important; }
+.bgWhite{ background-color:#FFFFFF;}
+.bgGrey{ background-color:#ececec;}
+.borderRight{ border-right:#ccc 1px solid;}
+.borderLeft{ border-left:#ccc 1px solid;}
+.borderAll{ border:#ccc 1px solid;}
+.shadowGrey{ box-shadow:#ccc 0 0 5px;}
+.center{ float:none !important; margin:0 auto !important; position:relative !important;}
+.strong{font-weight:bold;}
+.textCenter{text-align:center;}
+.white{color:#fff !important;}
+
+
+/* -----------------------------------*/
+/* -------->> 2. Grid <<<-----------*/
+/* -----------------------------------*/
+
+
+.col{
+float:left;
+min-height: 1px;
+padding: 1% 0.7% 1% 1.4%;
+position: relative;
+margin: auto 0.4%;
+}
+
+
+.one{
+width:5%;
+}
+
+.two{
+width:13%;
+}
+
+.three{
+width:20%;
+}
+
+.four{
+width:30%;
+}
+
+.five{
+width:38%;
+}
+
+.six{
+width:47%;	
+}
+
+.seven{
+width:55%;	
+}
+
+.eight{
+width:63%;	
+}
+
+.nine{
+width:68%;	
+}
+
+.ten{
+width:80%;	
+}
+
+.eleven{
+width:88%;	
+}
+
+.twelve{
+width:900px;
+margin:0 0 0 8px;	
+}
+
+.thirdteen {
+width:100%;
+}
+
+/* -----------------------------------*/
+/* -------->> 3. Text <<<-----------*/
+/* -----------------------------------*/
+
+.col h1, .col h2, .col h3, .col h4, .col p, .col ul, .col li, .col a {
+color:#fff;
+font-family:"Lao UI", Arial, sans-serif;	
+line-height:1.5em;
+}
+
+.col h1, .col h2, .col h3, .col h4{
+margin:0.2em 0;	
+text-align:center;
+}
+
+
+.col h1{
+color:#fff;
+font-size:90px;	
+line-height:0.8em;
+text-shadow:0px 5px 8px rgba(0,0,0,0.8);
+font-weight:100;
+}
+
+
+.col h2{
+color:rgb(0, 115, 192);	
+font-size:2em;
+}
+
+.col h3{
+font-size:30px;
+font-weight:100;
+}
+
+.col h4{
+font-size:24px;
+font-weight:100;
+text-align:right;
+margin-right:99px;
+}
+
+/* -----------------------------------------------------*/
+/* -------->> 4. Template Page Adjustment <<<-----------*/
+/* -----------------------------------------------------*/
+
+#display_seals table {
+	margin-left:0 !important;
+}
+#left_nav, .three-promos {
+	visibility:hidden;
+}
+.socialannex-fblike-adjust {
+	margin-left:307px;
+}
+.sa_s12_likebox {
+	right:-151px;
+}
+#content {
+	padding:0px;
+}
+#content table[cellpadding="0"] {
+	width:100%;
+	margin-top:15px;
+}
+#content td:first-child {
+	display:none;
+}
+
+/* ------------------------------------------*/
+/* ---->> 5. Page specific styling <<<-------*/
+/* ------------------------------------------*/
+.ci-ed-contentArea {
+	background:transparent url(../images/easterBg.jpg) 0 0 no-repeat;
+	width:940px;
+	height:800px;
+}
+#ci-ed-container {
+	height:600px;
+	width:100%;
+}
+
+.ci-ed-eggClick {
+	width: 66px;
+	height:82px;
+	background:transparent url(../images/egg.png) 0 0 no-repeat;
+	position:fixed;
+	position:relative;
+	z-index:999;
+
+}
+.ci-ed-hardBn, .ci-ed-normalBn, .ci-ed-easyBn {
+	float:left;
+	width:100px;
+	display:inline;
+	color:red;
+	text-align:center;
+}
+.ci-ed-hardBn:hover, .ci-ed-normalBn:hover, .ci-ed-easyBn:hover {
+	cursor:pointer;
+	background:red;
+	color:white;
+}
+.ci-ed-tagLine, .ci-ed-coupon {
+	float:left;
+	margin-top:50px;
+}
+.ci-ed-tagLine {
+	width:60%;
+	font-family: 'Lusitana', serif;
+}
+.ci-ed-tagLine h1 {
+	color:#fff;
+	font-size:34px;
+}
+.ci-ed-tagLine h3 {
+	color:#fff;
+	font-size:24px;
+}
+.ci-ed-coupon {
+	width:40%;
+}
+.promoSection {
+	background: #fff url(http://www.comboink.com/v/newsletter/promotion-midMarch2014/images/midMarch-bg.gif) 10px 0 no-repeat;
+	height:630px;
+}
+.marginTop{
+	margin-top:80px !important;
+}
+.marginBottom{
+	margin-bottom:57px !important;
+}
+.keyword_search {
+    background: #c3020a;
+    width: 650px;
+	padding:10px 0px 10px 44px;
+	margin-left:107px;
+	margin-bottom:26px;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+.keyword_search  td{
+	display:inline-table !important;
+}
+.keyword_search table {
+	width:94%;
+}
+.search_input_style input[type="text"] {
+	width:428px;
+	font-size:20px;
+	padding:8px 5px;
+}
+.search_submit{
+	background:#60b539;
+	border-top:1px solid #c9fbb2;
+	border-left:1px solid #c9fbb2;
+	border-bottom:1px solid #23530e;
+	border-right:1px solid #23530e;
+	color:#fff;
+	min-width:161px;
+	cursor:pointer;
+	font-size:24px;
+	padding:5px 0;
+	-moz-box-shadow: 0 1px 2px #19320e;
+	-webkit-box-shadow: 0 1px 2px #19320e;
+	box-shadow: 0px 1px 2px #19320e;
+}
+.search_submit:hover {
+	background:#33621d;
+	border-bottom:1px solid #c9fbb2;
+	border-right:1px solid #c9fbb2;
+	border-top:1px solid #23530e;
+	border-left:1px solid #23530e;
+	color:aaa;
+	-moz-box-shadow: 0 0px 1px #19320e;
+	-webkit-box-shadow: 0 0px 1px #19320e;
+	box-shadow: 0px 0px 1px #19320e;
+}

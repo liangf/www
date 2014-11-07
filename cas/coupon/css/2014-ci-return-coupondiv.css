@@ -1,0 +1,54 @@
+/************* CSS Header ******************************/
+/*
+Please refer to http://www.877ink.com/coding-standards.pdf for
+the most up to date coding standards for CompAndSave.com
+Author: Megan Prior-Pfeifer
+
+Created for Amazon shoppers at CompAndSave.com
+
+ 
+*/
+/*********************************************************/
+
+#page-wrap{
+	position:relative;
+}
+
+#cas_cms_couponDivAmazon{
+	position: absolute;
+	top: 260px;
+	left: 660px;
+	border: 3px dashed #ccc;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding: 5px;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.0em;
+	background: #fff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+	width:220px;
+}
+
+#cas_cms_couponDivAmazon p{
+	margin:.1em 0;
+}
+
+#cas_cms_couponDivAmazon p:nth-child(1){
+	font-weight:bold;
+	font-size:1.0em;
+	line-height:1.2em;
+}
+
+#cas_cms_couponDivAmazon img{
+	width:55%;
+	display:inline-block;
+	margin:0;
+	vertical-align:middle;
+}
+
+#cas_cms_codeAmazon{
+	font-size:1.2em;
+	color:#ff9900;
+}

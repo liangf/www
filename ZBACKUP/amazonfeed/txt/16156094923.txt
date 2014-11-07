@@ -1,0 +1,473 @@
+Feed Processing Summary:
+   Total records processed	 2104
+   Rejected               	 - 20
+                          	======
+   Accepted               	 2084
+
+original-record-number	sku	error-code	error-type	error-message
+10	INK-Lexmark-13619HC	99037	Warning	The "UPC" (00734646132510) field contains an invalid value.
+100	INK-BROTHER-LC02Y	99037	Warning	The "UPC" (00012502563754) field contains an invalid value.
+1000	INK-Canon-BCI-3ePM	99037	Warning	The "UPC" (00750845725827) field contains an invalid value.
+1001	INK-Canon-BCI-3eY	99037	Warning	The "UPC" (00750845725810) field contains an invalid value.
+1006	INK-Canon-BCI-5PM-6PM	99037	Warning	The "UPC" (00750845726299) field contains an invalid value.
+1007	ZINK-HP-51645A-C6578DN-Combo4	90117	Warning	The Description field contains an invalid value: Product InfoHP Cartridge Combo Pack: Three HP 45 Black 51645A Ink Cartridges & One HP 78 Tri Colo... The value exceeds the maximum number of characters allowed: 2000.
+101	INK-BROTHER-LC03BKC	99037	Warning	The "UPC" (00012502525479) field contains an invalid value.
+102	INK-BROTHER-LC03MY	99037	Warning	The "UPC" (00012502525493) field contains an invalid value.
+1020	DW-HP-HP02-Combo13	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DW-HP-HP02-Combo13-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1020	DW-HP-HP02-Combo13	90117	Warning	The Description field contains an invalid value: Product InfoWholesale Pricing on HP Photosmart InkCombo Pack of HP 02 ink cartridgesCompAndSave's... The value exceeds the maximum number of characters allowed: 2000.
+1021	DW-BROTHER-LC51-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DW-BROTHER-LC51-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1022	DW-Canon-PGI5CLI8-Combo12	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DW-Canon-PGI5CLI8-Combo12-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1022	DW-Canon-PGI5CLI8-Combo12	99037	Warning	The "UPC" (00013803051056) field contains an invalid value.
+1050	ZINK-HP-HP02-Combo7	90117	Warning	The Description field contains an invalid value: Product InfoWe carry a variety of Replacement Inkjet Cartridges models at the discount price with... The value exceeds the maximum number of characters allowed: 2000.
+1051	INK-Canon-CLI-221BK	8542	Error	SKU INK-Canon-CLI-221BK, (ASIN B000J1F028, (part_number Merchant: 'CLI-221BK' / Amazon: '6646A007AA')), (ASIN B00BT2N28A, (part_number Merchant: 'CLI-221BK' / Amazon: 'CNM2946B001US')), (ASIN B0045K5HAE, (part_number Merchant: 'CLI-221BK' / Amazon: '2946B001')), (ASIN B008OTCKDO, (part_number Merchant: 'CLI-221BK' / Amazon: 'UTCNM2946B001')), (ASIN B001CSO794, (part_number Merchant: 'CLI-221BK' / Amazon: '2946B001')). The product_id submitted with INK-Canon-CLI-221BK corresponds to multiple ASINs (B000J1F028, B00BT2N28A, B0045K5HAE, B008OTCKDO, B001CSO794) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+1055	INK-Canon-PGI-220BK	8542	Error	SKU INK-Canon-PGI-220BK, (ASIN B0031B1DEC, (part_number Merchant: 'PGI-220BK' / Amazon: 'UTCNM2945B001')), (ASIN B00DOAMNBC, (part_number Merchant: 'PGI-220BK' / Amazon: '2945B001')), (ASIN B003J25ALU, (part_number Merchant: 'PGI-220BK' / Amazon: '2973B001')), (ASIN B001CSMJKI, (part_number Merchant: 'PGI-220BK' / Amazon: '2945B001')). The product_id submitted with INK-Canon-PGI-220BK corresponds to multiple ASINs (B0031B1DEC, B00DOAMNBC, B003J25ALU, B001CSMJKI) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+1061	ZINK-HP-HP02-Combo13	90117	Warning	The Description field contains an invalid value: Product InfoWholesale Pricing on HP Photosmart InkCombo Pack of HP 02 ink cartridgesCompAndSave's... The value exceeds the maximum number of characters allowed: 2000.
+11	INK-Lexmark-15M0120	99037	Warning	The "UPC" (00734646174442) field contains an invalid value.
+1119	INK-Ricoh-GC21Y	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Ricoh-GC21Y-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1120	INK-Ricoh-GC31BK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Ricoh-GC31BK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1121	INK-Ricoh-GC31C	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Ricoh-GC31C-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1122	INK-Ricoh-GC31M	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Ricoh-GC31M-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1123	INK-Ricoh-GC31Y	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Ricoh-GC31Y-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1136	TONER-Dell-F362T	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Dell-F362T-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1140	TONER-Kyocera-Mita-TK1142	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Kyocera-Mita-TK1142-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1141	TONER-Lexmark-X651H11A	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Lexmark-X651H11A-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1165	INK-Mutoh-VJMSINK3CL	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Mutoh-VJMSINK3CL-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1170	INK-Roland-ESL-3CL	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Roland-ESL-3CL-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+122	INK-HP-C4907AN	8542	Error	SKU INK-HP-C4907AN, (ASIN B004E3JW58, (part_number Merchant: 'C4907AN' / Amazon: '22577')), (ASIN B00GCW3CJG, (part_number Merchant: 'C4907AN' / Amazon: 'C4909AN')), (ASIN B001NID88Y, (part_number Merchant: 'C4907AN' / Amazon: 'C4909AN#140')), (ASIN B008OSE4QG, (part_number Merchant: 'C4907AN' / Amazon: '55754')). The product_id submitted with INK-HP-C4907AN corresponds to multiple ASINs (B004E3JW58, B00GCW3CJG, B001NID88Y, B008OSE4QG) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+1279	INK-HP-IQ2392A	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-HP-IQ2392A-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+13	INK-Lexmark-17G0060	99037	Warning	The "UPC" (00734646163972) field contains an invalid value.
+1316	INK-Mimaki-ES3CL	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Mimaki-ES3CL-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1340	TONER-Panasonic-KX-FATK509	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Panasonic-KX-FATK509-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1341	TONER-Panasonic-KX-FATM507	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Panasonic-KX-FATM507-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1342	TONER-Panasonic-KX-FATY508	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Panasonic-KX-FATY508-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1355	DRUM-Konica-Minolta-A03010AF	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DRUM-Konica-Minolta-A03010AF-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1356	DRUM-Konica-Minolta-A03010GF	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DRUM-Konica-Minolta-A03010GF-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1357	DRUM-Konica-Minolta-A03100F	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DRUM-Konica-Minolta-A03100F-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1358	DRUM-Konica-Minolta-A03105F	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DRUM-Konica-Minolta-A03105F-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+138	INK-HP-C4841A	99037	Warning	The "UPC" (00088698205419) field contains an invalid value.
+140	INK-HP-C4804A	99037	Warning	The "UPC" (00808736270946) field contains an invalid value.
+141	INK-HP-C4911A	99037	Warning	The "UPC" (00725184272707) field contains an invalid value.
+1412	SPEC-BROTHER-LC103-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-BROTHER-LC103-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1413	SPEC-HP-HP564XL-Combo11	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-HP-HP564XL-Combo11-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1413	SPEC-HP-HP564XL-Combo11	90117	Warning	The Description field contains an invalid value: Product Info11-pack High Yield Remanufactured Ink Cartridges replace Hewlett Packard (HP 564XL)Re... The value exceeds the maximum number of characters allowed: 2000.
+1414	SPEC-HP-HP564XL-Combo9	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-HP-HP564XL-Combo9-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1414	SPEC-HP-HP564XL-Combo9	90117	Warning	The Description field contains an invalid value: Product Info9-pack High Yield Remanufactured Ink Cartridges replace Hewlett Packard (HP 564XL)Rem... The value exceeds the maximum number of characters allowed: 2000.
+1415	SPEC-Canon-PGI-250XL-Combo12	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Canon-PGI-250XL-Combo12-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1416	SPEC-Kodak-10-Combo4	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Kodak-10-Combo4-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1417	SPEC-Kodak-10-Combo8	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Kodak-10-Combo8-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1418	SPEC-Kodak-30XL-Combo4	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Kodak-30XL-Combo4-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1419	SPEC-Kodak-30XL-Combo8	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Kodak-30XL-Combo8-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+142	INK-HP-C4912A	99037	Warning	The "UPC" (00725184272714) field contains an invalid value.
+1420	SPEC-Kodak-30XL-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Kodak-30XL-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1421	SPEC-Dell-Series-21-Combo8	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Dell-Series-21-Combo8-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1422	SPEC-Dell-Series-22-Combo8	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Dell-Series-22-Combo8-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1423	SPEC-Dell-Series-23-Combo8	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Dell-Series-23-Combo8-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1424	SPEC-Dell-Series-24-Combo8	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Dell-Series-24-Combo8-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+143	INK-HP-C4913A	99037	Warning	The "UPC" (00725184272721) field contains an invalid value.
+1431	RIBBON-Panasonic-KX-FA92	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/RIBBON-Panasonic-KX-FA92-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1432	RIBBON-Sharp-UX-3CR-2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/RIBBON-Sharp-UX-3CR-2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+144	INK-HP-C4930A	99037	Warning	The "UPC" (00025184252564) field contains an invalid value.
+1443	TONER-Panasonic-KX-FATC506	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Panasonic-KX-FATC506-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1445	TONER-Okidata-42918981	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Okidata-42918981-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1446	TONER-Okidata-42918982	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Okidata-42918982-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1447	TONER-Okidata-42918983	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Okidata-42918983-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1448	TONER-Okidata-42918984	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Okidata-42918984-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+145	INK-HP-C4931A	99037	Warning	The "UPC" (00025184252571) field contains an invalid value.
+1453	TONER-Konica-Minolta-A0WG03F	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Konica-Minolta-A0WG03F-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1454	TONER-Konica-Minolta-A0WG08F	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Konica-Minolta-A0WG08F-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1455	TONER-Konica-Minolta-A0WG0EF	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Konica-Minolta-A0WG0EF-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1456	TONER-Konica-Minolta-A0WG0KF	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Konica-Minolta-A0WG0KF-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+146	INK-HP-C4932A	99037	Warning	The "UPC" (00025184252588) field contains an invalid value.
+1465	DRUM-Minolta-1710568-001	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DRUM-Minolta-1710568-001-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+147	INK-HP-C4933A	99037	Warning	The "UPC" (00025184252595) field contains an invalid value.
+148	INK-HP-C4934A	99037	Warning	The "UPC" (00025184252601) field contains an invalid value.
+149	INK-HP-C4935A	99037	Warning	The "UPC" (00025184252618) field contains an invalid value.
+150	INK-HP-C5016A	99037	Warning	The "UPC" (00725184651571) field contains an invalid value.
+151	INK-HP-C5017A	8026	Error	Seller is not authorized to list products in this category. For more details, see http://sellercentral.amazon.com/gp/errorcode/8026
+151	INK-HP-C5017A	99037	Warning	The "UPC" (00725184651588) field contains an invalid value.
+1516	PH-4x6-MATTE-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-4x6-MATTE-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1517	PH-4x6-CANVAS-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-4x6-CANVAS-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1518	PH-4x6-LUSTRE-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-4x6-LUSTRE-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1519	PH-4x6-MATTE-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-4x6-MATTE-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+152	INK-HP-C6578AN	90117	Warning	The Description field contains an invalid value: Product InfoHP 78 - C6578AN (Compatible) Tri-Color Inkjet CartridgeWe carry a variety of Replacem... The value exceeds the maximum number of characters allowed: 2000.
+1520	PH-4x6-LUSTRE-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-4x6-LUSTRE-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1521	PH-4x6-CANVAS-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-4x6-CANVAS-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1522	PH-5x7-GLOSSY-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-5x7-GLOSSY-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1523	PH-5x7-LUSTRE-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-5x7-LUSTRE-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1524	PH-5x7-MATTE-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-5x7-MATTE-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1525	PH-5x7-CANVAS-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-5x7-CANVAS-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1526	PH-5x7-GLOSSY-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-5x7-GLOSSY-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1527	PH-5x7-LUSTRE-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-5x7-LUSTRE-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1528	PH-5x7-MATTE-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-5x7-MATTE-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1529	PH-5x7-CANVAS-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-5x7-CANVAS-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+153	INK-HP-C6656AN	90117	Warning	The Description field contains an invalid value: Product InfoHP 56 - C6656AN C6656A (Compatible) Black Ink CartridgeWe carry a variety of Replacem... The value exceeds the maximum number of characters allowed: 2000.
+154	INK-HP-C6657AN	90117	Warning	The Description field contains an invalid value: Product InfoHP 57 - C6657AN (Compatible) Tri-Color Inkjet CartridgeWe carry a variety of Replacem... The value exceeds the maximum number of characters allowed: 2000.
+155	INK-HP-C9425A	99037	Warning	The "UPC" (00808736670852) field contains an invalid value.
+156	INK-HP-C6658AN	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 58) Photo Color Replacement Printer Ink CartridgeWe carry a varie... The value exceeds the maximum number of characters allowed: 2000.
+156	INK-HP-C6658AN	99037	Warning	The "UPC" (00808736152549) field contains an invalid value.
+1568	SPEC-Canon-BCI-3eBK-6-Combo12	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Canon-BCI-3eBK-6-Combo12-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1569	SPEC-Canon-BCI-3eBK-6-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Canon-BCI-3eBK-6-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1570	SPEC-BROTHER-LC41-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-BROTHER-LC41-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1571	SPEC-BROTHER-LC75-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-BROTHER-LC75-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1572	SPEC-BROTHER-LC79-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-BROTHER-LC79-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+16	INK-Lexmark-18L0032	99037	Warning	The "UPC" (00734646476133) field contains an invalid value.
+160	INK-HP-C8766WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 95 - C8766WN (Compatible) Tri-Color Ink CartridgeWe carry a variety of Replacement... The value exceeds the maximum number of characters allowed: 2000.
+1613	ZINK-HP-74-75-Combo2	90117	Warning	The Description field contains an invalid value: Product InfoWe carry a variety of Replacement Inkjet Cartridges models at the discount price with... The value exceeds the maximum number of characters allowed: 2000.
+1614	ZINK-HP-74-75-Combo3	90117	Warning	The Description field contains an invalid value: Product InfoWe carry a variety of Replacement Inkjet Cartridges models at the discount price with... The value exceeds the maximum number of characters allowed: 2000.
+1615	ZINK-HP-74-75-Combo5	90117	Warning	The Description field contains an invalid value: Product InfoBest Price on HP 75XL Ink & HP 74XL Cartridge Combo PackThis replacement HP cartridge... The value exceeds the maximum number of characters allowed: 2000.
+1624	ZINK-Canon-PG-40-CL-41-Combo3	8542	Error	SKU ZINK-Canon-PG-40-CL-41-Combo3, (ASIN B00GCWXK02, (part_number Merchant: 'PG-40 CL-41' / Amazon: '0615B002')), (ASIN B000A2BJ44, (part_number Merchant: 'PG-40 CL-41' / Amazon: '0615B002')). The product_id submitted with ZINK-Canon-PG-40-CL-41-Combo3 corresponds to multiple ASINs (B00GCWXK02, B000A2BJ44) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+1625	ZINK-Canon-PG-40-CL-41-Combo5	8542	Error	SKU ZINK-Canon-PG-40-CL-41-Combo5, (ASIN B00GCWXK02, (part_number Merchant: 'PG-40 CL-41' / Amazon: '0615B002')), (ASIN B000A2BJ44, (part_number Merchant: 'PG-40 CL-41' / Amazon: '0615B002')). The product_id submitted with ZINK-Canon-PG-40-CL-41-Combo5 corresponds to multiple ASINs (B00GCWXK02, B000A2BJ44) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+1638	ZINK-HP-HP564XL-Combo11	90117	Warning	The Description field contains an invalid value: Product Info11-pack High Yield Remanufactured Ink Cartridges replace Hewlett Packard (HP 564XL)Re... The value exceeds the maximum number of characters allowed: 2000.
+1639	ZINK-HP-HP564XL-Combo9	90117	Warning	The Description field contains an invalid value: Product Info9-pack High Yield Remanufactured Ink Cartridges replace Hewlett Packard (HP 564XL)Rem... The value exceeds the maximum number of characters allowed: 2000.
+164	INK-HP-C9363WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 97 - C9363WN (Compatible) Tri-Color Printer Ink CartridgeWe carry a variety of Rep... The value exceeds the maximum number of characters allowed: 2000.
+1641	PH-8.5x11-GLOSSY-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-8.5x11-GLOSSY-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1642	PH-8.5x11-GLOSSY-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-8.5x11-GLOSSY-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1654	PH-8.5x11-LUSTRE-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-8.5x11-LUSTRE-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1655	PH-8.5x11-LUSTRE-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-8.5x11-LUSTRE-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+166	INK-HP-C9369WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 99 - C9369WN (Compatible) Photo Color Ink CartridgeThis Remanufactured HP 99 Photo... The value exceeds the maximum number of characters allowed: 2000.
+1664	PH-11x17-LUSTRE-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-11x17-LUSTRE-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1665	PH-11x17-LUSTRE-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-11x17-LUSTRE-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+167	INK-Canon-BCI-3ePC	99037	Warning	The "UPC" (00750845725834) field contains an invalid value.
+17	INK-Lexmark-18L0042	99037	Warning	The "UPC" (00734646476140) field contains an invalid value.
+1725	PH-11x17-MATTE-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-11x17-MATTE-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1726	PH-11x17-MATTE-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-11x17-MATTE-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1727	PH-8.5x11-MATTE-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-8.5x11-MATTE-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1728	PH-8.5x11-MATTE-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-8.5x11-MATTE-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1777	TONER-Lexmark-C546U1KG	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Lexmark-C546U1KG-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1792	ZINK-HP-HP564XL-Combo4	90117	Warning	The Description field contains an invalid value: Product Info4-pack High Yield Remanufactured Ink Cartridges replace Hewlett Packard (HP 564XL)Rem... The value exceeds the maximum number of characters allowed: 2000.
+1796	AFFSPEC-Brother-TN360-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/AFFSPEC-Brother-TN360-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1797	SPEC-BROTHER-LC51-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-BROTHER-LC51-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1798	SPEC-Canon-S35-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Canon-S35-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1799	SPEC-HP-CB435A-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-HP-CB435A-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+18	USB-CAMBM-6FT-P	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMBM-6FT-P-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1800	SPEC-HP-CE278A-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-HP-CE278A-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1801	SPEC-Dell-GR332-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Dell-GR332-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+181	ZINK-HP-HP564XL-Combo5	90117	Warning	The Description field contains an invalid value: Product Info5-pack High Yield Remanufactured Ink Cartridges replace Hewlett Packard (HP 564XL)Rem... The value exceeds the maximum number of characters allowed: 2000.
+1828	TONER-Canon-7429A005AA	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Canon-7429A005AA-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1857	DRUM-IBM-75P5712	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DRUM-IBM-75P5712-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1858	TONER-IBM-75P5711	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-IBM-75P5711-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+187	WINK-Canon-PGI5CLI8-Combo50	99037	Warning	The "UPC" (00013803051056) field contains an invalid value.
+1913	RIBBON-Brother-PC102RF	8026	Error	Seller is not authorized to list products in this category. For more details, see http://sellercentral.amazon.com/gp/errorcode/8026
+1921	INK-Ricoh-GC21BK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Ricoh-GC21BK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1922	INK-Ricoh-GC21C	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Ricoh-GC21C-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1923	INK-Ricoh-GC21M	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Ricoh-GC21M-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+1925	INK-Xerox-8R7994	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Xerox-8R7994-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+193	WINK-BROTHER-LC41-Combo40	99037	Warning	The "UPC" (00012502610946) field contains an invalid value.
+195	ZINK-HP-HP-94-95-Combo5	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 94/95) Black & Tri Color Ink cartridgeWe carry a variety of Repla... The value exceeds the maximum number of characters allowed: 2000.
+1958	AFFSPEC-BROTHER-LC61-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/AFFSPEC-BROTHER-LC61-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+196	ZINK-HP-HP-21-22-Combo5	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 21/22) Black & Tri Color Ink CartridgeWe carry a variety of Repla... The value exceeds the maximum number of characters allowed: 2000.
+1969	INK-Mimaki-SS2CL	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Mimaki-SS2CL-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+198	ZINK-HP-HP-60XL-Combo3	90117	Warning	The Description field contains an invalid value: Product InfoThis Replacement HP 60XL high yield black (CC641WN) inkjet cartridge is an original H... The value exceeds the maximum number of characters allowed: 2000.
+1988	INK-Lexmark-12A1990	90117	Warning	The Description field contains an invalid value: Product InfoLexmark 90 12A1990 Photo Color Replacement Printer Ink CartridgeThis Remanufactured L... The value exceeds the maximum number of characters allowed: 2000.
+199	ZINK-HP-HP-60XL-Combo2	90117	Warning	The Description field contains an invalid value: Product InfoHP 60XL Ink Cartridge Combo Pack - Save on CC641WN black & CC644WN tri-color cartridg... The value exceeds the maximum number of characters allowed: 2000.
+20	INK-HP-C8721WN-C	90117	Warning	The Description field contains an invalid value: Product InfoHP 02 - C8721WN (Compatible) Black Printer Ink CartridgeThis replacement ink cartridg... The value exceeds the maximum number of characters allowed: 2000.
+2010	TONER-Kyocera-Mita-TK562C	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Kyocera-Mita-TK562C-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+2011	TONER-Kyocera-Mita-TK562K	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Kyocera-Mita-TK562K-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+2012	TONER-Kyocera-Mita-TK562M	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Kyocera-Mita-TK562M-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+2013	TONER-Kyocera-Mita-TK562Y	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Kyocera-Mita-TK562Y-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+202	SPEC-Samsung-ML-2010D3-Comb2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Samsung-ML-2010D3-Comb2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+2070	SPEC-Canon-PGI220-Combo12	8542	Error	SKU SPEC-Canon-PGI220-Combo12, (ASIN B0031B1DEC, (part_number Merchant: 'PGI-220 12Pks' / Amazon: 'UTCNM2945B001')), (ASIN B00DOAMNBC, (part_number Merchant: 'PGI-220 12Pks' / Amazon: '2945B001')), (ASIN B003J25ALU, (part_number Merchant: 'PGI-220 12Pks' / Amazon: '2973B001')), (ASIN B001CSMJKI, (part_number Merchant: 'PGI-220 12Pks' / Amazon: '2945B001')). The product_id submitted with SPEC-Canon-PGI220-Combo12 corresponds to multiple ASINs (B0031B1DEC, B00DOAMNBC, B003J25ALU, B001CSMJKI) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+2070	SPEC-Canon-PGI220-Combo12	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Canon-PGI220-Combo12-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+2071	SPEC-Canon-PGI5CLI8-Combo12	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Canon-PGI5CLI8-Combo12-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+2071	SPEC-Canon-PGI5CLI8-Combo12	99037	Warning	The "UPC" (00013803051056) field contains an invalid value.
+2072	SPEC-Canon-PGI225-Combo12	8542	Error	SKU SPEC-Canon-PGI225-Combo12, (ASIN B00DOAU8DM, (part_number Merchant: 'PGI225CLI226-12PK' / Amazon: '4530B001')), (ASIN B00GCSXLT6, (part_number Merchant: 'PGI225CLI226-12PK' / Amazon: '4530B001')), (ASIN B00A8PD6QM, (part_number Merchant: 'PGI225CLI226-12PK' / Amazon: 'PGI225CLI226-6PK')), (ASIN B00A8PD7F2, (part_number Merchant: 'PGI225CLI226-12PK' / Amazon: 'PGI225CLI226-14PK')), (ASIN B003QR67QU, (part_number Merchant: 'PGI225CLI226-12PK' / Amazon: '4530B001')). The product_id submitted with SPEC-Canon-PGI225-Combo12 corresponds to multiple ASINs (B00DOAU8DM, B00GCSXLT6, B00A8PD6QM, B00A8PD7F2, B003QR67QU) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+2072	SPEC-Canon-PGI225-Combo12	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Canon-PGI225-Combo12-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+2083	TONER-Panasonic-KX-FAT92	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Panasonic-KX-FAT92-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+21	INK-HP-C8771WN-C	90117	Warning	The Description field contains an invalid value: Product InfoHP 02 - C8771WN (Compatible) Cyan Printer Ink CartridgeThis replacement ink cartridge... The value exceeds the maximum number of characters allowed: 2000.
+2102	RIBBON-Brother-PC501	8026	Error	Seller is not authorized to list products in this category. For more details, see http://sellercentral.amazon.com/gp/errorcode/8026
+22	INK-HP-C8772WN-C	90117	Warning	The Description field contains an invalid value: Product InfoHP 02 - C8772WN (Compatible) Magenta Printer Ink CartridgeThis replacement ink cartri... The value exceeds the maximum number of characters allowed: 2000.
+23	INK-HP-C8773WN-C	90117	Warning	The Description field contains an invalid value: Product InfoHP 02 - C8773WN (Compatible) Yellow Printer Ink CartridgeThis replacement ink cartrid... The value exceeds the maximum number of characters allowed: 2000.
+232	SPEC-Brother-TN115-Combo4	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Brother-TN115-Combo4-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+233	DW-Brother-TN115-Combo4	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DW-Brother-TN115-Combo4-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+234	DW-Samsung-ML-2010D3-Comb2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DW-Samsung-ML-2010D3-Comb2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+235	SPEC-Brother-TN360-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-Brother-TN360-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+236	DW-Brother-TN360-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/DW-Brother-TN360-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+24	INK-HP-C8774WN-C	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard HP 02 C8774WN Light Cyan Replacement Printer Ink CartridgeThis replac... The value exceeds the maximum number of characters allowed: 2000.
+25	INK-HP-C8775WN-C	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard HP 02 C8775WN Light Magenta Replacement Printer Ink CartridgeThis rep... The value exceeds the maximum number of characters allowed: 2000.
+293	INK-Epson-T048220	99037	Warning	The "UPC" (00010343847095) field contains an invalid value.
+298	INK-Epson-T054020	99037	Warning	The "UPC" (00010343848993) field contains an invalid value.
+299	INK-Epson-T054120	99037	Warning	The "UPC" (00010343848924) field contains an invalid value.
+300	INK-Epson-T054220	99037	Warning	The "UPC" (00010343848931) field contains an invalid value.
+301	INK-Epson-T054320	99037	Warning	The "UPC" (00010343848948) field contains an invalid value.
+302	INK-Epson-T054420	99037	Warning	The "UPC" (00010343848955) field contains an invalid value.
+303	INK-Epson-T054720	99037	Warning	The "UPC" (00010343848962) field contains an invalid value.
+304	INK-Epson-T054820	99037	Warning	The "UPC" (00010343848979) field contains an invalid value.
+305	INK-Epson-T054920	99037	Warning	The "UPC" (00010343848986) field contains an invalid value.
+306	INK-Epson-T059120	99037	Warning	The "UPC" (00010343853874) field contains an invalid value.
+307	INK-Epson-T059220	99037	Warning	The "UPC" (00010343853881) field contains an invalid value.
+308	INK-Epson-T059320	99037	Warning	The "UPC" (00010343853898) field contains an invalid value.
+309	INK-Epson-T059420	99037	Warning	The "UPC" (00010343853904) field contains an invalid value.
+310	INK-Epson-T059520	99037	Warning	The "UPC" (00010343853911) field contains an invalid value.
+311	INK-Epson-T059620	99037	Warning	The "UPC" (00010343853928) field contains an invalid value.
+312	INK-Epson-T059720	99037	Warning	The "UPC" (00010343853935) field contains an invalid value.
+313	INK-Epson-T059820	99037	Warning	The "UPC" (00010343853942) field contains an invalid value.
+314	INK-Epson-T059920	99037	Warning	The "UPC" (00010343853959) field contains an invalid value.
+317	INK-Epson-T060320	99037	Warning	The "UPC" (00010343854215) field contains an invalid value.
+318	INK-Epson-T060420	99037	Warning	The "UPC" (00010343854222) field contains an invalid value.
+319	INK-Epson-T563700-T562700	99037	Warning	The "UPC" (00010343853430) field contains an invalid value.
+320	INK-Epson-T563900-T562900	99037	Warning	The "UPC" (00010343853447) field contains an invalid value.
+321	INK-Epson-T567800-T566800	99037	Warning	The "UPC" (00010343853522) field contains an invalid value.
+325	TONER-Samsung-ML-5000D5	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Samsung-ML-5000D5-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+327	TONER-Samsung-ML-7000D8	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Samsung-ML-7000D8-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+328	TONER-Samsung-ML-7300DA	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Samsung-ML-7300DA-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+335	TONER-Samsung-SF-550D3	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Samsung-SF-550D3-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+339	INK-Epson-T565100	99037	Warning	The "UPC" (00010343852785) field contains an invalid value.
+340	INK-Epson-T565200	99037	Warning	The "UPC" (00010343852792) field contains an invalid value.
+341	INK-Epson-T565300	99037	Warning	The "UPC" (00010343852808) field contains an invalid value.
+342	INK-Epson-T565400	99037	Warning	The "UPC" (00010343852815) field contains an invalid value.
+343	INK-Epson-T565500	99037	Warning	The "UPC" (00010343852822) field contains an invalid value.
+344	INK-Epson-T565600	99037	Warning	The "UPC" (00010343852839) field contains an invalid value.
+345	INK-Epson-T565700	99037	Warning	The "UPC" (00010343852846) field contains an invalid value.
+346	INK-Epson-T565900	99037	Warning	The "UPC" (00010343853027) field contains an invalid value.
+347	INK-Canon-PG-40	8542	Error	SKU INK-Canon-PG-40, (ASIN B00GCWXK02, (part_number Merchant: 'PG-40' / Amazon: '0615B002')), (ASIN B000A2BJ44, (part_number Merchant: 'PG-40' / Amazon: '0615B002')). The product_id submitted with INK-Canon-PG-40 corresponds to multiple ASINs (B00GCWXK02, B000A2BJ44) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+351	USB-CAMBM-3FT	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMBM-3FT-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+352	USB-CAMAF-3FT	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMAF-3FT-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+353	USB-CAMBM-3FT-P	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMBM-3FT-P-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+354	USB-CAMAF-10FT	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMAF-10FT-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+355	USB-CAMBM-10FT	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMBM-10FT-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+356	USB-CAMBM-10FT-P	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMBM-10FT-P-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+357	USB-CAMAF-15FT	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMAF-15FT-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+358	USB-CAMBM-15FT	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMBM-15FT-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+359	USB-CAMBM-15FT-P	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/USB-CAMBM-15FT-P-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+362	INK-Epson-S191089	99037	Warning	The "UPC" (00010343847262) field contains an invalid value.
+363	INK-Epson-S193110	99037	Warning	The "UPC" (00010343847279) field contains an invalid value.
+364	INK-Epson-T001011	99037	Warning	The "UPC" (00010343815957) field contains an invalid value.
+365	INK-Epson-T003011	99037	Warning	The "UPC" (00010343815964) field contains an invalid value.
+366	INK-Epson-T005011	99037	Warning	The "UPC" (00010343815971) field contains an invalid value.
+368	INK-Epson-T008201	99037	Warning	The "UPC" (00010343818811) field contains an invalid value.
+369	INK-Epson-T009201	99037	Warning	The "UPC" (00010343818835) field contains an invalid value.
+370	INK-Epson-T013201	99037	Warning	The "UPC" (00010343819733) field contains an invalid value.
+371	INK-Epson-T014201	99037	Warning	The "UPC" (00010343819740) field contains an invalid value.
+372	INK-Epson-T015201	99037	Warning	The "UPC" (00010343819849) field contains an invalid value.
+373	INK-Epson-T016201	20009	Warning	110 minimum is required length on longest side, actual width of image submitted 90, actual height of image submitted 83 
+373	INK-Epson-T016201	99037	Warning	The "UPC" (00010343819870) field contains an invalid value.
+374	INK-Epson-T017201	99037	Warning	The "UPC" (00010343832299) field contains an invalid value.
+375	INK-Epson-T018201	99037	Warning	The "UPC" (00010343832305) field contains an invalid value.
+380	INK-Epson-T028201	99037	Warning	The "UPC" (00010343836761) field contains an invalid value.
+381	INK-Epson-T029201	99037	Warning	The "UPC" (00010343836839) field contains an invalid value.
+383	INK-Epson-T032220	99037	Warning	The "UPC" (00010343837331) field contains an invalid value.
+384	INK-Epson-T032320	99037	Warning	The "UPC" (00010343837270) field contains an invalid value.
+385	INK-Epson-T032420	99037	Warning	The "UPC" (00010343837218) field contains an invalid value.
+386	INK-Epson-T033120	99037	Warning	The "UPC" (00010343843288) field contains an invalid value.
+387	INK-Epson-T033220	99037	Warning	The "UPC" (00010343843295) field contains an invalid value.
+388	INK-Epson-T033320	99037	Warning	The "UPC" (00010343843301) field contains an invalid value.
+389	INK-Epson-T033420	99037	Warning	The "UPC" (00010343843318) field contains an invalid value.
+390	INK-Epson-T033520	99037	Warning	The "UPC" (00010343843325) field contains an invalid value.
+391	INK-Epson-T033620	99037	Warning	The "UPC" (00010343843332) field contains an invalid value.
+392	INK-Epson-T034120	99037	Warning	The "UPC" (00010343841024) field contains an invalid value.
+393	INK-Epson-T034220	99037	Warning	The "UPC" (00010343841031) field contains an invalid value.
+394	INK-Epson-T034320	99037	Warning	The "UPC" (00010343841048) field contains an invalid value.
+395	INK-Epson-T034420	99037	Warning	The "UPC" (00010343841055) field contains an invalid value.
+396	INK-Epson-T034520	99037	Warning	The "UPC" (00010343841062) field contains an invalid value.
+416	SPEC-BROTHER-LC51-Combo40	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-BROTHER-LC51-Combo40-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+417	SPEC-BROTHER-LC61-Combo10	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/SPEC-BROTHER-LC61-Combo10-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+421	ZTONER-Canon-E40-Combo2	90117	Warning	The Description field contains an invalid value: Product InfoReplacement Canon E-40 E40 (1491A002AA) Combo Pack of 2 Black Laser Toner CartridgeOu... The value exceeds the maximum number of characters allowed: 2000.
+457	TONER-Lexmark-53P7706	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/TONER-Lexmark-53P7706-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+47	INK-HP-CB335WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 74 - CB335WN (Compatible) Black Ink CartridgeWe carry a variety of Replacement Ink... The value exceeds the maximum number of characters allowed: 2000.
+472	INK-Xerox-8R7660	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Xerox-8R7660-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+473	INK-Xerox-8R7661	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Xerox-8R7661-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+474	INK-Xerox-8R7662	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Xerox-8R7662-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+475	INK-Xerox-8R7663	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/INK-Xerox-8R7663-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+48	INK-HP-CB336WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 74XL - CB336WN (Compatible) High Yield Black Ink CartridgeWe carry a variety of Re... The value exceeds the maximum number of characters allowed: 2000.
+484	INK-HP-CB323WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 564XL - CB323WN (Compatible) High Yield Cyan Ink CartridgeRemanufactured to be as ... The value exceeds the maximum number of characters allowed: 2000.
+485	INK-HP-CB324WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 564XL - CB324WN (Compatible) High Yield Magenta Ink Cartridge Remanufactured to be... The value exceeds the maximum number of characters allowed: 2000.
+487	INK-HP-CB325WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 564XL - CB325WN (Compatible) Yellow High Yield Ink CartridgeRemanufactured to be a... The value exceeds the maximum number of characters allowed: 2000.
+49	INK-HP-CB337WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 75 - CB337WN (Compatible) Tri-Color Ink CartridgeWe carry a variety of Replacement... The value exceeds the maximum number of characters allowed: 2000.
+490	INK-HP-C9368AN	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard HP 100 Photo Gray Ink CartridgeThis Remanufactured HP 100 Photo Gray ... The value exceeds the maximum number of characters allowed: 2000.
+50	INK-HP-CB338WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 75XL - CB338WN (Compatible) High Yield Tri-Color Inkjet Cartridge We carry a varie... The value exceeds the maximum number of characters allowed: 2000.
+529	INK-Canon-CLI-226C	8542	Error	SKU INK-Canon-CLI-226C, (ASIN B008OTCMGO, (part_number Merchant: 'CLI-226C' / Amazon: '4547B001AA')), (ASIN B009R5Q09Y, (part_number Merchant: 'CLI-226C' / Amazon: 'UTCNM4547B001AA')), (ASIN B004SRJJ76, (part_number Merchant: 'CLI-226C' / Amazon: '4547B001')), (ASIN B0071U0YBW, (part_number Merchant: 'CLI-226C' / Amazon: 'CAN-0210')), (ASIN B00BT2NBZO, (part_number Merchant: 'CLI-226C' / Amazon: '4547B001')), (ASIN B003QR886M, (part_number Merchant: 'CLI-226C' / Amazon: '4547B001')), (ASIN B004F7IWJK, (part_number Merchant: 'CLI-226C' / Amazon: '4547B001')), (ASIN B00GCUXOFK, (part_number Merchant: 'CLI-226C' / Amazon: '4547B001')). The product_id submitted with INK-Canon-CLI-226C corresponds to multiple ASINs (B008OTCMGO, B009R5Q09Y, B004SRJJ76, B0071U0YBW, B00BT2NBZO, B003QR886M, B004F7IWJK, B00GCUXOFK) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+53	INK-Lexmark-18C0031	90117	Warning	The Description field contains an invalid value: Product InfoLexmark 31 - 18C0031 (Compatible) Color Printer Ink CartridgeThis Remanufactured Lexm... The value exceeds the maximum number of characters allowed: 2000.
+531	INK-Canon-CLI-226Y	8542	Error	SKU INK-Canon-CLI-226Y, (ASIN B004E3CFJS, (part_number Merchant: 'CLI-226Y' / Amazon: '79076')), (ASIN B004CJN4SU, (part_number Merchant: 'CLI-226Y' / Amazon: '4549B001')), (ASIN B003QR28RC, (part_number Merchant: 'CLI-226Y' / Amazon: '4549B001')), (ASIN B00GCUY15W, (part_number Merchant: 'CLI-226Y' / Amazon: '4549B001')), (ASIN B003JX5AYQ, (part_number Merchant: 'CLI-226Y' / Amazon: '5005B002')), (ASIN B004SRPR0Y, (part_number Merchant: 'CLI-226Y' / Amazon: '4549B001')). The product_id submitted with INK-Canon-CLI-226Y corresponds to multiple ASINs (B004E3CFJS, B004CJN4SU, B003QR28RC, B00GCUY15W, B003JX5AYQ, B004SRPR0Y) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+576	PH-8.5x11-CANVAS-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-8.5x11-CANVAS-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+577	PH-8.5x11-CANVAS-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-8.5x11-CANVAS-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+583	PH-11x17-GLOSSY-20PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-11x17-GLOSSY-20PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+584	PH-11x17-GLOSSY-100PK	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/PH-11x17-GLOSSY-100PK-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+587	INK-Canon-CL-211	8542	Error	SKU INK-Canon-CL-211, (ASIN B00C9KCLBA, (part_number Merchant: 'CL-211' / Amazon: 'AAC0002-CNM2976B001')), (ASIN B001DJ86CQ, (part_number Merchant: 'CL-211' / Amazon: '2976B001')), (ASIN B00GCUE2FG, (part_number Merchant: 'CL-211' / Amazon: '2976B001AA')), (ASIN B00BT2MWT0, (part_number Merchant: 'CL-211' / Amazon: '2976B001')). The product_id submitted with INK-Canon-CL-211 corresponds to multiple ASINs (B00C9KCLBA, B001DJ86CQ, B00GCUE2FG, B00BT2MWT0) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+592	INK-Epson-T034620	99037	Warning	The "UPC" (00010343841079) field contains an invalid value.
+593	INK-Epson-T034720	99037	Warning	The "UPC" (00010343841086) field contains an invalid value.
+594	INK-Epson-T034820	99037	Warning	The "UPC" (00010343841093) field contains an invalid value.
+595	INK-Epson-T036120	99037	Warning	The "UPC" (00010343842328) field contains an invalid value.
+596	INK-Epson-T037020	99037	Warning	The "UPC" (00010343842335) field contains an invalid value.
+598	TONER-HP-C3909X	20009	Warning	110 minimum is required length on longest side, actual width of image submitted 101, actual height of image submitted 101 
+610	TONER-HP-C8543X	20009	Warning	110 minimum is required length on longest side, actual width of image submitted 107, actual height of image submitted 107 
+677	INK-HP-C4805A	99037	Warning	The "UPC" (00808736270953) field contains an invalid value.
+678	INK-HP-C4806A	99037	Warning	The "UPC" (00808736270960) field contains an invalid value.
+680	INK-Canon-BCI-61	99037	Warning	The "UPC" (00750845722666) field contains an invalid value.
+681	INK-Canon-BCI-62	99037	Warning	The "UPC" (00750845722673) field contains an invalid value.
+682	INK-Canon-BCI-6G	99037	Warning	The "UPC" (00013803040180) field contains an invalid value.
+683	INK-Canon-BCI-6R	99037	Warning	The "UPC" (00013803029888) field contains an invalid value.
+684	INK-Canon-BCI-8BK	20009	Warning	110 minimum is required length on longest side, actual width of image submitted 101, actual height of image submitted 103 
+684	INK-Canon-BCI-8BK	99037	Warning	The "UPC" (00750845722796) field contains an invalid value.
+685	INK-Canon-BCI-8C	99037	Warning	The "UPC" (00750845722840) field contains an invalid value.
+686	INK-Canon-BCI-8M	99037	Warning	The "UPC" (00750845722833) field contains an invalid value.
+687	INK-Canon-BCI-8PBK	99037	Warning	The "UPC" (00750845723502) field contains an invalid value.
+688	INK-Canon-BCI-8PC	99037	Warning	The "UPC" (00750845722871) field contains an invalid value.
+689	INK-Canon-BCI-8PM	99037	Warning	The "UPC" (00750845722864) field contains an invalid value.
+690	INK-Canon-BCI-8WF	99037	Warning	The "UPC" (00750845722802) field contains an invalid value.
+691	INK-Canon-BCI-8Y	99037	Warning	The "UPC" (00750845722826) field contains an invalid value.
+692	INK-Canon-BJI-201C-HC	20009	Warning	110 minimum is required length on longest side, actual width of image submitted 95, actual height of image submitted 93 
+692	INK-Canon-BJI-201C-HC	99037	Warning	The "UPC" (00750845720020) field contains an invalid value.
+693	INK-Canon-BJI-201M-HC	20009	Warning	110 minimum is required length on longest side, actual width of image submitted 89, actual height of image submitted 97 
+693	INK-Canon-BJI-201M-HC	99037	Warning	The "UPC" (00750845720037) field contains an invalid value.
+694	INK-Canon-BJI-201Y-HC	20009	Warning	110 minimum is required length on longest side, actual width of image submitted 91, actual height of image submitted 93 
+694	INK-Canon-BJI-201Y-HC	99037	Warning	The "UPC" (00750845720044) field contains an invalid value.
+695	INK-Canon-BJI-642BK	99037	Warning	The "UPC" (00038569405004) field contains an invalid value.
+696	INK-Canon-BJI-643BK	99037	Warning	The "UPC" (00038569419995) field contains an invalid value.
+697	INK-Canon-BJI-643C	99037	Warning	The "UPC" (00038569419988) field contains an invalid value.
+698	INK-Canon-BJI-643M	99037	Warning	The "UPC" (00038569419971) field contains an invalid value.
+699	INK-Canon-BJI-643Y	99037	Warning	The "UPC" (00038569419964) field contains an invalid value.
+7	INK-Lexmark-12A1980	99037	Warning	The "UPC" (00734646120616) field contains an invalid value.
+70	INK-HP-C4836AN	99037	Warning	The "UPC" (00088698857366) field contains an invalid value.
+700	INK-Canon-BX-3	99037	Warning	The "UPC" (00030275063714) field contains an invalid value.
+702	INK-Canon-CLI-8C	8542	Error	SKU INK-Canon-CLI-8C, (ASIN B000A2BKAM, (part_number Merchant: 'CLI-8C' / Amazon: '0621B002')), (ASIN B00GCX06EY, (part_number Merchant: 'CLI-8C' / Amazon: 'CPRN-INK-BK6')). The product_id submitted with INK-Canon-CLI-8C corresponds to multiple ASINs (B000A2BKAM, B00GCX06EY) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+704	INK-Canon-CLI-8PC	8026	Error	Seller is not authorized to list products in this category. For more details, see http://sellercentral.amazon.com/gp/errorcode/8026
+706	INK-Canon-CLI-8Y	8542	Error	SKU INK-Canon-CLI-8Y, (ASIN B00HKVKFIO, (part_number Merchant: 'CLI-8Y' / Amazon: '0623B002')), (ASIN B000A2BKTI, (part_number Merchant: 'CLI-8Y' / Amazon: '0623B002')). The product_id submitted with INK-Canon-CLI-8Y corresponds to multiple ASINs (B00HKVKFIO, B000A2BKTI) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+708	INK-Epson-S020089	99037	Warning	The "UPC" (00010343601871) field contains an invalid value.
+709	INK-Epson-S020093	99037	Warning	The "UPC" (00010343812321) field contains an invalid value.
+71	INK-HP-C4837AN	99037	Warning	The "UPC" (00088698857472) field contains an invalid value.
+710	INK-Epson-S020108	99037	Warning	The "UPC" (00010343601888) field contains an invalid value.
+711	INK-Epson-S020110	99037	Warning	The "UPC" (00010343813793) field contains an invalid value.
+713	INK-Epson-S020122	99037	Warning	The "UPC" (00010343813496) field contains an invalid value.
+714	INK-Epson-S020126	99037	Warning	The "UPC" (00010343813502) field contains an invalid value.
+715	INK-Epson-S020130	99037	Warning	The "UPC" (00010343813519) field contains an invalid value.
+716	INK-Epson-S020187	99037	Warning	The "UPC" (00010343814820) field contains an invalid value.
+719	INK-Epson-S020193	99037	Warning	The "UPC" (00010343814844) field contains an invalid value.
+72	INK-HP-C4838AN	99037	Warning	The "UPC" (00088698857588) field contains an invalid value.
+720	INK-Epson-S187093	99037	Warning	The "UPC" (00010343847248) field contains an invalid value.
+721	INK-Epson-S189108	99037	Warning	The "UPC" (00010343847255) field contains an invalid value.
+727	INK-Epson-T543100	99037	Warning	The "UPC" (00010343840164) field contains an invalid value.
+728	INK-Epson-T543200	99037	Warning	The "UPC" (00010343840171) field contains an invalid value.
+729	INK-Epson-T543300	99037	Warning	The "UPC" (00010343840188) field contains an invalid value.
+73	INK-HP-C4842A	99037	Warning	The "UPC" (00088698205426) field contains an invalid value.
+730	INK-Epson-T543400	99037	Warning	The "UPC" (00010343840225) field contains an invalid value.
+731	INK-Epson-T543500	99037	Warning	The "UPC" (00010343840232) field contains an invalid value.
+732	INK-Epson-T543600	99037	Warning	The "UPC" (00010343840249) field contains an invalid value.
+733	INK-Epson-T543700	99037	Warning	The "UPC" (00010343840256) field contains an invalid value.
+734	INK-Epson-T543800	99037	Warning	The "UPC" (00010343840263) field contains an invalid value.
+735	INK-Epson-T544100	99037	Warning	The "UPC" (00010343840270) field contains an invalid value.
+736	INK-Epson-T544200	99037	Warning	The "UPC" (00010343840287) field contains an invalid value.
+737	INK-Epson-T544300	99037	Warning	The "UPC" (00010343840294) field contains an invalid value.
+738	INK-Epson-T544400	99037	Warning	The "UPC" (00010343840300) field contains an invalid value.
+739	INK-Epson-T544500	99037	Warning	The "UPC" (00010343840317) field contains an invalid value.
+74	INK-HP-C4843A	99037	Warning	The "UPC" (00088698205433) field contains an invalid value.
+740	INK-Epson-T544600	99037	Warning	The "UPC" (00010343840324) field contains an invalid value.
+741	INK-Epson-T544700	99037	Warning	The "UPC" (00010343840331) field contains an invalid value.
+742	INK-Epson-T544800	99037	Warning	The "UPC" (00010343840348) field contains an invalid value.
+743	INK-Epson-T545100	99037	Warning	The "UPC" (00010343840362) field contains an invalid value.
+744	INK-Epson-T545200	99037	Warning	The "UPC" (00010343840379) field contains an invalid value.
+745	INK-Epson-T545300	99037	Warning	The "UPC" (00010343840386) field contains an invalid value.
+746	INK-Epson-T545400	99037	Warning	The "UPC" (00010343840393) field contains an invalid value.
+747	INK-Epson-T545500	99037	Warning	The "UPC" (00010343840409) field contains an invalid value.
+748	INK-Epson-T545600	99037	Warning	The "UPC" (00010343840416) field contains an invalid value.
+75	INK-HP-C4844A	90117	Warning	The Description field contains an invalid value: Product InfoHP 10 - C4844A (Compatible) High Yield Black Printer Ink CartridgeWe carry a variety ... The value exceeds the maximum number of characters allowed: 2000.
+750	INK-Epson-T559120	99037	Warning	The "UPC" (00010343851894) field contains an invalid value.
+751	INK-Epson-T559220	99037	Warning	The "UPC" (00010343851900) field contains an invalid value.
+752	INK-Epson-T559320	99037	Warning	The "UPC" (00010343851917) field contains an invalid value.
+753	INK-Epson-T559420	99037	Warning	The "UPC" (00010343851924) field contains an invalid value.
+754	INK-Epson-T559520	99037	Warning	The "UPC" (00010343851931) field contains an invalid value.
+755	INK-Epson-T559620	99037	Warning	The "UPC" (00010343851948) field contains an invalid value.
+756	INK-Epson-T563200-T562200	99037	Warning	The "UPC" (00010343853386) field contains an invalid value.
+757	INK-Epson-T563300-T562300	99037	Warning	The "UPC" (00010343853393) field contains an invalid value.
+76	INK-HP-C5010AN	99037	Warning	The "UPC" (00725184712500) field contains an invalid value.
+764	ZINK-HP-HP-96-97-Combo2	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 96) C8767WN Black & (HP 97) C9363WN Tri Color Ink cartridgeWe car... The value exceeds the maximum number of characters allowed: 2000.
+765	ZINK-HP-HP-96-97-Combo3	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 96) C8767WN Black & (HP 97) C9363WN Tri Color Ink cartridgeWe car... The value exceeds the maximum number of characters allowed: 2000.
+766	ZINK-HP-HP-96-97-Combo5	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 96) C8767WN Black & (HP 97) C9363WN Tri Color Ink cartridgeWe car... The value exceeds the maximum number of characters allowed: 2000.
+77	INK-HP-C5011AN	99037	Warning	The "UPC" (00725184712647) field contains an invalid value.
+770	ZINK-HP-HP-94-97-Combo2	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 94) C8765WN Black & (HP 97) C9363WN Tri Color Ink cartridgeWe car... The value exceeds the maximum number of characters allowed: 2000.
+771	ZINK-HP-HP-94-97-Combo3	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 94) C8765WN Black & (HP 97) C9363WN Tri Color Ink cartridgeWe car... The value exceeds the maximum number of characters allowed: 2000.
+772	ZINK-HP-HP-94-97-Combo5	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 94) C8765WN Black & (HP 97) C9363WN Tri Color Ink cartridgeWe car... The value exceeds the maximum number of characters allowed: 2000.
+779	FB-Brother-TN360-Combo2	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/FB-Brother-TN360-Combo2-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+780	FB-Brother-TN115-Combo4	20000	Warning	Error downloading image from URL: http://www.compandsave.com/v/vspfiles/photos/FB-Brother-TN115-Combo4-2T.jpg . HTTP Status Code: 404.  For more details, see http://sellercentral.amazon.com/gp/errorcode/20004
+781	ZINK-Lexmark-50-20-Combo2	99037	Warning	The "UPC" (00734646163965) field contains an invalid value.
+782	ZINK-Lexmark-50-20-Combo3	99037	Warning	The "UPC" (00734646163965) field contains an invalid value.
+783	ZINK-Lexmark-50-20-Combo5	99037	Warning	The "UPC" (00734646163965) field contains an invalid value.
+795	INK-Canon-BCI-11C	99037	Warning	The "UPC" (00750845720860) field contains an invalid value.
+796	INK-Canon-BCI-1201BK	99037	Warning	The "UPC" (00013803008845) field contains an invalid value.
+797	INK-Canon-BCI-1201C	99037	Warning	The "UPC" (00013803008814) field contains an invalid value.
+798	INK-Canon-BCI-1201M	99037	Warning	The "UPC" (00013803008821) field contains an invalid value.
+799	INK-Canon-BCI-1201Y	99037	Warning	The "UPC" (00013803008838) field contains an invalid value.
+8	INK-Lexmark-13400HC	99037	Warning	The "UPC" (00734646132596) field contains an invalid value.
+80	INK-HP-C9351AN	90117	Warning	The Description field contains an invalid value: Product InfoHP 21 - C9351AN (Compatible) Black Ink CartridgeWe carry a variety of Replacement Ink... The value exceeds the maximum number of characters allowed: 2000.
+802	INK-Canon-BCI-1302BK	99037	Warning	The "UPC" (00013803019506) field contains an invalid value.
+803	INK-Canon-BCI-1302C	99037	Warning	The "UPC" (00013803019490) field contains an invalid value.
+804	INK-Canon-BCI-1302M	99037	Warning	The "UPC" (00013803019513) field contains an invalid value.
+805	INK-Canon-BCI-1302PC	99037	Warning	The "UPC" (00013803019537) field contains an invalid value.
+806	INK-Canon-BCI-1302PM	99037	Warning	The "UPC" (00013803019544) field contains an invalid value.
+807	INK-Canon-BCI-1302Y	99037	Warning	The "UPC" (00013803019520) field contains an invalid value.
+808	INK-Canon-BCI-1401BK	99037	Warning	The "UPC" (00013803019278) field contains an invalid value.
+809	INK-Canon-BCI-1401C	99037	Warning	The "UPC" (00013803019384) field contains an invalid value.
+81	INK-HP-C9352AN	90117	Warning	The Description field contains an invalid value: Product InfoHP 22 - C9352AN (Compatible) Tri-Color Printer Ink CartridgeWe carry a variety of Rep... The value exceeds the maximum number of characters allowed: 2000.
+812	INK-Canon-BCI-1401M	99037	Warning	The "UPC" (00013803019391) field contains an invalid value.
+813	INK-Canon-BCI-1401Y	99037	Warning	The "UPC" (00013803019407) field contains an invalid value.
+814	INK-Canon-BCI-1411BK	99037	Warning	The "UPC" (00013803019438) field contains an invalid value.
+815	INK-Canon-BCI-1411C	99037	Warning	The "UPC" (00013803019445) field contains an invalid value.
+816	INK-Canon-BCI-1411M	99037	Warning	The "UPC" (00013803019452) field contains an invalid value.
+817	INK-Canon-BCI-1411PC	99037	Warning	The "UPC" (00013803019476) field contains an invalid value.
+818	INK-Canon-BCI-1411PM	99037	Warning	The "UPC" (00013803019483) field contains an invalid value.
+819	INK-Canon-BCI-1411Y	99037	Warning	The "UPC" (00013803019469) field contains an invalid value.
+820	INK-Canon-BCI-1431BK	99037	Warning	The "UPC" (00013803031386) field contains an invalid value.
+821	INK-Canon-BCI-1431C	99037	Warning	The "UPC" (00013803031409) field contains an invalid value.
+822	INK-Canon-BCI-1431M	99037	Warning	The "UPC" (00013803031416) field contains an invalid value.
+823	INK-Canon-BCI-1431PC	99037	Warning	The "UPC" (00013803031430) field contains an invalid value.
+824	INK-Canon-BCI-1431PM	99037	Warning	The "UPC" (00013803031447) field contains an invalid value.
+825	INK-Canon-BCI-1431Y	99037	Warning	The "UPC" (00013803031423) field contains an invalid value.
+827	INK-Canon-BCI-15C	99037	Warning	The "UPC" (00013803020892) field contains an invalid value.
+828	INK-Canon-BCI-16C	99037	Warning	The "UPC" (00013803044409) field contains an invalid value.
+829	INK-Canon-BCI-21BK	99037	Warning	The "UPC" (00750845720808) field contains an invalid value.
+83	INK-HP-51625A	99037	Warning	The "UPC" (00088698003022) field contains an invalid value.
+830	INK-Canon-BCI-21C	99037	Warning	The "UPC" (00750845720815) field contains an invalid value.
+834	INK-Canon-BCI-3eC	99037	Warning	The "UPC" (00750845725889) field contains an invalid value.
+835	INK-Canon-BCI-3eM	99037	Warning	The "UPC" (00750845725797) field contains an invalid value.
+836	INK-Canon-BCI-3ePBK	99037	Warning	The "UPC" (00750845725841) field contains an invalid value.
+837	ZINK-HP-HP-60XL-Combo5	90117	Warning	The Description field contains an invalid value: Product InfoThis Replacement HP 60XL high yield black (CC641WN) inkjet cartridge is an original H... The value exceeds the maximum number of characters allowed: 2000.
+838	ZINK-HP-HP-21-22-Combo3	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 21/22) Black & Tri Color Ink CartridgeWe carry a variety of Repla... The value exceeds the maximum number of characters allowed: 2000.
+839	ZINK-HP-HP-21-22-Combo2	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 21/22) Black & Tri Color Ink CartridgeWe carry a variety of Repla... The value exceeds the maximum number of characters allowed: 2000.
+84	INK-HP-51640M	99037	Warning	The "UPC" (00088698003190) field contains an invalid value.
+846	ZINK-HP-HP-94-95-Combo2	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 94/95) Black & Tri Color (Combo Pack) Ink cartridgeWe carry a var... The value exceeds the maximum number of characters allowed: 2000.
+847	ZINK-HP-HP-94-95-Combo3	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 94/95) Black & Tri Color (Combo Pack) Ink cartridgeWe carry a var... The value exceeds the maximum number of characters allowed: 2000.
+849	ZINK-HP-HP-92-93-Combo2	8542	Error	SKU ZINK-HP-HP-92-93-Combo2, (ASIN B00276533Y, (part_number Merchant: 'C9362WN C9361WN' / Amazon: 'C9513FN#140')), (ASIN B008OSEVPK, (part_number Merchant: 'C9362WN C9361WN' / Amazon: 'C9513FN')), (ASIN B000K5Y4PW, (part_number Merchant: 'C9362WN C9361WN' / Amazon: 'C9513FN#140')). The product_id submitted with ZINK-HP-HP-92-93-Combo2 corresponds to multiple ASINs (B00276533Y, B008OSEVPK, B000K5Y4PW) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+850	ZINK-HP-56-57-Combo5	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 56 HP 57) Black & Tri Color (Combo Pack) Ink CartridgeWe carry a ... The value exceeds the maximum number of characters allowed: 2000.
+851	ZINK-HP-56-57-Combo2	8542	Error	SKU ZINK-HP-56-57-Combo2, (ASIN B000KDAJR6, (part_number Merchant: 'C6656AN C6657AN' / Amazon: 'C9321FN#140')), (ASIN B0002GDEAK, (part_number Merchant: 'C6656AN C6657AN' / Amazon: 'C9321FN#140')), (ASIN B0032UF9YW, (part_number Merchant: 'C6656AN C6657AN' / Amazon: 'UTHEWC9321FN140')), (ASIN B004E2RJ1I, (part_number Merchant: 'C6656AN C6657AN' / Amazon: 'HEWC9321FN')), (ASIN B008OSBO9Q, (part_number Merchant: 'C6656AN C6657AN' / Amazon: 'C9321FN')). The product_id submitted with ZINK-HP-56-57-Combo2 corresponds to multiple ASINs (B000KDAJR6, B0002GDEAK, B0032UF9YW, B004E2RJ1I, B008OSBO9Q) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+851	ZINK-HP-56-57-Combo2	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 56 HP 57) Black & Tri Color (Combo Pack) Ink CartridgeWe carry a ... The value exceeds the maximum number of characters allowed: 2000.
+852	ZINK-HP-56-57-Combo3	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 56 HP 57) Black & Tri Color (Combo Pack) Ink CartridgeWe carry a ... The value exceeds the maximum number of characters allowed: 2000.
+86	INK-HP-51629A	99037	Warning	The "UPC" (00088698030066) field contains an invalid value.
+87	INK-HP-51640A	99037	Warning	The "UPC" (00088698003176) field contains an invalid value.
+88	INK-HP-51640C	99037	Warning	The "UPC" (00088698003183) field contains an invalid value.
+89	INK-HP-51640Y	99037	Warning	The "UPC" (00088698003206) field contains an invalid value.
+90	INK-HP-51641A	99037	Warning	The "UPC" (00088698004272) field contains an invalid value.
+91	INK-HP-51645A	90117	Warning	The Description field contains an invalid value: Product InfoHP 45 - 51645A (Compatible) Black Ink CartridgeWe carry a variety of Replacement Inkj... The value exceeds the maximum number of characters allowed: 2000.
+92	INK-HP-51649A	90117	Warning	The Description field contains an invalid value: Product InfoHewlett Packard (HP 49) Color Replacement Printer Ink CartridgeWe carry a variety of ... The value exceeds the maximum number of characters allowed: 2000.
+92	INK-HP-51649A	99037	Warning	The "UPC" (00088698043769) field contains an invalid value.
+93	INK-HP-C9426A	99037	Warning	The "UPC" (00808736670869) field contains an invalid value.
+94	INK-HP-C9427A	99037	Warning	The "UPC" (00808736670876) field contains an invalid value.
+95	INK-HP-C9428A	99037	Warning	The "UPC" (00808736670883) field contains an invalid value.
+959	INK-HP-CC640WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 60 - CC640WN (Compatible) Black Ink CartridgeThis professionally replacement HP 60... The value exceeds the maximum number of characters allowed: 2000.
+96	INK-HP-C9429A	99037	Warning	The "UPC" (00808736670890) field contains an invalid value.
+960	INK-HP-CC641WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 60XL - CC641WN (Compatible) High Yield Black Ink cartridgeThis professionally repl... The value exceeds the maximum number of characters allowed: 2000.
+962	INK-HP-CC643WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 60 - CC643WN (Compatible) Tri-Color Printer Inkjet CartridgeThis professionally re... The value exceeds the maximum number of characters allowed: 2000.
+963	INK-HP-CC644WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 60XL - CC644WN (Compatible) High Yield Tri-Color Ink CartridgeThis professionally ... The value exceeds the maximum number of characters allowed: 2000.
+965	INK-HP-CB321WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 564XL - CN684WN CB321WN (Compatible) Black High Yield Ink CartridgesRemanufactured... The value exceeds the maximum number of characters allowed: 2000.
+966	INK-HP-CB322WN	8542	Error	SKU INK-HP-CB322WN, (ASIN B004LQZTKK, (part_number Merchant: 'CB322WN' / Amazon: 'CN684WN#140')), (ASIN B00GCTWW40, (part_number Merchant: 'CB322WN' / Amazon: 'CN684WN')), (ASIN B00ADSYIVQ, (part_number Merchant: 'CB322WN' / Amazon: 'HP 564XL Combo5')), (ASIN B00ADT2EM0, (part_number Merchant: 'CB322WN' / Amazon: 'HP 564XL 9PK')), (ASIN B003VL3ZJ8, (part_number Merchant: 'CB322WN' / Amazon: 'HP564lx')), (ASIN B00EAY2TG0, (part_number Merchant: 'CB322WN' / Amazon: 'AAC8001-95614')), (ASIN B00ADT2DWG, (part_number Merchant: 'CB322WN' / Amazon: 'HP 564XL 11PK')). The product_id submitted with INK-HP-CB322WN corresponds to multiple ASINs (B004LQZTKK, B00GCTWW40, B00ADSYIVQ, B00ADT2EM0, B003VL3ZJ8, B00EAY2TG0, B00ADT2DWG) but we are unable to determine which. Please update your information to best match the appropriate ASIN. If your product is different than any ASIN, please check the product_id. If it is correct, please contact Seller Support for proper resolution. Feed ID: 0 For details, see http://sellercentral.amazon.com/gp/errorcode/200692340
+966	INK-HP-CB322WN	90117	Warning	The Description field contains an invalid value: Product InfoHP 564XL - CB322WN CR277WN (Compatible) Photo Black High Yield Ink CartridgeRemanufac... The value exceeds the maximum number of characters allowed: 2000.
+968	INK-BROTHER-LC04C	99037	Warning	The "UPC" (00012502055938) field contains an invalid value.
+969	INK-BROTHER-LC04M	99037	Warning	The "UPC" (00012502055945) field contains an invalid value.
+97	INK-BROTHER-LC02BK	99037	Warning	The "UPC" (00012502563723) field contains an invalid value.
+970	INK-BROTHER-LC04Y	99037	Warning	The "UPC" (00012502055921) field contains an invalid value.
+971	INK-BROTHER-LC21BK	99037	Warning	The "UPC" (00012502600329) field contains an invalid value.
+972	INK-BROTHER-LC21C	99037	Warning	The "UPC" (00012502600336) field contains an invalid value.
+973	INK-BROTHER-LC21M	99037	Warning	The "UPC" (00012502600343) field contains an invalid value.
+974	INK-BROTHER-LC21Y	99037	Warning	The "UPC" (00012502600350) field contains an invalid value.
+975	INK-BROTHER-LC25BK	99037	Warning	The "UPC" (00012502606314) field contains an invalid value.
+976	INK-BROTHER-LC25C	99037	Warning	The "UPC" (00012502606321) field contains an invalid value.
+977	INK-BROTHER-LC25M	99037	Warning	The "UPC" (00012502606338) field contains an invalid value.
+978	INK-BROTHER-LC25Y	99037	Warning	The "UPC" (00012502606345) field contains an invalid value.
+979	INK-BROTHER-LC31BK	99037	Warning	The "UPC" (00012502607229) field contains an invalid value.
+98	INK-BROTHER-LC02C	99037	Warning	The "UPC" (00012502563730) field contains an invalid value.
+980	INK-BROTHER-LC31C	99037	Warning	The "UPC" (00012502607236) field contains an invalid value.
+981	INK-BROTHER-LC31M	99037	Warning	The "UPC" (00012502607243) field contains an invalid value.
+982	INK-BROTHER-LC31Y	99037	Warning	The "UPC" (00012502607250) field contains an invalid value.
+99	INK-BROTHER-LC02M	99037	Warning	The "UPC" (00012502563747) field contains an invalid value.
+992	INK-Canon-BC-05	99037	Warning	The "UPC" (00750845721379) field contains an invalid value.
+993	INK-Canon-BC-20	99037	Warning	The "UPC" (00750845720532) field contains an invalid value.
+994	INK-Canon-BCI-10	99037	Warning	The "UPC" (00750845720839) field contains an invalid value.
+999	INK-Canon-BCI-11BK	99037	Warning	The "UPC" (00750845720853) field contains an invalid value.

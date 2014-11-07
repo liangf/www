@@ -1,0 +1,154 @@
+<!-- Hidden the eggs on 7 pages !-->
+<script type="text/javascript">
+/*******************************************************/
+/* Compandsave Easgter Day Campaign*/
+/* Description: Hidden the eggs on 7 pages */
+/* Author: liangf */
+/* Version: 0.0.1 */
+/*******************************************************/
+
+var fileref=document.createElement("link");
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", "//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css");
+document.getElementById("sa_loyalty").appendChild(fileref);
+
+var hreftext = window.location.href;
+var reg1=/_s\/169\.htm$/i;
+var egg1 = reg1.exec(hreftext);
+
+var reg2=/_s\/167\.htm$/i;
+var egg2 = reg2.exec(hreftext);
+
+var reg3=/_s\/168\.htm$/i;
+var egg3 = reg3.exec(hreftext);
+
+var reg4=/_s\/212\.htm$/i;
+var egg4 = reg4.exec(hreftext);
+
+var reg5=/ProductCode\=INK-HP-C9352AN$/i;
+var egg5 = reg5.exec(hreftext);
+
+var reg6=/ProductCode\=ZINK\-HP\-HP564XL\-Combo9$/i;
+var egg6 = reg6.exec(hreftext);
+
+var reg7=/MailingList\_subscribe\.asp$/i;
+var egg7 = reg7.exec(hreftext);
+
+
+if (egg1) {
+    var eggDiv = document.createElement("div");
+    eggDiv.id = "cas_eeh_egg1";
+    document.getElementById("sa_loyalty").appendChild(eggDiv);
+}
+
+if (egg2) {
+    var eggDiv = document.createElement("div");
+    eggDiv.id = "cas_eeh_egg2";
+    document.getElementById("sa_loyalty").appendChild(eggDiv);
+}
+
+if (egg3) {
+    var eggDiv = document.createElement("div");
+    eggDiv.id = "cas_eeh_egg3";
+    document.getElementById("sa_loyalty").appendChild(eggDiv);
+}
+
+if (egg4) {
+    var eggDiv = document.createElement("div");
+    eggDiv.id = "cas_eeh_egg4";
+    document.getElementById("sa_loyalty").appendChild(eggDiv);
+}
+
+if (egg5) {
+    var eggDiv = document.createElement("div");
+    eggDiv.id = "cas_eeh_egg5";
+    document.getElementById("sa_loyalty").appendChild(eggDiv);
+}
+
+if (egg6) {
+    var eggDiv = document.createElement("div");
+    eggDiv.id = "cas_eeh_egg6";
+    document.getElementById("sa_loyalty").appendChild(eggDiv);
+}
+
+if (egg7) {
+    var eggDiv = document.createElement("div");
+    eggDiv.id = "cas_eeh_egg7";
+    document.getElementById("sa_loyalty").appendChild(eggDiv);
+}
+
+
+$('#cas_eeh_egg1').click(function() {  
+    window.open('http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-1.html','Compandsave Easter Campaign','width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0');
+});
+
+$('#cas_eeh_egg2').click(function() {  
+    window.open('http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-2.html','Compandsave Easter Campaign','width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0');
+});
+
+$('#cas_eeh_egg3').click(function() {  
+    window.open('http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-3.html','Compandsave Easter Campaign','width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0');
+});
+
+$('#cas_eeh_egg4').click(function() {  
+    window.open('http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-4.html','Compandsave Easter Campaign','width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0');
+});
+
+$('#cas_eeh_egg5').click(function() {  
+    window.open('http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-5.html','Compandsave Easter Campaign','width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0');
+});
+
+$('#cas_eeh_egg6').click(function() {  
+    window.open('http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-6.html','Compandsave Easter Campaign','width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0');
+});
+
+$('#cas_eeh_egg7').click(function() {  
+    window.open('http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-7.html','Compandsave Easter Campaign','width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0');
+});
+
+/*
+var fileref=document.createElement("link");
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", "//www.compandsave.com/v/newsletter/promotion-april-2014/css/2014-april-cas-popup.css");
+document.getElementById("sa_loyalty").appendChild(fileref);
+
+var hreftext = window.location.href;
+var reg = new Array("/_s\/169\.htm$/i","/_s\/167\.htm$/i","/_s\/168\.htm$/i", "/_s\/212\.htm$/i", "/ProductCode\=INK-HP-C9352AN$/i", "/ProductCode\=ZINK\-HP\-HP564XL\-Combo9$/i", "/MailingList\_subscribe\.asp$/i");
+//var reg1=/_s\/169\.htm$/i;
+//var egg1 = reg1.exec(hreftext);
+
+var eggDiv = document.createElement("div");
+var eggDivId = "cas_eeh_egg";
+var popup_url = "http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-";
+var popup_title = "Compandsave Easter Campaign";
+var popup_style = "width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0";
+for (var i=1; i<=7; i++) {
+    var egg = reg[i-1].exec(hreftext);
+    if (egg) {
+        eggDivId += i;
+        popup_url += i;
+        popup_url += ".html";
+    }
+}
+
+eggDiv.id = eggDivId;
+document.getElementById("sa_loyalty").appendChild(eggDiv);
+$(eggDivId).click(function() {  
+    window.open(popup_url, popup_title, popup_style);
+});
+
+if (egg1) {
+    var eggDiv = document.createElement("div");
+    eggDiv.id = "cas_eeh_egg1";
+    document.getElementById("sa_loyalty").appendChild(eggDiv);
+}
+
+$('#cas_eeh_egg1').click(function() {  
+    window.open('http://www.compandsavetest.com/v/dc/J/promotion-april-2014/egg-1.html','Compandsave Easter Campaign','width=620,height=660,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=400,top=0');
+});
+*/
+
+</script>
+<!-- End of Hidden the eggs on 7 page !-->

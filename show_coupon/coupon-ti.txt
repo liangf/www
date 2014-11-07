@@ -1,0 +1,12 @@
+    jQuery.post("//www.tomatoink.com/v/dc/yy/liangf/servertime/time3.asp", function(data) {
+        var amazon_id = document.getElementById("cas_cms_couponDivAmazon");
+        var coupon_id = document.getElementById("ti_couponDiv");
+		if (data > 0 && amazon_id == null && coupon_id == null) {
+			fileref.setAttribute("href", "//www.compandsave.com/v/dc/yy/liangf/coupon/css/2014-ti-return-coupondiv.css");
+			document.getElementById("content_area").appendChild(fileref);
+			couponDiv.id = "cas_cms_couponDivAmazon";
+			document.getElementById("content_area").appendChild(couponDiv);
+			document.getElementById("cas_cms_couponDivAmazon").innerHTML = '<p>10% OFF<br>Only Today!</p>'+'<p>Coupon Code:</p>'+'<p><strong id="cas_cms_codeAmazon"></strong></p>';	
+			document.getElementById('cas_cms_codeAmazon').innerHTML="IT10"; 
+		}
+	});
